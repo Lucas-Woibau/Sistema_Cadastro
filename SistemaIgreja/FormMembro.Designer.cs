@@ -1,6 +1,6 @@
 ﻿namespace SistemaIgreja
 {
-    partial class Form1
+    partial class FormMembro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelInfo = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textBoxPesqMem = new System.Windows.Forms.TextBox();
             this.labelPesqMem = new System.Windows.Forms.Label();
-            this.panelForm = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelAssinatura = new System.Windows.Forms.Label();
+            this.formMembroInfo = new System.Windows.Forms.Panel();
+            this.btnNovo = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.textAcei = new System.Windows.Forms.TextBox();
+            this.textTipo = new System.Windows.Forms.TextBox();
             this.labelAceito = new System.Windows.Forms.Label();
             this.labelTipo = new System.Windows.Forms.Label();
             this.textTalen = new System.Windows.Forms.TextBox();
@@ -48,7 +59,7 @@
             this.labelIgrAnt = new System.Windows.Forms.Label();
             this.textIgrBat = new System.Windows.Forms.TextBox();
             this.labelIgrBatismo = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textDtBat = new System.Windows.Forms.TextBox();
             this.labelBatismo = new System.Windows.Forms.Label();
             this.textMae = new System.Windows.Forms.TextBox();
             this.labelMae = new System.Windows.Forms.Label();
@@ -94,7 +105,7 @@
             this.labelEscolaridade = new System.Windows.Forms.Label();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.texTelefone = new System.Windows.Forms.TextBox();
+            this.textTelefone = new System.Windows.Forms.TextBox();
             this.labelTelefone = new System.Windows.Forms.Label();
             this.textCep = new System.Windows.Forms.TextBox();
             this.labelCep = new System.Windows.Forms.Label();
@@ -102,50 +113,121 @@
             this.labelUf = new System.Windows.Forms.Label();
             this.textCidade = new System.Windows.Forms.TextBox();
             this.labelCidade = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBairro = new System.Windows.Forms.TextBox();
             this.labelBairro = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textNumero = new System.Windows.Forms.TextBox();
             this.labelNumero = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textEndereco = new System.Windows.Forms.TextBox();
             this.labelEndereco = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textSexo = new System.Windows.Forms.TextBox();
             this.labelSexo = new System.Windows.Forms.Label();
             this.textNome = new System.Windows.Forms.TextBox();
             this.labelNome = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
+            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
             this.panelInfo.SuspendLayout();
-            this.panelForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.formMembroInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
             // 
+            this.panelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelInfo.Controls.Add(this.dataGridView1);
             this.panelInfo.Controls.Add(this.textBoxPesqMem);
             this.panelInfo.Controls.Add(this.labelPesqMem);
-            this.panelInfo.Location = new System.Drawing.Point(643, 5);
+            this.panelInfo.Location = new System.Drawing.Point(634, 0);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(633, 750);
+            this.panelInfo.Size = new System.Drawing.Size(651, 740);
             this.panelInfo.TabIndex = 0;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnID,
+            this.ColumnNOME,
+            this.ColumnTIPO,
+            this.ColumnCONTATO,
+            this.ColumnCIDADE,
+            this.Column6});
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 371);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.Size = new System.Drawing.Size(645, 354);
+            this.dataGridView1.TabIndex = 89;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            this.ColumnID.HeaderText = "#";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnID.Width = 30;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            this.ColumnNOME.HeaderText = "NOME";
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnNOME.Width = 211;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            this.ColumnTIPO.HeaderText = "TIPO";
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            this.ColumnCONTATO.HeaderText = "CONTATO";
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            this.ColumnCIDADE.HeaderText = "CIDADE";
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column6
+            // 
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column6.HeaderText = "";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
             // 
             // textBoxPesqMem
             // 
             this.textBoxPesqMem.Location = new System.Drawing.Point(93, 329);
             this.textBoxPesqMem.MaxLength = 50;
             this.textBoxPesqMem.Name = "textBoxPesqMem";
-            this.textBoxPesqMem.Size = new System.Drawing.Size(385, 20);
+            this.textBoxPesqMem.Size = new System.Drawing.Size(234, 20);
             this.textBoxPesqMem.TabIndex = 88;
+            this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
             // 
             // labelPesqMem
             // 
@@ -156,113 +238,141 @@
             this.labelPesqMem.TabIndex = 1;
             this.labelPesqMem.Text = "MEMBRO:";
             // 
-            // panelForm
+            // formMembroInfo
             // 
-            this.panelForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panelForm.Controls.Add(this.textBox6);
-            this.panelForm.Controls.Add(this.textBox1);
-            this.panelForm.Controls.Add(this.pictureBox1);
-            this.panelForm.Controls.Add(this.labelAssinatura);
-            this.panelForm.Controls.Add(this.labelAceito);
-            this.panelForm.Controls.Add(this.labelTipo);
-            this.panelForm.Controls.Add(this.textTalen);
-            this.panelForm.Controls.Add(this.labelTalen);
-            this.panelForm.Controls.Add(this.textCargIgr);
-            this.panelForm.Controls.Add(this.labelCargIgr);
-            this.panelForm.Controls.Add(this.textCargExer);
-            this.panelForm.Controls.Add(this.labelCargExe);
-            this.panelForm.Controls.Add(this.textPasBat);
-            this.panelForm.Controls.Add(this.labelPasBat);
-            this.panelForm.Controls.Add(this.textIgrAnt);
-            this.panelForm.Controls.Add(this.labelIgrAnt);
-            this.panelForm.Controls.Add(this.textIgrBat);
-            this.panelForm.Controls.Add(this.labelIgrBatismo);
-            this.panelForm.Controls.Add(this.textBox7);
-            this.panelForm.Controls.Add(this.labelBatismo);
-            this.panelForm.Controls.Add(this.textMae);
-            this.panelForm.Controls.Add(this.labelMae);
-            this.panelForm.Controls.Add(this.textPai);
-            this.panelForm.Controls.Add(this.labelPai);
-            this.panelForm.Controls.Add(this.textSexFilho5);
-            this.panelForm.Controls.Add(this.textDtFilho5);
-            this.panelForm.Controls.Add(this.textFilho5);
-            this.panelForm.Controls.Add(this.textSexFilho4);
-            this.panelForm.Controls.Add(this.textDtFilho4);
-            this.panelForm.Controls.Add(this.textFilho4);
-            this.panelForm.Controls.Add(this.textSexFilho3);
-            this.panelForm.Controls.Add(this.textDtFilho3);
-            this.panelForm.Controls.Add(this.textFilho3);
-            this.panelForm.Controls.Add(this.textSexFilho2);
-            this.panelForm.Controls.Add(this.textDtFilho2);
-            this.panelForm.Controls.Add(this.textFilho2);
-            this.panelForm.Controls.Add(this.textSexFilho);
-            this.panelForm.Controls.Add(this.sexFilho);
-            this.panelForm.Controls.Add(this.textDtFilho);
-            this.panelForm.Controls.Add(this.DtFilho);
-            this.panelForm.Controls.Add(this.textFilho);
-            this.panelForm.Controls.Add(this.nomeFilho);
-            this.panelForm.Controls.Add(this.textTelConj);
-            this.panelForm.Controls.Add(this.labelTelConj);
-            this.panelForm.Controls.Add(this.textConj);
-            this.panelForm.Controls.Add(this.labelConj);
-            this.panelForm.Controls.Add(this.textCpf);
-            this.panelForm.Controls.Add(this.labelCpf);
-            this.panelForm.Controls.Add(this.textDtCasamento);
-            this.panelForm.Controls.Add(this.labelDtCasamento);
-            this.panelForm.Controls.Add(this.textOrg);
-            this.panelForm.Controls.Add(this.labelOrg);
-            this.panelForm.Controls.Add(this.textRg);
-            this.panelForm.Controls.Add(this.labelRg);
-            this.panelForm.Controls.Add(this.textNat);
-            this.panelForm.Controls.Add(this.labelNat);
-            this.panelForm.Controls.Add(this.textNasc);
-            this.panelForm.Controls.Add(this.labelNasc);
-            this.panelForm.Controls.Add(this.textProfissao);
-            this.panelForm.Controls.Add(this.labelProfissao);
-            this.panelForm.Controls.Add(this.textEscolaridade);
-            this.panelForm.Controls.Add(this.labelEscolaridade);
-            this.panelForm.Controls.Add(this.textEmail);
-            this.panelForm.Controls.Add(this.labelEmail);
-            this.panelForm.Controls.Add(this.texTelefone);
-            this.panelForm.Controls.Add(this.labelTelefone);
-            this.panelForm.Controls.Add(this.textCep);
-            this.panelForm.Controls.Add(this.labelCep);
-            this.panelForm.Controls.Add(this.textUf);
-            this.panelForm.Controls.Add(this.labelUf);
-            this.panelForm.Controls.Add(this.textCidade);
-            this.panelForm.Controls.Add(this.labelCidade);
-            this.panelForm.Controls.Add(this.textBox5);
-            this.panelForm.Controls.Add(this.labelBairro);
-            this.panelForm.Controls.Add(this.textBox4);
-            this.panelForm.Controls.Add(this.labelNumero);
-            this.panelForm.Controls.Add(this.textBox3);
-            this.panelForm.Controls.Add(this.labelEndereco);
-            this.panelForm.Controls.Add(this.textBox2);
-            this.panelForm.Controls.Add(this.labelSexo);
-            this.panelForm.Controls.Add(this.textNome);
-            this.panelForm.Controls.Add(this.labelNome);
-            this.panelForm.Location = new System.Drawing.Point(4, 5);
-            this.panelForm.Name = "panelForm";
-            this.panelForm.Size = new System.Drawing.Size(633, 695);
-            this.panelForm.TabIndex = 1;
+            this.formMembroInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formMembroInfo.Controls.Add(this.btnNovo);
+            this.formMembroInfo.Controls.Add(this.btnSalvar);
+            this.formMembroInfo.Controls.Add(this.btnEditar);
+            this.formMembroInfo.Controls.Add(this.textAcei);
+            this.formMembroInfo.Controls.Add(this.textTipo);
+            this.formMembroInfo.Controls.Add(this.labelAceito);
+            this.formMembroInfo.Controls.Add(this.labelTipo);
+            this.formMembroInfo.Controls.Add(this.textTalen);
+            this.formMembroInfo.Controls.Add(this.labelTalen);
+            this.formMembroInfo.Controls.Add(this.textCargIgr);
+            this.formMembroInfo.Controls.Add(this.labelCargIgr);
+            this.formMembroInfo.Controls.Add(this.textCargExer);
+            this.formMembroInfo.Controls.Add(this.labelCargExe);
+            this.formMembroInfo.Controls.Add(this.textPasBat);
+            this.formMembroInfo.Controls.Add(this.labelPasBat);
+            this.formMembroInfo.Controls.Add(this.textIgrAnt);
+            this.formMembroInfo.Controls.Add(this.labelIgrAnt);
+            this.formMembroInfo.Controls.Add(this.textIgrBat);
+            this.formMembroInfo.Controls.Add(this.labelIgrBatismo);
+            this.formMembroInfo.Controls.Add(this.textDtBat);
+            this.formMembroInfo.Controls.Add(this.labelBatismo);
+            this.formMembroInfo.Controls.Add(this.textMae);
+            this.formMembroInfo.Controls.Add(this.labelMae);
+            this.formMembroInfo.Controls.Add(this.textPai);
+            this.formMembroInfo.Controls.Add(this.labelPai);
+            this.formMembroInfo.Controls.Add(this.textSexFilho5);
+            this.formMembroInfo.Controls.Add(this.textDtFilho5);
+            this.formMembroInfo.Controls.Add(this.textFilho5);
+            this.formMembroInfo.Controls.Add(this.textSexFilho4);
+            this.formMembroInfo.Controls.Add(this.textDtFilho4);
+            this.formMembroInfo.Controls.Add(this.textFilho4);
+            this.formMembroInfo.Controls.Add(this.textSexFilho3);
+            this.formMembroInfo.Controls.Add(this.textDtFilho3);
+            this.formMembroInfo.Controls.Add(this.textFilho3);
+            this.formMembroInfo.Controls.Add(this.textSexFilho2);
+            this.formMembroInfo.Controls.Add(this.textDtFilho2);
+            this.formMembroInfo.Controls.Add(this.textFilho2);
+            this.formMembroInfo.Controls.Add(this.textSexFilho);
+            this.formMembroInfo.Controls.Add(this.sexFilho);
+            this.formMembroInfo.Controls.Add(this.textDtFilho);
+            this.formMembroInfo.Controls.Add(this.DtFilho);
+            this.formMembroInfo.Controls.Add(this.textFilho);
+            this.formMembroInfo.Controls.Add(this.nomeFilho);
+            this.formMembroInfo.Controls.Add(this.textTelConj);
+            this.formMembroInfo.Controls.Add(this.labelTelConj);
+            this.formMembroInfo.Controls.Add(this.textConj);
+            this.formMembroInfo.Controls.Add(this.labelConj);
+            this.formMembroInfo.Controls.Add(this.textCpf);
+            this.formMembroInfo.Controls.Add(this.labelCpf);
+            this.formMembroInfo.Controls.Add(this.textDtCasamento);
+            this.formMembroInfo.Controls.Add(this.labelDtCasamento);
+            this.formMembroInfo.Controls.Add(this.textOrg);
+            this.formMembroInfo.Controls.Add(this.labelOrg);
+            this.formMembroInfo.Controls.Add(this.textRg);
+            this.formMembroInfo.Controls.Add(this.labelRg);
+            this.formMembroInfo.Controls.Add(this.textNat);
+            this.formMembroInfo.Controls.Add(this.labelNat);
+            this.formMembroInfo.Controls.Add(this.textNasc);
+            this.formMembroInfo.Controls.Add(this.labelNasc);
+            this.formMembroInfo.Controls.Add(this.textProfissao);
+            this.formMembroInfo.Controls.Add(this.labelProfissao);
+            this.formMembroInfo.Controls.Add(this.textEscolaridade);
+            this.formMembroInfo.Controls.Add(this.labelEscolaridade);
+            this.formMembroInfo.Controls.Add(this.textEmail);
+            this.formMembroInfo.Controls.Add(this.labelEmail);
+            this.formMembroInfo.Controls.Add(this.textTelefone);
+            this.formMembroInfo.Controls.Add(this.labelTelefone);
+            this.formMembroInfo.Controls.Add(this.textCep);
+            this.formMembroInfo.Controls.Add(this.labelCep);
+            this.formMembroInfo.Controls.Add(this.textUf);
+            this.formMembroInfo.Controls.Add(this.labelUf);
+            this.formMembroInfo.Controls.Add(this.textCidade);
+            this.formMembroInfo.Controls.Add(this.labelCidade);
+            this.formMembroInfo.Controls.Add(this.textBairro);
+            this.formMembroInfo.Controls.Add(this.labelBairro);
+            this.formMembroInfo.Controls.Add(this.textNumero);
+            this.formMembroInfo.Controls.Add(this.labelNumero);
+            this.formMembroInfo.Controls.Add(this.textEndereco);
+            this.formMembroInfo.Controls.Add(this.labelEndereco);
+            this.formMembroInfo.Controls.Add(this.textSexo);
+            this.formMembroInfo.Controls.Add(this.labelSexo);
+            this.formMembroInfo.Controls.Add(this.textNome);
+            this.formMembroInfo.Controls.Add(this.labelNome);
+            this.formMembroInfo.Location = new System.Drawing.Point(1, 0);
+            this.formMembroInfo.Name = "formMembroInfo";
+            this.formMembroInfo.Size = new System.Drawing.Size(627, 737);
+            this.formMembroInfo.TabIndex = 3;
             // 
-            // pictureBox1
+            // btnNovo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(157, 607);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(295, 50);
-            this.pictureBox1.TabIndex = 87;
-            this.pictureBox1.TabStop = false;
+            this.btnNovo.Location = new System.Drawing.Point(36, 680);
+            this.btnNovo.Name = "btnNovo";
+            this.btnNovo.Size = new System.Drawing.Size(148, 39);
+            this.btnNovo.TabIndex = 93;
+            this.btnNovo.Text = "NOVO";
+            this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
-            // labelAssinatura
+            // btnSalvar
             // 
-            this.labelAssinatura.AutoSize = true;
-            this.labelAssinatura.Location = new System.Drawing.Point(236, 670);
-            this.labelAssinatura.Name = "labelAssinatura";
-            this.labelAssinatura.Size = new System.Drawing.Size(142, 13);
-            this.labelAssinatura.TabIndex = 86;
-            this.labelAssinatura.Text = "ASSINATURA DO PASTOR";
+            this.btnSalvar.Location = new System.Drawing.Point(416, 680);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(148, 39);
+            this.btnSalvar.TabIndex = 92;
+            this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(224, 680);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(148, 39);
+            this.btnEditar.TabIndex = 91;
+            this.btnEditar.Text = "EDITAR";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // textAcei
+            // 
+            this.textAcei.Location = new System.Drawing.Point(292, 551);
+            this.textAcei.MaxLength = 50;
+            this.textAcei.Name = "textAcei";
+            this.textAcei.Size = new System.Drawing.Size(285, 20);
+            this.textAcei.TabIndex = 89;
+            // 
+            // textTipo
+            // 
+            this.textTipo.Location = new System.Drawing.Point(12, 551);
+            this.textTipo.MaxLength = 50;
+            this.textTipo.Name = "textTipo";
+            this.textTipo.Size = new System.Drawing.Size(226, 20);
+            this.textTipo.TabIndex = 88;
             // 
             // labelAceito
             // 
@@ -282,9 +392,9 @@
             this.labelTipo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipo.Location = new System.Drawing.Point(13, 532);
             this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(170, 16);
+            this.labelTipo.Size = new System.Drawing.Size(178, 16);
             this.labelTipo.TabIndex = 79;
-            this.labelTipo.Text = "TIPO (membro / frequentador):";
+            this.labelTipo.Text = "*TIPO (Membro / Frequentador):";
             // 
             // textTalen
             // 
@@ -400,13 +510,13 @@
             this.labelIgrBatismo.TabIndex = 67;
             this.labelIgrBatismo.Text = "NOME IGREJA BATISMO:";
             // 
-            // textBox7
+            // textDtBat
             // 
-            this.textBox7.Location = new System.Drawing.Point(13, 390);
-            this.textBox7.MaxLength = 15;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(97, 20);
-            this.textBox7.TabIndex = 66;
+            this.textDtBat.Location = new System.Drawing.Point(13, 390);
+            this.textDtBat.MaxLength = 15;
+            this.textDtBat.Name = "textDtBat";
+            this.textDtBat.Size = new System.Drawing.Size(97, 20);
+            this.textDtBat.TabIndex = 66;
             // 
             // labelBatismo
             // 
@@ -663,9 +773,9 @@
             this.labelCpf.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCpf.Location = new System.Drawing.Point(149, 131);
             this.labelCpf.Name = "labelCpf";
-            this.labelCpf.Size = new System.Drawing.Size(30, 16);
+            this.labelCpf.Size = new System.Drawing.Size(35, 16);
             this.labelCpf.TabIndex = 34;
-            this.labelCpf.Text = "CPF:";
+            this.labelCpf.Text = "*CPF:";
             // 
             // textDtCasamento
             // 
@@ -720,9 +830,9 @@
             this.labelRg.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRg.Location = new System.Drawing.Point(552, 89);
             this.labelRg.Name = "labelRg";
-            this.labelRg.Size = new System.Drawing.Size(25, 16);
+            this.labelRg.Size = new System.Drawing.Size(30, 16);
             this.labelRg.TabIndex = 28;
-            this.labelRg.Text = "RG:";
+            this.labelRg.Text = "*RG:";
             // 
             // textNat
             // 
@@ -756,11 +866,11 @@
             this.labelNasc.AutoSize = true;
             this.labelNasc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelNasc.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNasc.Location = new System.Drawing.Point(328, 89);
+            this.labelNasc.Location = new System.Drawing.Point(324, 89);
             this.labelNasc.Name = "labelNasc";
-            this.labelNasc.Size = new System.Drawing.Size(114, 16);
+            this.labelNasc.Size = new System.Drawing.Size(122, 16);
             this.labelNasc.TabIndex = 24;
-            this.labelNasc.Text = "DATA NASCIMENTO";
+            this.labelNasc.Text = "*DATA NASCIMENTO:";
             // 
             // textProfissao
             // 
@@ -819,20 +929,20 @@
             this.labelEmail.TabIndex = 18;
             this.labelEmail.Text = "E-MAIL:";
             // 
-            // texTelefone
+            // textTelefone
             // 
-            this.texTelefone.Location = new System.Drawing.Point(334, 66);
-            this.texTelefone.MaxLength = 15;
-            this.texTelefone.Name = "texTelefone";
-            this.texTelefone.Size = new System.Drawing.Size(105, 20);
-            this.texTelefone.TabIndex = 17;
+            this.textTelefone.Location = new System.Drawing.Point(334, 66);
+            this.textTelefone.MaxLength = 15;
+            this.textTelefone.Name = "textTelefone";
+            this.textTelefone.Size = new System.Drawing.Size(105, 20);
+            this.textTelefone.TabIndex = 17;
             // 
             // labelTelefone
             // 
             this.labelTelefone.AutoSize = true;
             this.labelTelefone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.labelTelefone.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTelefone.Location = new System.Drawing.Point(331, 47);
+            this.labelTelefone.Location = new System.Drawing.Point(327, 47);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(117, 16);
             this.labelTelefone.TabIndex = 16;
@@ -853,9 +963,9 @@
             this.labelCep.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCep.Location = new System.Drawing.Point(237, 47);
             this.labelCep.Name = "labelCep";
-            this.labelCep.Size = new System.Drawing.Size(30, 16);
+            this.labelCep.Size = new System.Drawing.Size(35, 16);
             this.labelCep.TabIndex = 14;
-            this.labelCep.Text = "CEP:";
+            this.labelCep.Text = "*CEP:";
             // 
             // textUf
             // 
@@ -891,17 +1001,17 @@
             this.labelCidade.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCidade.Location = new System.Drawing.Point(4, 47);
             this.labelCidade.Name = "labelCidade";
-            this.labelCidade.Size = new System.Drawing.Size(50, 16);
+            this.labelCidade.Size = new System.Drawing.Size(55, 16);
             this.labelCidade.TabIndex = 10;
-            this.labelCidade.Text = "CIDADE:";
+            this.labelCidade.Text = "*CIDADE:";
             // 
-            // textBox5
+            // textBairro
             // 
-            this.textBox5.Location = new System.Drawing.Point(525, 24);
-            this.textBox5.MaxLength = 15;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(93, 20);
-            this.textBox5.TabIndex = 9;
+            this.textBairro.Location = new System.Drawing.Point(525, 24);
+            this.textBairro.MaxLength = 15;
+            this.textBairro.Name = "textBairro";
+            this.textBairro.Size = new System.Drawing.Size(93, 20);
+            this.textBairro.TabIndex = 9;
             // 
             // labelBairro
             // 
@@ -914,13 +1024,13 @@
             this.labelBairro.TabIndex = 8;
             this.labelBairro.Text = "BAIRRO:";
             // 
-            // textBox4
+            // textNumero
             // 
-            this.textBox4.Location = new System.Drawing.Point(466, 24);
-            this.textBox4.MaxLength = 6;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(50, 20);
-            this.textBox4.TabIndex = 7;
+            this.textNumero.Location = new System.Drawing.Point(466, 24);
+            this.textNumero.MaxLength = 6;
+            this.textNumero.Name = "textNumero";
+            this.textNumero.Size = new System.Drawing.Size(50, 20);
+            this.textNumero.TabIndex = 7;
             // 
             // labelNumero
             // 
@@ -933,13 +1043,13 @@
             this.labelNumero.TabIndex = 6;
             this.labelNumero.Text = "NÚMERO:";
             // 
-            // textBox3
+            // textEndereco
             // 
-            this.textBox3.Location = new System.Drawing.Point(283, 24);
-            this.textBox3.MaxLength = 30;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(169, 20);
-            this.textBox3.TabIndex = 5;
+            this.textEndereco.Location = new System.Drawing.Point(283, 24);
+            this.textEndereco.MaxLength = 30;
+            this.textEndereco.Name = "textEndereco";
+            this.textEndereco.Size = new System.Drawing.Size(169, 20);
+            this.textEndereco.TabIndex = 5;
             // 
             // labelEndereco
             // 
@@ -952,13 +1062,13 @@
             this.labelEndereco.TabIndex = 4;
             this.labelEndereco.Text = "ENDEREÇO (avenida, rua):";
             // 
-            // textBox2
+            // textSexo
             // 
-            this.textBox2.Location = new System.Drawing.Point(186, 24);
-            this.textBox2.MaxLength = 12;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(81, 20);
-            this.textBox2.TabIndex = 3;
+            this.textSexo.Location = new System.Drawing.Point(186, 24);
+            this.textSexo.MaxLength = 12;
+            this.textSexo.Name = "textSexo";
+            this.textSexo.Size = new System.Drawing.Size(81, 20);
+            this.textSexo.TabIndex = 3;
             // 
             // labelSexo
             // 
@@ -967,17 +1077,19 @@
             this.labelSexo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSexo.Location = new System.Drawing.Point(183, 5);
             this.labelSexo.Name = "labelSexo";
-            this.labelSexo.Size = new System.Drawing.Size(38, 16);
+            this.labelSexo.Size = new System.Drawing.Size(43, 16);
             this.labelSexo.TabIndex = 2;
-            this.labelSexo.Text = "SEXO:";
+            this.labelSexo.Text = "*SEXO:";
             // 
             // textNome
             // 
+            this.textNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membrosBindingSource, "NOME", true));
             this.textNome.Location = new System.Drawing.Point(7, 24);
             this.textNome.MaxLength = 50;
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(159, 20);
             this.textNome.TabIndex = 1;
+            this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged_1);
             // 
             // labelNome
             // 
@@ -986,122 +1098,46 @@
             this.labelNome.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNome.Location = new System.Drawing.Point(4, 5);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(45, 16);
+            this.labelNome.Size = new System.Drawing.Size(50, 16);
             this.labelNome.TabIndex = 0;
-            this.labelNome.Text = "NOME:";
+            this.labelNome.Text = "*NOME:";
             // 
-            // dataGridView1
+            // sistemaIgrejaDataSet
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.TIPO,
-            this.Column3,
-            this.Column1,
-            this.Column4});
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 371);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 348);
-            this.dataGridView1.TabIndex = 89;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
+            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // textBox1
+            // membrosBindingSource
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 551);
-            this.textBox1.MaxLength = 50;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 20);
-            this.textBox1.TabIndex = 88;
+            this.membrosBindingSource.DataMember = "membros";
+            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
             // 
-            // textBox6
+            // membrosTableAdapter
             // 
-            this.textBox6.Location = new System.Drawing.Point(292, 551);
-            this.textBox6.MaxLength = 50;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(285, 20);
-            this.textBox6.TabIndex = 89;
+            this.membrosTableAdapter.ClearBeforeFill = true;
             // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "NOME";
-            this.Column2.MaxInputLength = 50;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 147;
-            // 
-            // TIPO
-            // 
-            this.TIPO.HeaderText = "TIPO";
-            this.TIPO.MaxInputLength = 50;
-            this.TIPO.Name = "TIPO";
-            this.TIPO.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "CELULAR";
-            this.Column3.MaxInputLength = 50;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ENDEREÇO";
-            this.Column1.MaxInputLength = 50;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 130;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "CIDADE";
-            this.Column4.MaxInputLength = 50;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 80;
-            // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Location = new System.Drawing.Point(56, 710);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(196, 41);
-            this.buttonEditar.TabIndex = 2;
-            this.buttonEditar.Text = "EDITAR MEMBRO";
-            this.buttonEditar.UseVisualStyleBackColor = true;
-            // 
-            // buttonSalvar
-            // 
-            this.buttonSalvar.Location = new System.Drawing.Point(364, 710);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(196, 41);
-            this.buttonSalvar.TabIndex = 3;
-            this.buttonSalvar.Text = "SALVAR MEMBRO";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
-            // 
-            // Form1
+            // FormMembro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1283, 759);
-            this.Controls.Add(this.buttonSalvar);
-            this.Controls.Add(this.buttonEditar);
-            this.Controls.Add(this.panelForm);
+            this.ClientSize = new System.Drawing.Size(1280, 731);
+            this.Controls.Add(this.formMembroInfo);
             this.Controls.Add(this.panelInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "FormMembro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CADASTRO DE MEMBROS";
+            this.Load += new System.EventHandler(this.FormMembro_Load);
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
-            this.panelForm.ResumeLayout(false);
-            this.panelForm.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.formMembroInfo.ResumeLayout(false);
+            this.formMembroInfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1109,47 +1145,32 @@
         #endregion
 
         private System.Windows.Forms.Panel panelInfo;
-        private System.Windows.Forms.Panel panelForm;
-        private System.Windows.Forms.TextBox textNome;
-        private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label labelSexo;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label labelEndereco;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label labelNumero;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label labelBairro;
-        private System.Windows.Forms.TextBox textCep;
-        private System.Windows.Forms.Label labelCep;
-        private System.Windows.Forms.TextBox textUf;
-        private System.Windows.Forms.Label labelUf;
-        private System.Windows.Forms.TextBox textCidade;
-        private System.Windows.Forms.Label labelCidade;
-        private System.Windows.Forms.TextBox texTelefone;
-        private System.Windows.Forms.Label labelTelefone;
-        private System.Windows.Forms.TextBox textEmail;
-        private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.TextBox textEscolaridade;
-        private System.Windows.Forms.Label labelEscolaridade;
-        private System.Windows.Forms.TextBox textProfissao;
-        private System.Windows.Forms.Label labelProfissao;
-        private System.Windows.Forms.TextBox textNasc;
-        private System.Windows.Forms.Label labelNasc;
-        private System.Windows.Forms.TextBox textNat;
-        private System.Windows.Forms.Label labelNat;
-        private System.Windows.Forms.TextBox textRg;
-        private System.Windows.Forms.Label labelRg;
-        private System.Windows.Forms.TextBox textOrg;
-        private System.Windows.Forms.Label labelOrg;
-        private System.Windows.Forms.TextBox textCpf;
-        private System.Windows.Forms.Label labelCpf;
-        private System.Windows.Forms.TextBox textDtCasamento;
-        private System.Windows.Forms.Label labelDtCasamento;
-        private System.Windows.Forms.TextBox textTelConj;
-        private System.Windows.Forms.Label labelTelConj;
-        private System.Windows.Forms.TextBox textConj;
-        private System.Windows.Forms.Label labelConj;
+        private System.Windows.Forms.TextBox textBoxPesqMem;
+        private System.Windows.Forms.Label labelPesqMem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel formMembroInfo;
+        private System.Windows.Forms.TextBox textAcei;
+        private System.Windows.Forms.TextBox textTipo;
+        private System.Windows.Forms.Label labelAceito;
+        private System.Windows.Forms.Label labelTipo;
+        private System.Windows.Forms.TextBox textTalen;
+        private System.Windows.Forms.Label labelTalen;
+        private System.Windows.Forms.TextBox textCargIgr;
+        private System.Windows.Forms.Label labelCargIgr;
+        private System.Windows.Forms.TextBox textCargExer;
+        private System.Windows.Forms.Label labelCargExe;
+        private System.Windows.Forms.TextBox textPasBat;
+        private System.Windows.Forms.Label labelPasBat;
+        private System.Windows.Forms.TextBox textIgrAnt;
+        private System.Windows.Forms.Label labelIgrAnt;
+        private System.Windows.Forms.TextBox textIgrBat;
+        private System.Windows.Forms.Label labelIgrBatismo;
+        private System.Windows.Forms.TextBox textDtBat;
+        private System.Windows.Forms.Label labelBatismo;
+        private System.Windows.Forms.TextBox textMae;
+        private System.Windows.Forms.Label labelMae;
+        private System.Windows.Forms.TextBox textPai;
+        private System.Windows.Forms.Label labelPai;
         private System.Windows.Forms.TextBox textSexFilho5;
         private System.Windows.Forms.TextBox textDtFilho5;
         private System.Windows.Forms.TextBox textFilho5;
@@ -1168,40 +1189,58 @@
         private System.Windows.Forms.Label DtFilho;
         private System.Windows.Forms.TextBox textFilho;
         private System.Windows.Forms.Label nomeFilho;
-        private System.Windows.Forms.TextBox textIgrBat;
-        private System.Windows.Forms.Label labelIgrBatismo;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label labelBatismo;
-        private System.Windows.Forms.TextBox textMae;
-        private System.Windows.Forms.Label labelMae;
-        private System.Windows.Forms.TextBox textPai;
-        private System.Windows.Forms.Label labelPai;
-        private System.Windows.Forms.TextBox textTalen;
-        private System.Windows.Forms.Label labelTalen;
-        private System.Windows.Forms.TextBox textCargIgr;
-        private System.Windows.Forms.Label labelCargIgr;
-        private System.Windows.Forms.TextBox textCargExer;
-        private System.Windows.Forms.Label labelCargExe;
-        private System.Windows.Forms.TextBox textPasBat;
-        private System.Windows.Forms.Label labelPasBat;
-        private System.Windows.Forms.TextBox textIgrAnt;
-        private System.Windows.Forms.Label labelIgrAnt;
-        private System.Windows.Forms.Label labelTipo;
-        private System.Windows.Forms.Label labelAssinatura;
-        private System.Windows.Forms.Label labelAceito;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBoxPesqMem;
-        private System.Windows.Forms.Label labelPesqMem;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TIPO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonEditar;
-        private System.Windows.Forms.Button buttonSalvar;
+        private System.Windows.Forms.TextBox textTelConj;
+        private System.Windows.Forms.Label labelTelConj;
+        private System.Windows.Forms.TextBox textConj;
+        private System.Windows.Forms.Label labelConj;
+        private System.Windows.Forms.TextBox textCpf;
+        private System.Windows.Forms.Label labelCpf;
+        private System.Windows.Forms.TextBox textDtCasamento;
+        private System.Windows.Forms.Label labelDtCasamento;
+        private System.Windows.Forms.TextBox textOrg;
+        private System.Windows.Forms.Label labelOrg;
+        private System.Windows.Forms.TextBox textRg;
+        private System.Windows.Forms.Label labelRg;
+        private System.Windows.Forms.TextBox textNat;
+        private System.Windows.Forms.Label labelNat;
+        private System.Windows.Forms.TextBox textNasc;
+        private System.Windows.Forms.Label labelNasc;
+        private System.Windows.Forms.TextBox textProfissao;
+        private System.Windows.Forms.Label labelProfissao;
+        private System.Windows.Forms.TextBox textEscolaridade;
+        private System.Windows.Forms.Label labelEscolaridade;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox textTelefone;
+        private System.Windows.Forms.Label labelTelefone;
+        private System.Windows.Forms.TextBox textCep;
+        private System.Windows.Forms.Label labelCep;
+        private System.Windows.Forms.TextBox textUf;
+        private System.Windows.Forms.Label labelUf;
+        private System.Windows.Forms.TextBox textCidade;
+        private System.Windows.Forms.Label labelCidade;
+        private System.Windows.Forms.TextBox textBairro;
+        private System.Windows.Forms.Label labelBairro;
+        private System.Windows.Forms.TextBox textNumero;
+        private System.Windows.Forms.Label labelNumero;
+        private System.Windows.Forms.TextBox textEndereco;
+        private System.Windows.Forms.Label labelEndereco;
+        private System.Windows.Forms.TextBox textSexo;
+        private System.Windows.Forms.Label labelSexo;
+        private System.Windows.Forms.TextBox textNome;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTIPO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCONTATO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCIDADE;
+        private System.Windows.Forms.DataGridViewButtonColumn Column6;
+        private SistemaIgrejaDataSet sistemaIgrejaDataSet;
+        private System.Windows.Forms.BindingSource membrosBindingSource;
+        private SistemaIgrejaDataSetTableAdapters.membrosTableAdapter membrosTableAdapter;
     }
 }
 

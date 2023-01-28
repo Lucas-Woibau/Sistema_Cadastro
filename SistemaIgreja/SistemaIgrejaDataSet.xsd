@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SistemaIgrejaDataSet" targetNamespace="http://tempuri.org/SistemaIgrejaDataSet.xsd" xmlns:mstns="http://tempuri.org/SistemaIgrejaDataSet.xsd" xmlns="http://tempuri.org/SistemaIgrejaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SistemaIgrejaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SistemaIgrejaConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SistemaIgreja.Properties.Settings.GlobalReference.Default.SistemaIgrejaConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="membrosTableAdapter" GeneratorDataComponentClassName="membrosTableAdapter" Name="membros" UserDataComponentName="membrosTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SistemaIgrejaConnectionString (Settings)" DbObjectName="SistemaIgreja.dbo.membros" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[membros] WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_SEXO = 1 AND [SEXO] IS NULL) OR ([SEXO] = @Original_SEXO)) AND ((@IsNull_ENDERECO = 1 AND [ENDERECO] IS NULL) OR ([ENDERECO] = @Original_ENDERECO)) AND ((@IsNull_NÚMERO = 1 AND [NÚMERO] IS NULL) OR ([NÚMERO] = @Original_NÚMERO)) AND ((@IsNull_BAIRRO = 1 AND [BAIRRO] IS NULL) OR ([BAIRRO] = @Original_BAIRRO)) AND ((@IsNull_CIDADE = 1 AND [CIDADE] IS NULL) OR ([CIDADE] = @Original_CIDADE)) AND ((@IsNull_UF = 1 AND [UF] IS NULL) OR ([UF] = @Original_UF)) AND ((@IsNull_CEP = 1 AND [CEP] IS NULL) OR ([CEP] = @Original_CEP)) AND ((@IsNull_TELEFONE_CELULAR = 1 AND [TELEFONE_CELULAR] IS NULL) OR ([TELEFONE_CELULAR] = @Original_TELEFONE_CELULAR)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_ESCOLARIDADE = 1 AND [ESCOLARIDADE] IS NULL) OR ([ESCOLARIDADE] = @Original_ESCOLARIDADE)) AND ((@IsNull_PROFISSAO = 1 AND [PROFISSAO] IS NULL) OR ([PROFISSAO] = @Original_PROFISSAO)) AND ((@IsNull_DATA_NASCIMENTO = 1 AND [DATA_NASCIMENTO] IS NULL) OR ([DATA_NASCIMENTO] = @Original_DATA_NASCIMENTO)) AND ((@IsNull_NATURALIDADE = 1 AND [NATURALIDADE] IS NULL) OR ([NATURALIDADE] = @Original_NATURALIDADE)) AND ((@IsNull_RG = 1 AND [RG] IS NULL) OR ([RG] = @Original_RG)) AND ((@IsNull_ORG = 1 AND [ORG] IS NULL) OR ([ORG] = @Original_ORG)) AND ((@IsNull_CPF = 1 AND [CPF] IS NULL) OR ([CPF] = @Original_CPF)) AND ((@IsNull_DATA_CASAMENTO = 1 AND [DATA_CASAMENTO] IS NULL) OR ([DATA_CASAMENTO] = @Original_DATA_CASAMENTO)) AND ((@IsNull_CONJUGUE = 1 AND [CONJUGUE] IS NULL) OR ([CONJUGUE] = @Original_CONJUGUE)) AND ((@IsNull_CEL_CONJUGUE = 1 AND [CEL_CONJUGUE] IS NULL) OR ([CEL_CONJUGUE] = @Original_CEL_CONJUGUE)) AND ((@IsNull_NOME_FILHO1 = 1 AND [NOME_FILHO1] IS NULL) OR ([NOME_FILHO1] = @Original_NOME_FILHO1)) AND ((@IsNull_NOME_FILHO2 = 1 AND [NOME_FILHO2] IS NULL) OR ([NOME_FILHO2] = @Original_NOME_FILHO2)) AND ((@IsNull_NOME_FILHO3 = 1 AND [NOME_FILHO3] IS NULL) OR ([NOME_FILHO3] = @Original_NOME_FILHO3)) AND ((@IsNull_NOME_FILHO4 = 1 AND [NOME_FILHO4] IS NULL) OR ([NOME_FILHO4] = @Original_NOME_FILHO4)) AND ((@IsNull_NOME_FILHO5 = 1 AND [NOME_FILHO5] IS NULL) OR ([NOME_FILHO5] = @Original_NOME_FILHO5)) AND ((@IsNull_DATA_NASCIMENTO_FILHO1 = 1 AND [DATA_NASCIMENTO_FILHO1] IS NULL) OR ([DATA_NASCIMENTO_FILHO1] = @Original_DATA_NASCIMENTO_FILHO1)) AND ((@IsNull_DATA_NASCIMENTO_FILHO2 = 1 AND [DATA_NASCIMENTO_FILHO2] IS NULL) OR ([DATA_NASCIMENTO_FILHO2] = @Original_DATA_NASCIMENTO_FILHO2)) AND ((@IsNull_DATA_NASCIMENTO_FILHO3 = 1 AND [DATA_NASCIMENTO_FILHO3] IS NULL) OR ([DATA_NASCIMENTO_FILHO3] = @Original_DATA_NASCIMENTO_FILHO3)) AND ((@IsNull_DATA_NASCIMENTO_FILHO4 = 1 AND [DATA_NASCIMENTO_FILHO4] IS NULL) OR ([DATA_NASCIMENTO_FILHO4] = @Original_DATA_NASCIMENTO_FILHO4)) AND ((@IsNull_DATA_NASCIMENTO_FILHO5 = 1 AND [DATA_NASCIMENTO_FILHO5] IS NULL) OR ([DATA_NASCIMENTO_FILHO5] = @Original_DATA_NASCIMENTO_FILHO5)) AND ((@IsNull_SEXO_FILHO1 = 1 AND [SEXO_FILHO1] IS NULL) OR ([SEXO_FILHO1] = @Original_SEXO_FILHO1)) AND ((@IsNull_SEXO_FILHO2 = 1 AND [SEXO_FILHO2] IS NULL) OR ([SEXO_FILHO2] = @Original_SEXO_FILHO2)) AND ((@IsNull_SEXO_FILHO3 = 1 AND [SEXO_FILHO3] IS NULL) OR ([SEXO_FILHO3] = @Original_SEXO_FILHO3)) AND ((@IsNull_SEXO_FILHO4 = 1 AND [SEXO_FILHO4] IS NULL) OR ([SEXO_FILHO4] = @Original_SEXO_FILHO4)) AND ((@IsNull_SEXO_FILHO5 = 1 AND [SEXO_FILHO5] IS NULL) OR ([SEXO_FILHO5] = @Original_SEXO_FILHO5)) AND ((@IsNull_NOME_PAI = 1 AND [NOME_PAI] IS NULL) OR ([NOME_PAI] = @Original_NOME_PAI)) AND ((@IsNull_NOME_MAE = 1 AND [NOME_MAE] IS NULL) OR ([NOME_MAE] = @Original_NOME_MAE)) AND ((@IsNull_DATA_BATISMO = 1 AND [DATA_BATISMO] IS NULL) OR ([DATA_BATISMO] = @Original_DATA_BATISMO)) AND ((@IsNull_NOME_IGREJA_BATISMO = 1 AND [NOME_IGREJA_BATISMO] IS NULL) OR ([NOME_IGREJA_BATISMO] = @Original_NOME_IGREJA_BATISMO)) AND ((@IsNull_NOME_IGREJA_ANTERIOR = 1 AND [NOME_IGREJA_ANTERIOR] IS NULL) OR ([NOME_IGREJA_ANTERIOR] = @Original_NOME_IGREJA_ANTERIOR)) AND ((@IsNull_NOME_PASTOR_BATIZOU = 1 AND [NOME_PASTOR_BATIZOU] IS NULL) OR ([NOME_PASTOR_BATIZOU] = @Original_NOME_PASTOR_BATIZOU)) AND ((@IsNull_CARGOS_EXERCIDOS = 1 AND [CARGOS_EXERCIDOS] IS NULL) OR ([CARGOS_EXERCIDOS] = @Original_CARGOS_EXERCIDOS)) AND ((@IsNull_REQUISICAO_CARGO = 1 AND [REQUISICAO_CARGO] IS NULL) OR ([REQUISICAO_CARGO] = @Original_REQUISICAO_CARGO)) AND ((@IsNull_TALENTOS = 1 AND [TALENTOS] IS NULL) OR ([TALENTOS] = @Original_TALENTOS)) AND ([TIPO] = @Original_TIPO) AND ((@IsNull_ACEITO_POR = 1 AND [ACEITO_POR] IS NULL) OR ([ACEITO_POR] = @Original_ACEITO_POR)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ENDERECO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ENDERECO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NÚMERO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NÚMERO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BAIRRO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_BAIRRO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_UF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CEP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TELEFONE_CELULAR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TELEFONE_CELULAR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EMAIL" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ESCOLARIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ESCOLARIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PROFISSAO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PROFISSAO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NATURALIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NATURALIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_RG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ORG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CPF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_CASAMENTO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_CASAMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CONJUGUE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEL_CONJUGUE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CEL_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_PAI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_PAI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_MAE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_MAE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_BATISMO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_IGREJA_BATISMO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_IGREJA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_PASTOR_BATIZOU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_PASTOR_BATIZOU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CARGOS_EXERCIDOS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CARGOS_EXERCIDOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_REQUISICAO_CARGO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_REQUISICAO_CARGO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TALENTOS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TALENTOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TIPO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ACEITO_POR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ACEITO_POR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[membros] ([ID], [NOME], [SEXO], [ENDERECO], [NÚMERO], [BAIRRO], [CIDADE], [UF], [CEP], [TELEFONE_CELULAR], [EMAIL], [ESCOLARIDADE], [PROFISSAO], [DATA_NASCIMENTO], [NATURALIDADE], [RG], [ORG], [CPF], [DATA_CASAMENTO], [CONJUGUE], [CEL_CONJUGUE], [NOME_FILHO1], [NOME_FILHO2], [NOME_FILHO3], [NOME_FILHO4], [NOME_FILHO5], [DATA_NASCIMENTO_FILHO1], [DATA_NASCIMENTO_FILHO2], [DATA_NASCIMENTO_FILHO3], [DATA_NASCIMENTO_FILHO4], [DATA_NASCIMENTO_FILHO5], [SEXO_FILHO1], [SEXO_FILHO2], [SEXO_FILHO3], [SEXO_FILHO4], [SEXO_FILHO5], [NOME_PAI], [NOME_MAE], [DATA_BATISMO], [NOME_IGREJA_BATISMO], [NOME_IGREJA_ANTERIOR], [NOME_PASTOR_BATIZOU], [CARGOS_EXERCIDOS], [REQUISICAO_CARGO], [TALENTOS], [TIPO], [ACEITO_POR]) VALUES (@ID, @NOME, @SEXO, @ENDERECO, @NÚMERO, @BAIRRO, @CIDADE, @UF, @CEP, @TELEFONE_CELULAR, @EMAIL, @ESCOLARIDADE, @PROFISSAO, @DATA_NASCIMENTO, @NATURALIDADE, @RG, @ORG, @CPF, @DATA_CASAMENTO, @CONJUGUE, @CEL_CONJUGUE, @NOME_FILHO1, @NOME_FILHO2, @NOME_FILHO3, @NOME_FILHO4, @NOME_FILHO5, @DATA_NASCIMENTO_FILHO1, @DATA_NASCIMENTO_FILHO2, @DATA_NASCIMENTO_FILHO3, @DATA_NASCIMENTO_FILHO4, @DATA_NASCIMENTO_FILHO5, @SEXO_FILHO1, @SEXO_FILHO2, @SEXO_FILHO3, @SEXO_FILHO4, @SEXO_FILHO5, @NOME_PAI, @NOME_MAE, @DATA_BATISMO, @NOME_IGREJA_BATISMO, @NOME_IGREJA_ANTERIOR, @NOME_PASTOR_BATIZOU, @CARGOS_EXERCIDOS, @REQUISICAO_CARGO, @TALENTOS, @TIPO, @ACEITO_POR);
+SELECT ID, NOME, SEXO, ENDERECO, NÚMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3, NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5, NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGO, TALENTOS, TIPO, ACEITO_POR FROM membros WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ENDERECO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NÚMERO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BAIRRO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@UF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CEP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TELEFONE_CELULAR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ESCOLARIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PROFISSAO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NATURALIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@RG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ORG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CPF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_CASAMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CEL_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_PAI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_MAE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_IGREJA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_PASTOR_BATIZOU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CARGOS_EXERCIDOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@REQUISICAO_CARGO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TALENTOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TIPO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ACEITO_POR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, NOME, SEXO, ENDERECO, NÚMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3, NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5, NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGO, TALENTOS, TIPO, ACEITO_POR FROM dbo.membros</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[membros] SET [ID] = @ID, [NOME] = @NOME, [SEXO] = @SEXO, [ENDERECO] = @ENDERECO, [NÚMERO] = @NÚMERO, [BAIRRO] = @BAIRRO, [CIDADE] = @CIDADE, [UF] = @UF, [CEP] = @CEP, [TELEFONE_CELULAR] = @TELEFONE_CELULAR, [EMAIL] = @EMAIL, [ESCOLARIDADE] = @ESCOLARIDADE, [PROFISSAO] = @PROFISSAO, [DATA_NASCIMENTO] = @DATA_NASCIMENTO, [NATURALIDADE] = @NATURALIDADE, [RG] = @RG, [ORG] = @ORG, [CPF] = @CPF, [DATA_CASAMENTO] = @DATA_CASAMENTO, [CONJUGUE] = @CONJUGUE, [CEL_CONJUGUE] = @CEL_CONJUGUE, [NOME_FILHO1] = @NOME_FILHO1, [NOME_FILHO2] = @NOME_FILHO2, [NOME_FILHO3] = @NOME_FILHO3, [NOME_FILHO4] = @NOME_FILHO4, [NOME_FILHO5] = @NOME_FILHO5, [DATA_NASCIMENTO_FILHO1] = @DATA_NASCIMENTO_FILHO1, [DATA_NASCIMENTO_FILHO2] = @DATA_NASCIMENTO_FILHO2, [DATA_NASCIMENTO_FILHO3] = @DATA_NASCIMENTO_FILHO3, [DATA_NASCIMENTO_FILHO4] = @DATA_NASCIMENTO_FILHO4, [DATA_NASCIMENTO_FILHO5] = @DATA_NASCIMENTO_FILHO5, [SEXO_FILHO1] = @SEXO_FILHO1, [SEXO_FILHO2] = @SEXO_FILHO2, [SEXO_FILHO3] = @SEXO_FILHO3, [SEXO_FILHO4] = @SEXO_FILHO4, [SEXO_FILHO5] = @SEXO_FILHO5, [NOME_PAI] = @NOME_PAI, [NOME_MAE] = @NOME_MAE, [DATA_BATISMO] = @DATA_BATISMO, [NOME_IGREJA_BATISMO] = @NOME_IGREJA_BATISMO, [NOME_IGREJA_ANTERIOR] = @NOME_IGREJA_ANTERIOR, [NOME_PASTOR_BATIZOU] = @NOME_PASTOR_BATIZOU, [CARGOS_EXERCIDOS] = @CARGOS_EXERCIDOS, [REQUISICAO_CARGO] = @REQUISICAO_CARGO, [TALENTOS] = @TALENTOS, [TIPO] = @TIPO, [ACEITO_POR] = @ACEITO_POR WHERE (([ID] = @Original_ID) AND ((@IsNull_NOME = 1 AND [NOME] IS NULL) OR ([NOME] = @Original_NOME)) AND ((@IsNull_SEXO = 1 AND [SEXO] IS NULL) OR ([SEXO] = @Original_SEXO)) AND ((@IsNull_ENDERECO = 1 AND [ENDERECO] IS NULL) OR ([ENDERECO] = @Original_ENDERECO)) AND ((@IsNull_NÚMERO = 1 AND [NÚMERO] IS NULL) OR ([NÚMERO] = @Original_NÚMERO)) AND ((@IsNull_BAIRRO = 1 AND [BAIRRO] IS NULL) OR ([BAIRRO] = @Original_BAIRRO)) AND ((@IsNull_CIDADE = 1 AND [CIDADE] IS NULL) OR ([CIDADE] = @Original_CIDADE)) AND ((@IsNull_UF = 1 AND [UF] IS NULL) OR ([UF] = @Original_UF)) AND ((@IsNull_CEP = 1 AND [CEP] IS NULL) OR ([CEP] = @Original_CEP)) AND ((@IsNull_TELEFONE_CELULAR = 1 AND [TELEFONE_CELULAR] IS NULL) OR ([TELEFONE_CELULAR] = @Original_TELEFONE_CELULAR)) AND ((@IsNull_EMAIL = 1 AND [EMAIL] IS NULL) OR ([EMAIL] = @Original_EMAIL)) AND ((@IsNull_ESCOLARIDADE = 1 AND [ESCOLARIDADE] IS NULL) OR ([ESCOLARIDADE] = @Original_ESCOLARIDADE)) AND ((@IsNull_PROFISSAO = 1 AND [PROFISSAO] IS NULL) OR ([PROFISSAO] = @Original_PROFISSAO)) AND ((@IsNull_DATA_NASCIMENTO = 1 AND [DATA_NASCIMENTO] IS NULL) OR ([DATA_NASCIMENTO] = @Original_DATA_NASCIMENTO)) AND ((@IsNull_NATURALIDADE = 1 AND [NATURALIDADE] IS NULL) OR ([NATURALIDADE] = @Original_NATURALIDADE)) AND ((@IsNull_RG = 1 AND [RG] IS NULL) OR ([RG] = @Original_RG)) AND ((@IsNull_ORG = 1 AND [ORG] IS NULL) OR ([ORG] = @Original_ORG)) AND ((@IsNull_CPF = 1 AND [CPF] IS NULL) OR ([CPF] = @Original_CPF)) AND ((@IsNull_DATA_CASAMENTO = 1 AND [DATA_CASAMENTO] IS NULL) OR ([DATA_CASAMENTO] = @Original_DATA_CASAMENTO)) AND ((@IsNull_CONJUGUE = 1 AND [CONJUGUE] IS NULL) OR ([CONJUGUE] = @Original_CONJUGUE)) AND ((@IsNull_CEL_CONJUGUE = 1 AND [CEL_CONJUGUE] IS NULL) OR ([CEL_CONJUGUE] = @Original_CEL_CONJUGUE)) AND ((@IsNull_NOME_FILHO1 = 1 AND [NOME_FILHO1] IS NULL) OR ([NOME_FILHO1] = @Original_NOME_FILHO1)) AND ((@IsNull_NOME_FILHO2 = 1 AND [NOME_FILHO2] IS NULL) OR ([NOME_FILHO2] = @Original_NOME_FILHO2)) AND ((@IsNull_NOME_FILHO3 = 1 AND [NOME_FILHO3] IS NULL) OR ([NOME_FILHO3] = @Original_NOME_FILHO3)) AND ((@IsNull_NOME_FILHO4 = 1 AND [NOME_FILHO4] IS NULL) OR ([NOME_FILHO4] = @Original_NOME_FILHO4)) AND ((@IsNull_NOME_FILHO5 = 1 AND [NOME_FILHO5] IS NULL) OR ([NOME_FILHO5] = @Original_NOME_FILHO5)) AND ((@IsNull_DATA_NASCIMENTO_FILHO1 = 1 AND [DATA_NASCIMENTO_FILHO1] IS NULL) OR ([DATA_NASCIMENTO_FILHO1] = @Original_DATA_NASCIMENTO_FILHO1)) AND ((@IsNull_DATA_NASCIMENTO_FILHO2 = 1 AND [DATA_NASCIMENTO_FILHO2] IS NULL) OR ([DATA_NASCIMENTO_FILHO2] = @Original_DATA_NASCIMENTO_FILHO2)) AND ((@IsNull_DATA_NASCIMENTO_FILHO3 = 1 AND [DATA_NASCIMENTO_FILHO3] IS NULL) OR ([DATA_NASCIMENTO_FILHO3] = @Original_DATA_NASCIMENTO_FILHO3)) AND ((@IsNull_DATA_NASCIMENTO_FILHO4 = 1 AND [DATA_NASCIMENTO_FILHO4] IS NULL) OR ([DATA_NASCIMENTO_FILHO4] = @Original_DATA_NASCIMENTO_FILHO4)) AND ((@IsNull_DATA_NASCIMENTO_FILHO5 = 1 AND [DATA_NASCIMENTO_FILHO5] IS NULL) OR ([DATA_NASCIMENTO_FILHO5] = @Original_DATA_NASCIMENTO_FILHO5)) AND ((@IsNull_SEXO_FILHO1 = 1 AND [SEXO_FILHO1] IS NULL) OR ([SEXO_FILHO1] = @Original_SEXO_FILHO1)) AND ((@IsNull_SEXO_FILHO2 = 1 AND [SEXO_FILHO2] IS NULL) OR ([SEXO_FILHO2] = @Original_SEXO_FILHO2)) AND ((@IsNull_SEXO_FILHO3 = 1 AND [SEXO_FILHO3] IS NULL) OR ([SEXO_FILHO3] = @Original_SEXO_FILHO3)) AND ((@IsNull_SEXO_FILHO4 = 1 AND [SEXO_FILHO4] IS NULL) OR ([SEXO_FILHO4] = @Original_SEXO_FILHO4)) AND ((@IsNull_SEXO_FILHO5 = 1 AND [SEXO_FILHO5] IS NULL) OR ([SEXO_FILHO5] = @Original_SEXO_FILHO5)) AND ((@IsNull_NOME_PAI = 1 AND [NOME_PAI] IS NULL) OR ([NOME_PAI] = @Original_NOME_PAI)) AND ((@IsNull_NOME_MAE = 1 AND [NOME_MAE] IS NULL) OR ([NOME_MAE] = @Original_NOME_MAE)) AND ((@IsNull_DATA_BATISMO = 1 AND [DATA_BATISMO] IS NULL) OR ([DATA_BATISMO] = @Original_DATA_BATISMO)) AND ((@IsNull_NOME_IGREJA_BATISMO = 1 AND [NOME_IGREJA_BATISMO] IS NULL) OR ([NOME_IGREJA_BATISMO] = @Original_NOME_IGREJA_BATISMO)) AND ((@IsNull_NOME_IGREJA_ANTERIOR = 1 AND [NOME_IGREJA_ANTERIOR] IS NULL) OR ([NOME_IGREJA_ANTERIOR] = @Original_NOME_IGREJA_ANTERIOR)) AND ((@IsNull_NOME_PASTOR_BATIZOU = 1 AND [NOME_PASTOR_BATIZOU] IS NULL) OR ([NOME_PASTOR_BATIZOU] = @Original_NOME_PASTOR_BATIZOU)) AND ((@IsNull_CARGOS_EXERCIDOS = 1 AND [CARGOS_EXERCIDOS] IS NULL) OR ([CARGOS_EXERCIDOS] = @Original_CARGOS_EXERCIDOS)) AND ((@IsNull_REQUISICAO_CARGO = 1 AND [REQUISICAO_CARGO] IS NULL) OR ([REQUISICAO_CARGO] = @Original_REQUISICAO_CARGO)) AND ((@IsNull_TALENTOS = 1 AND [TALENTOS] IS NULL) OR ([TALENTOS] = @Original_TALENTOS)) AND ([TIPO] = @Original_TIPO) AND ((@IsNull_ACEITO_POR = 1 AND [ACEITO_POR] IS NULL) OR ([ACEITO_POR] = @Original_ACEITO_POR)));
+SELECT ID, NOME, SEXO, ENDERECO, NÚMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3, NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5, NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGO, TALENTOS, TIPO, ACEITO_POR FROM membros WHERE (ID = @ID)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ENDERECO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NÚMERO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BAIRRO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@UF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CEP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TELEFONE_CELULAR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ESCOLARIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PROFISSAO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NATURALIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@RG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ORG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CPF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_CASAMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CEL_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@SEXO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_PAI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_MAE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DATA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_IGREJA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NOME_PASTOR_BATIZOU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CARGOS_EXERCIDOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@REQUISICAO_CARGO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TALENTOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TIPO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@ACEITO_POR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ENDERECO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ENDERECO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ENDERECO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NÚMERO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NÚMERO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NÚMERO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_BAIRRO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_BAIRRO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BAIRRO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_UF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_UF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEP" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CEP" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEP" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TELEFONE_CELULAR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TELEFONE_CELULAR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TELEFONE_CELULAR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_EMAIL" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_EMAIL" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EMAIL" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ESCOLARIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ESCOLARIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ESCOLARIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_PROFISSAO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_PROFISSAO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PROFISSAO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NATURALIDADE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NATURALIDADE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NATURALIDADE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_RG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_RG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ORG" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ORG" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ORG" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CPF" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CPF" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CPF" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_CASAMENTO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_CASAMENTO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_CASAMENTO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CONJUGUE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CEL_CONJUGUE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CEL_CONJUGUE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CEL_CONJUGUE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_NASCIMENTO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_NASCIMENTO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO1" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO2" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO2" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO3" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO3" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO4" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO4" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO4" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_SEXO_FILHO5" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_SEXO_FILHO5" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="SEXO_FILHO5" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_PAI" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_PAI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PAI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_MAE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_MAE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_MAE" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_DATA_BATISMO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DATA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DATA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_IGREJA_BATISMO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_IGREJA_BATISMO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_BATISMO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_IGREJA_ANTERIOR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_IGREJA_ANTERIOR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_NOME_PASTOR_BATIZOU" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NOME_PASTOR_BATIZOU" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NOME_PASTOR_BATIZOU" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_CARGOS_EXERCIDOS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_CARGOS_EXERCIDOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CARGOS_EXERCIDOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_REQUISICAO_CARGO" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_REQUISICAO_CARGO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="REQUISICAO_CARGO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_TALENTOS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TALENTOS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TALENTOS" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TIPO" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TIPO" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ACEITO_POR" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_ACEITO_POR" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="ACEITO_POR" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="NOME" DataSetColumn="NOME" />
+              <Mapping SourceColumn="SEXO" DataSetColumn="SEXO" />
+              <Mapping SourceColumn="ENDERECO" DataSetColumn="ENDERECO" />
+              <Mapping SourceColumn="NÚMERO" DataSetColumn="NÚMERO" />
+              <Mapping SourceColumn="BAIRRO" DataSetColumn="BAIRRO" />
+              <Mapping SourceColumn="CIDADE" DataSetColumn="CIDADE" />
+              <Mapping SourceColumn="UF" DataSetColumn="UF" />
+              <Mapping SourceColumn="CEP" DataSetColumn="CEP" />
+              <Mapping SourceColumn="TELEFONE_CELULAR" DataSetColumn="TELEFONE_CELULAR" />
+              <Mapping SourceColumn="EMAIL" DataSetColumn="EMAIL" />
+              <Mapping SourceColumn="ESCOLARIDADE" DataSetColumn="ESCOLARIDADE" />
+              <Mapping SourceColumn="PROFISSAO" DataSetColumn="PROFISSAO" />
+              <Mapping SourceColumn="DATA_NASCIMENTO" DataSetColumn="DATA_NASCIMENTO" />
+              <Mapping SourceColumn="NATURALIDADE" DataSetColumn="NATURALIDADE" />
+              <Mapping SourceColumn="RG" DataSetColumn="RG" />
+              <Mapping SourceColumn="ORG" DataSetColumn="ORG" />
+              <Mapping SourceColumn="CPF" DataSetColumn="CPF" />
+              <Mapping SourceColumn="DATA_CASAMENTO" DataSetColumn="DATA_CASAMENTO" />
+              <Mapping SourceColumn="CONJUGUE" DataSetColumn="CONJUGUE" />
+              <Mapping SourceColumn="CEL_CONJUGUE" DataSetColumn="CEL_CONJUGUE" />
+              <Mapping SourceColumn="NOME_FILHO1" DataSetColumn="NOME_FILHO1" />
+              <Mapping SourceColumn="NOME_FILHO2" DataSetColumn="NOME_FILHO2" />
+              <Mapping SourceColumn="NOME_FILHO3" DataSetColumn="NOME_FILHO3" />
+              <Mapping SourceColumn="NOME_FILHO4" DataSetColumn="NOME_FILHO4" />
+              <Mapping SourceColumn="NOME_FILHO5" DataSetColumn="NOME_FILHO5" />
+              <Mapping SourceColumn="DATA_NASCIMENTO_FILHO1" DataSetColumn="DATA_NASCIMENTO_FILHO1" />
+              <Mapping SourceColumn="DATA_NASCIMENTO_FILHO2" DataSetColumn="DATA_NASCIMENTO_FILHO2" />
+              <Mapping SourceColumn="DATA_NASCIMENTO_FILHO3" DataSetColumn="DATA_NASCIMENTO_FILHO3" />
+              <Mapping SourceColumn="DATA_NASCIMENTO_FILHO4" DataSetColumn="DATA_NASCIMENTO_FILHO4" />
+              <Mapping SourceColumn="DATA_NASCIMENTO_FILHO5" DataSetColumn="DATA_NASCIMENTO_FILHO5" />
+              <Mapping SourceColumn="SEXO_FILHO1" DataSetColumn="SEXO_FILHO1" />
+              <Mapping SourceColumn="SEXO_FILHO2" DataSetColumn="SEXO_FILHO2" />
+              <Mapping SourceColumn="SEXO_FILHO3" DataSetColumn="SEXO_FILHO3" />
+              <Mapping SourceColumn="SEXO_FILHO4" DataSetColumn="SEXO_FILHO4" />
+              <Mapping SourceColumn="SEXO_FILHO5" DataSetColumn="SEXO_FILHO5" />
+              <Mapping SourceColumn="NOME_PAI" DataSetColumn="NOME_PAI" />
+              <Mapping SourceColumn="NOME_MAE" DataSetColumn="NOME_MAE" />
+              <Mapping SourceColumn="DATA_BATISMO" DataSetColumn="DATA_BATISMO" />
+              <Mapping SourceColumn="NOME_IGREJA_BATISMO" DataSetColumn="NOME_IGREJA_BATISMO" />
+              <Mapping SourceColumn="NOME_IGREJA_ANTERIOR" DataSetColumn="NOME_IGREJA_ANTERIOR" />
+              <Mapping SourceColumn="NOME_PASTOR_BATIZOU" DataSetColumn="NOME_PASTOR_BATIZOU" />
+              <Mapping SourceColumn="CARGOS_EXERCIDOS" DataSetColumn="CARGOS_EXERCIDOS" />
+              <Mapping SourceColumn="REQUISICAO_CARGO" DataSetColumn="REQUISICAO_CARGO" />
+              <Mapping SourceColumn="TALENTOS" DataSetColumn="TALENTOS" />
+              <Mapping SourceColumn="TIPO" DataSetColumn="TIPO" />
+              <Mapping SourceColumn="ACEITO_POR" DataSetColumn="ACEITO_POR" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SistemaIgrejaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SistemaIgrejaDataSet" msprop:Generator_DataSetName="SistemaIgrejaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="membros" msprop:Generator_RowEvHandlerName="membrosRowChangeEventHandler" msprop:Generator_RowDeletedName="membrosRowDeleted" msprop:Generator_RowDeletingName="membrosRowDeleting" msprop:Generator_RowEvArgName="membrosRowChangeEvent" msprop:Generator_TablePropName="membros" msprop:Generator_RowChangedName="membrosRowChanged" msprop:Generator_RowChangingName="membrosRowChanging" msprop:Generator_TableClassName="membrosDataTable" msprop:Generator_RowClassName="membrosRow" msprop:Generator_TableVarName="tablemembros" msprop:Generator_UserTableName="membros">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="NOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_UserColumnName="NOME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO" msprop:Generator_ColumnPropNameInRow="SEXO" msprop:Generator_ColumnPropNameInTable="SEXOColumn" msprop:Generator_ColumnVarNameInTable="columnSEXO" msprop:Generator_UserColumnName="SEXO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENDERECO" msprop:Generator_ColumnPropNameInRow="ENDERECO" msprop:Generator_ColumnPropNameInTable="ENDERECOColumn" msprop:Generator_ColumnVarNameInTable="columnENDERECO" msprop:Generator_UserColumnName="ENDERECO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NÚMERO" msprop:Generator_ColumnPropNameInRow="NÚMERO" msprop:Generator_ColumnPropNameInTable="NÚMEROColumn" msprop:Generator_ColumnVarNameInTable="columnNÚMERO" msprop:Generator_UserColumnName="NÚMERO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BAIRRO" msprop:Generator_ColumnPropNameInRow="BAIRRO" msprop:Generator_ColumnPropNameInTable="BAIRROColumn" msprop:Generator_ColumnVarNameInTable="columnBAIRRO" msprop:Generator_UserColumnName="BAIRRO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CIDADE" msprop:Generator_ColumnPropNameInRow="CIDADE" msprop:Generator_ColumnPropNameInTable="CIDADEColumn" msprop:Generator_ColumnVarNameInTable="columnCIDADE" msprop:Generator_UserColumnName="CIDADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UF" msprop:Generator_ColumnPropNameInRow="UF" msprop:Generator_ColumnPropNameInTable="UFColumn" msprop:Generator_ColumnVarNameInTable="columnUF" msprop:Generator_UserColumnName="UF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEP" msprop:Generator_ColumnPropNameInRow="CEP" msprop:Generator_ColumnPropNameInTable="CEPColumn" msprop:Generator_ColumnVarNameInTable="columnCEP" msprop:Generator_UserColumnName="CEP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEFONE_CELULAR" msprop:Generator_ColumnPropNameInRow="TELEFONE_CELULAR" msprop:Generator_ColumnPropNameInTable="TELEFONE_CELULARColumn" msprop:Generator_ColumnVarNameInTable="columnTELEFONE_CELULAR" msprop:Generator_UserColumnName="TELEFONE_CELULAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAIL" msprop:Generator_ColumnPropNameInRow="EMAIL" msprop:Generator_ColumnPropNameInTable="EMAILColumn" msprop:Generator_ColumnVarNameInTable="columnEMAIL" msprop:Generator_UserColumnName="EMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ESCOLARIDADE" msprop:Generator_ColumnPropNameInRow="ESCOLARIDADE" msprop:Generator_ColumnPropNameInTable="ESCOLARIDADEColumn" msprop:Generator_ColumnVarNameInTable="columnESCOLARIDADE" msprop:Generator_UserColumnName="ESCOLARIDADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROFISSAO" msprop:Generator_ColumnPropNameInRow="PROFISSAO" msprop:Generator_ColumnPropNameInTable="PROFISSAOColumn" msprop:Generator_ColumnVarNameInTable="columnPROFISSAO" msprop:Generator_UserColumnName="PROFISSAO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTOColumn" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO" msprop:Generator_UserColumnName="DATA_NASCIMENTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NATURALIDADE" msprop:Generator_ColumnPropNameInRow="NATURALIDADE" msprop:Generator_ColumnPropNameInTable="NATURALIDADEColumn" msprop:Generator_ColumnVarNameInTable="columnNATURALIDADE" msprop:Generator_UserColumnName="NATURALIDADE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RG" msprop:Generator_ColumnPropNameInRow="RG" msprop:Generator_ColumnPropNameInTable="RGColumn" msprop:Generator_ColumnVarNameInTable="columnRG" msprop:Generator_UserColumnName="RG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ORG" msprop:Generator_ColumnPropNameInRow="ORG" msprop:Generator_ColumnPropNameInTable="ORGColumn" msprop:Generator_ColumnVarNameInTable="columnORG" msprop:Generator_UserColumnName="ORG" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CPF" msprop:Generator_ColumnPropNameInRow="CPF" msprop:Generator_ColumnPropNameInTable="CPFColumn" msprop:Generator_ColumnVarNameInTable="columnCPF" msprop:Generator_UserColumnName="CPF" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_CASAMENTO" msprop:Generator_ColumnPropNameInRow="DATA_CASAMENTO" msprop:Generator_ColumnPropNameInTable="DATA_CASAMENTOColumn" msprop:Generator_ColumnVarNameInTable="columnDATA_CASAMENTO" msprop:Generator_UserColumnName="DATA_CASAMENTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CONJUGUE" msprop:Generator_ColumnPropNameInRow="CONJUGUE" msprop:Generator_ColumnPropNameInTable="CONJUGUEColumn" msprop:Generator_ColumnVarNameInTable="columnCONJUGUE" msprop:Generator_UserColumnName="CONJUGUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CEL_CONJUGUE" msprop:Generator_ColumnPropNameInRow="CEL_CONJUGUE" msprop:Generator_ColumnPropNameInTable="CEL_CONJUGUEColumn" msprop:Generator_ColumnVarNameInTable="columnCEL_CONJUGUE" msprop:Generator_UserColumnName="CEL_CONJUGUE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_FILHO1" msprop:Generator_ColumnPropNameInRow="NOME_FILHO1" msprop:Generator_ColumnPropNameInTable="NOME_FILHO1Column" msprop:Generator_ColumnVarNameInTable="columnNOME_FILHO1" msprop:Generator_UserColumnName="NOME_FILHO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_FILHO2" msprop:Generator_ColumnPropNameInRow="NOME_FILHO2" msprop:Generator_ColumnPropNameInTable="NOME_FILHO2Column" msprop:Generator_ColumnVarNameInTable="columnNOME_FILHO2" msprop:Generator_UserColumnName="NOME_FILHO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_FILHO3" msprop:Generator_ColumnPropNameInRow="NOME_FILHO3" msprop:Generator_ColumnPropNameInTable="NOME_FILHO3Column" msprop:Generator_ColumnVarNameInTable="columnNOME_FILHO3" msprop:Generator_UserColumnName="NOME_FILHO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_FILHO4" msprop:Generator_ColumnPropNameInRow="NOME_FILHO4" msprop:Generator_ColumnPropNameInTable="NOME_FILHO4Column" msprop:Generator_ColumnVarNameInTable="columnNOME_FILHO4" msprop:Generator_UserColumnName="NOME_FILHO4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_FILHO5" msprop:Generator_ColumnPropNameInRow="NOME_FILHO5" msprop:Generator_ColumnPropNameInTable="NOME_FILHO5Column" msprop:Generator_ColumnVarNameInTable="columnNOME_FILHO5" msprop:Generator_UserColumnName="NOME_FILHO5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO_FILHO1" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO_FILHO1" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTO_FILHO1Column" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO_FILHO1" msprop:Generator_UserColumnName="DATA_NASCIMENTO_FILHO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO_FILHO2" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO_FILHO2" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTO_FILHO2Column" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO_FILHO2" msprop:Generator_UserColumnName="DATA_NASCIMENTO_FILHO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO_FILHO3" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO_FILHO3" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTO_FILHO3Column" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO_FILHO3" msprop:Generator_UserColumnName="DATA_NASCIMENTO_FILHO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO_FILHO4" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO_FILHO4" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTO_FILHO4Column" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO_FILHO4" msprop:Generator_UserColumnName="DATA_NASCIMENTO_FILHO4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_NASCIMENTO_FILHO5" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO_FILHO5" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTO_FILHO5Column" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO_FILHO5" msprop:Generator_UserColumnName="DATA_NASCIMENTO_FILHO5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO_FILHO1" msprop:Generator_ColumnPropNameInRow="SEXO_FILHO1" msprop:Generator_ColumnPropNameInTable="SEXO_FILHO1Column" msprop:Generator_ColumnVarNameInTable="columnSEXO_FILHO1" msprop:Generator_UserColumnName="SEXO_FILHO1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO_FILHO2" msprop:Generator_ColumnPropNameInRow="SEXO_FILHO2" msprop:Generator_ColumnPropNameInTable="SEXO_FILHO2Column" msprop:Generator_ColumnVarNameInTable="columnSEXO_FILHO2" msprop:Generator_UserColumnName="SEXO_FILHO2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO_FILHO3" msprop:Generator_ColumnPropNameInRow="SEXO_FILHO3" msprop:Generator_ColumnPropNameInTable="SEXO_FILHO3Column" msprop:Generator_ColumnVarNameInTable="columnSEXO_FILHO3" msprop:Generator_UserColumnName="SEXO_FILHO3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO_FILHO4" msprop:Generator_ColumnPropNameInRow="SEXO_FILHO4" msprop:Generator_ColumnPropNameInTable="SEXO_FILHO4Column" msprop:Generator_ColumnVarNameInTable="columnSEXO_FILHO4" msprop:Generator_UserColumnName="SEXO_FILHO4" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SEXO_FILHO5" msprop:Generator_ColumnPropNameInRow="SEXO_FILHO5" msprop:Generator_ColumnPropNameInTable="SEXO_FILHO5Column" msprop:Generator_ColumnVarNameInTable="columnSEXO_FILHO5" msprop:Generator_UserColumnName="SEXO_FILHO5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_PAI" msprop:Generator_ColumnPropNameInRow="NOME_PAI" msprop:Generator_ColumnPropNameInTable="NOME_PAIColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_PAI" msprop:Generator_UserColumnName="NOME_PAI" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_MAE" msprop:Generator_ColumnPropNameInRow="NOME_MAE" msprop:Generator_ColumnPropNameInTable="NOME_MAEColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_MAE" msprop:Generator_UserColumnName="NOME_MAE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATA_BATISMO" msprop:Generator_ColumnPropNameInRow="DATA_BATISMO" msprop:Generator_ColumnPropNameInTable="DATA_BATISMOColumn" msprop:Generator_ColumnVarNameInTable="columnDATA_BATISMO" msprop:Generator_UserColumnName="DATA_BATISMO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_IGREJA_BATISMO" msprop:Generator_ColumnPropNameInRow="NOME_IGREJA_BATISMO" msprop:Generator_ColumnPropNameInTable="NOME_IGREJA_BATISMOColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_IGREJA_BATISMO" msprop:Generator_UserColumnName="NOME_IGREJA_BATISMO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_IGREJA_ANTERIOR" msprop:Generator_ColumnPropNameInRow="NOME_IGREJA_ANTERIOR" msprop:Generator_ColumnPropNameInTable="NOME_IGREJA_ANTERIORColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_IGREJA_ANTERIOR" msprop:Generator_UserColumnName="NOME_IGREJA_ANTERIOR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NOME_PASTOR_BATIZOU" msprop:Generator_ColumnPropNameInRow="NOME_PASTOR_BATIZOU" msprop:Generator_ColumnPropNameInTable="NOME_PASTOR_BATIZOUColumn" msprop:Generator_ColumnVarNameInTable="columnNOME_PASTOR_BATIZOU" msprop:Generator_UserColumnName="NOME_PASTOR_BATIZOU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARGOS_EXERCIDOS" msprop:Generator_ColumnPropNameInRow="CARGOS_EXERCIDOS" msprop:Generator_ColumnPropNameInTable="CARGOS_EXERCIDOSColumn" msprop:Generator_ColumnVarNameInTable="columnCARGOS_EXERCIDOS" msprop:Generator_UserColumnName="CARGOS_EXERCIDOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="REQUISICAO_CARGO" msprop:Generator_ColumnPropNameInRow="REQUISICAO_CARGO" msprop:Generator_ColumnPropNameInTable="REQUISICAO_CARGOColumn" msprop:Generator_ColumnVarNameInTable="columnREQUISICAO_CARGO" msprop:Generator_UserColumnName="REQUISICAO_CARGO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TALENTOS" msprop:Generator_ColumnPropNameInRow="TALENTOS" msprop:Generator_ColumnPropNameInTable="TALENTOSColumn" msprop:Generator_ColumnVarNameInTable="columnTALENTOS" msprop:Generator_UserColumnName="TALENTOS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIPO" msprop:Generator_ColumnPropNameInRow="TIPO" msprop:Generator_ColumnPropNameInTable="TIPOColumn" msprop:Generator_ColumnVarNameInTable="columnTIPO" msprop:Generator_UserColumnName="TIPO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACEITO_POR" msprop:Generator_ColumnPropNameInRow="ACEITO_POR" msprop:Generator_ColumnPropNameInTable="ACEITO_PORColumn" msprop:Generator_ColumnVarNameInTable="columnACEITO_POR" msprop:Generator_UserColumnName="ACEITO_POR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:membros" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

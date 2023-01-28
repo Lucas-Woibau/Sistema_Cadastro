@@ -24,6 +24,7 @@ namespace SistemaIgreja
         public string NATURALIDADE { get; set; }
         public string RG { get; set; }
         public string ORG { get; set; }
+        public string CPF { get; set; }
         public string DATA_CASAMENTO { get; set; }
         public string CONJUGUE { get; set; }
         public string CEL_CONJUGUE { get; set; }
@@ -54,53 +55,54 @@ namespace SistemaIgreja
         public string TIPO { get; set; }
         public string ACEITO_POR { get; set; }
 
-        public Membro(string nome, string sexo, string eNDERECO, string nUMERO, string bAIRRO, string cIDADE, string uF, string cEP, string tELEFONE_CELULAR, string eMAIL, string eSCOLARIDADE, string pROFISSAO, string dATA_NASCIMENTO, string nATURALIDADE, string rG, string oRG, string dATA_CASAMENTO, string cONJUGUE, string cEL_CONJUGUE, string nOME_FILHO1, string nOME_FILHO2, string nOME_FILHO3, string nOME_FILHO4, string nOME_FILHO5, string dATA_NASCIMENTO_FILHO1, string dATA_NASCIMENTO_FILHO2, string dATA_NASCIMENTO_FILHO3, string dATA_NASCIMENTO_FILHO4, string dATA_NASCIMENTO_FILHO5, string sEXO_FILHO1, string sEXO_FILHO2, string sEXO_FILHO3, string sEXO_FILHO4, string sEXO_FILHO5, string nOME_PAI, string nOME_MAE, string dATA_BATISMO, string nOME_IGREJA_BATISMO, string nOME_IGREJA_ANTERIOR, string nOME_PASTOR_BATIZOU, string cARGOS_EXERCIDOS, string rEQUISICAO_CARGOS, string tALENTOS, string tIPO, string aCEITO_POR)
+        public Membro(string nome, string sexo, string endereco, string numero, string bairro, string cidade, string uf, string cep, string telefone_celular, string email, string escolaridade, string profissao, string data_nascimento, string naturalidade, string rg, string org, string cpf, string data_casamento, string conjugue, string cel_conjugue, string nome_filho1, string nome_filho2, string nome_filho3, string nome_filho4, string nome_filho5, string data_nascimento_filho1, string data_nascimento_filho2, string data_nascimento_filho3, string data_nascimento_filho4, string data_nascimento_filho5, string sexo_filho1, string sexo_filho2, string sexo_filho3, string sexo_filho4, string sexo_filho5, string nome_pai, string nome_mae, string data_batismo, string nome_igreja_batismo, string nome_igreja_anterior, string nome_pastor_batizou, string cargos_exercidos, string requisicao_cargos, string talentos, string tipo, string aceito_por)
         {
             NOME = nome;
             SEXO = sexo;
-            ENDERECO = eNDERECO;
-            NUMERO = nUMERO;
-            BAIRRO = bAIRRO;
-            CIDADE = cIDADE;
-            UF = uF;
-            CEP = cEP;
-            TELEFONE_CELULAR = tELEFONE_CELULAR;
-            EMAIL = eMAIL;
-            ESCOLARIDADE = eSCOLARIDADE;
-            PROFISSAO = pROFISSAO;
-            DATA_NASCIMENTO = dATA_NASCIMENTO;
-            NATURALIDADE = nATURALIDADE;
-            RG = rG;
-            ORG = oRG;
-            DATA_CASAMENTO = dATA_CASAMENTO;
-            CONJUGUE = cONJUGUE;
-            CEL_CONJUGUE = cEL_CONJUGUE;
-            NOME_FILHO1 = nOME_FILHO1;
-            NOME_FILHO2 = nOME_FILHO2;
-            NOME_FILHO3 = nOME_FILHO3;
-            NOME_FILHO4 = nOME_FILHO4;
-            NOME_FILHO5 = nOME_FILHO5;
-            DATA_NASCIMENTO_FILHO1 = dATA_NASCIMENTO_FILHO1;
-            DATA_NASCIMENTO_FILHO2 = dATA_NASCIMENTO_FILHO2;
-            DATA_NASCIMENTO_FILHO3 = dATA_NASCIMENTO_FILHO3;
-            DATA_NASCIMENTO_FILHO4 = dATA_NASCIMENTO_FILHO4;
-            DATA_NASCIMENTO_FILHO5 = dATA_NASCIMENTO_FILHO5;
-            SEXO_FILHO1 = sEXO_FILHO1;
-            SEXO_FILHO2 = sEXO_FILHO2;
-            SEXO_FILHO3 = sEXO_FILHO3;
-            SEXO_FILHO4 = sEXO_FILHO4;
-            SEXO_FILHO5 = sEXO_FILHO5;
-            NOME_PAI = nOME_PAI;
-            NOME_MAE = nOME_MAE;
-            DATA_BATISMO = dATA_BATISMO;
-            NOME_IGREJA_BATISMO = nOME_IGREJA_BATISMO;
-            NOME_IGREJA_ANTERIOR = nOME_IGREJA_ANTERIOR;
-            NOME_PASTOR_BATIZOU = nOME_PASTOR_BATIZOU;
-            CARGOS_EXERCIDOS = cARGOS_EXERCIDOS;
-            REQUISICAO_CARGOS = rEQUISICAO_CARGOS;
-            TALENTOS = tALENTOS;
-            TIPO = tIPO;
-            ACEITO_POR = aCEITO_POR;
+            ENDERECO = endereco;
+            NUMERO = numero;
+            BAIRRO = bairro;
+            CIDADE = cidade;
+            UF = uf;
+            CEP = cep;
+            TELEFONE_CELULAR = telefone_celular;
+            EMAIL = email;
+            ESCOLARIDADE = escolaridade;
+            PROFISSAO = profissao;
+            DATA_NASCIMENTO = data_nascimento;
+            NATURALIDADE = naturalidade;
+            RG = rg;
+            ORG = org;
+            CPF = cpf;
+            DATA_CASAMENTO = data_casamento;
+            CONJUGUE = conjugue;
+            CEL_CONJUGUE = cel_conjugue;
+            NOME_FILHO1 = nome_filho1;
+            NOME_FILHO2 = nome_filho2;
+            NOME_FILHO3 = nome_filho3;
+            NOME_FILHO4 = nome_filho4;
+            NOME_FILHO5 = nome_filho5;
+            DATA_NASCIMENTO_FILHO1 = data_nascimento_filho1;
+            DATA_NASCIMENTO_FILHO2 = data_nascimento_filho2;
+            DATA_NASCIMENTO_FILHO3 = data_nascimento_filho3;
+            DATA_NASCIMENTO_FILHO4 = data_nascimento_filho4;
+            DATA_NASCIMENTO_FILHO5 = data_nascimento_filho5;
+            SEXO_FILHO1 = sexo_filho1;
+            SEXO_FILHO2 = sexo_filho2;
+            SEXO_FILHO3 = sexo_filho3;
+            SEXO_FILHO4 = sexo_filho4;
+            SEXO_FILHO5 = sexo_filho5;
+            NOME_PAI = nome_pai;
+            NOME_MAE = nome_mae;
+            DATA_BATISMO = data_batismo;
+            NOME_IGREJA_BATISMO = nome_igreja_batismo;
+            NOME_IGREJA_ANTERIOR = nome_igreja_anterior;
+            NOME_PASTOR_BATIZOU = nome_pastor_batizou;
+            CARGOS_EXERCIDOS = cargos_exercidos;
+            REQUISICAO_CARGOS = requisicao_cargos;
+            TALENTOS = talentos;
+            TIPO = tipo;
+            ACEITO_POR = aceito_por;
         }
     }
 }
