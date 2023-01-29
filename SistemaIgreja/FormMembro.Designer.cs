@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textBoxPesqMem = new System.Windows.Forms.TextBox();
             this.labelPesqMem = new System.Windows.Forms.Label();
             this.formMembroInfo = new System.Windows.Forms.Panel();
@@ -102,6 +96,8 @@
             this.textProfissao = new System.Windows.Forms.TextBox();
             this.labelProfissao = new System.Windows.Forms.Label();
             this.textEscolaridade = new System.Windows.Forms.TextBox();
+            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
             this.labelEscolaridade = new System.Windows.Forms.Label();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -123,14 +119,19 @@
             this.labelSexo = new System.Windows.Forms.Label();
             this.textNome = new System.Windows.Forms.TextBox();
             this.labelNome = new System.Windows.Forms.Label();
-            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
-            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.formMembroInfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
@@ -149,6 +150,8 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -157,85 +160,34 @@
             this.ColumnTIPO,
             this.ColumnCONTATO,
             this.ColumnCIDADE,
-            this.Column6});
+            this.Column6,
+            this.Column1});
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 371);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 368);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(645, 354);
-            this.dataGridView1.TabIndex = 89;
+            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "#";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnID.Width = 30;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            this.ColumnNOME.HeaderText = "NOME";
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnNOME.Width = 211;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            this.ColumnTIPO.HeaderText = "TIPO";
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            this.ColumnCONTATO.HeaderText = "CONTATO";
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            this.ColumnCIDADE.HeaderText = "CIDADE";
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column6
-            // 
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column6.HeaderText = "";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "EXCLUIR";
-            this.Column6.UseColumnTextForButtonValue = true;
-            // 
             // textBoxPesqMem
             // 
-            this.textBoxPesqMem.Location = new System.Drawing.Point(93, 329);
+            this.textBoxPesqMem.Location = new System.Drawing.Point(93, 320);
             this.textBoxPesqMem.MaxLength = 50;
             this.textBoxPesqMem.Name = "textBoxPesqMem";
             this.textBoxPesqMem.Size = new System.Drawing.Size(234, 20);
-            this.textBoxPesqMem.TabIndex = 88;
+            this.textBoxPesqMem.TabIndex = 1;
             this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
             // 
             // labelPesqMem
             // 
             this.labelPesqMem.AutoSize = true;
-            this.labelPesqMem.Location = new System.Drawing.Point(29, 332);
+            this.labelPesqMem.Location = new System.Drawing.Point(29, 323);
             this.labelPesqMem.Name = "labelPesqMem";
             this.labelPesqMem.Size = new System.Drawing.Size(58, 13);
-            this.labelPesqMem.TabIndex = 1;
+            this.labelPesqMem.TabIndex = 0;
             this.labelPesqMem.Text = "MEMBRO:";
             // 
             // formMembroInfo
@@ -764,7 +716,7 @@
             this.textCpf.MaxLength = 20;
             this.textCpf.Name = "textCpf";
             this.textCpf.Size = new System.Drawing.Size(90, 20);
-            this.textCpf.TabIndex = 35;
+            this.textCpf.TabIndex = 40;
             // 
             // labelCpf
             // 
@@ -774,7 +726,7 @@
             this.labelCpf.Location = new System.Drawing.Point(149, 131);
             this.labelCpf.Name = "labelCpf";
             this.labelCpf.Size = new System.Drawing.Size(35, 16);
-            this.labelCpf.TabIndex = 34;
+            this.labelCpf.TabIndex = 39;
             this.labelCpf.Text = "*CPF:";
             // 
             // textDtCasamento
@@ -802,7 +754,7 @@
             this.textOrg.MaxLength = 35;
             this.textOrg.Name = "textOrg";
             this.textOrg.Size = new System.Drawing.Size(127, 20);
-            this.textOrg.TabIndex = 31;
+            this.textOrg.TabIndex = 38;
             // 
             // labelOrg
             // 
@@ -812,7 +764,7 @@
             this.labelOrg.Location = new System.Drawing.Point(10, 131);
             this.labelOrg.Name = "labelOrg";
             this.labelOrg.Size = new System.Drawing.Size(60, 16);
-            this.labelOrg.TabIndex = 30;
+            this.labelOrg.TabIndex = 37;
             this.labelOrg.Text = "ORG. EXP:";
             // 
             // textRg
@@ -821,7 +773,7 @@
             this.textRg.MaxLength = 9;
             this.textRg.Name = "textRg";
             this.textRg.Size = new System.Drawing.Size(58, 20);
-            this.textRg.TabIndex = 29;
+            this.textRg.TabIndex = 36;
             // 
             // labelRg
             // 
@@ -831,7 +783,7 @@
             this.labelRg.Location = new System.Drawing.Point(552, 89);
             this.labelRg.Name = "labelRg";
             this.labelRg.Size = new System.Drawing.Size(30, 16);
-            this.labelRg.TabIndex = 28;
+            this.labelRg.TabIndex = 35;
             this.labelRg.Text = "*RG:";
             // 
             // textNat
@@ -840,7 +792,7 @@
             this.textNat.MaxLength = 30;
             this.textNat.Name = "textNat";
             this.textNat.Size = new System.Drawing.Size(92, 20);
-            this.textNat.TabIndex = 27;
+            this.textNat.TabIndex = 34;
             // 
             // labelNat
             // 
@@ -850,7 +802,7 @@
             this.labelNat.Location = new System.Drawing.Point(449, 89);
             this.labelNat.Name = "labelNat";
             this.labelNat.Size = new System.Drawing.Size(95, 16);
-            this.labelNat.TabIndex = 26;
+            this.labelNat.TabIndex = 33;
             this.labelNat.Text = "NATURALIDADE:";
             // 
             // textNasc
@@ -859,7 +811,7 @@
             this.textNasc.MaxLength = 15;
             this.textNasc.Name = "textNasc";
             this.textNasc.Size = new System.Drawing.Size(108, 20);
-            this.textNasc.TabIndex = 25;
+            this.textNasc.TabIndex = 32;
             // 
             // labelNasc
             // 
@@ -869,7 +821,7 @@
             this.labelNasc.Location = new System.Drawing.Point(324, 89);
             this.labelNasc.Name = "labelNasc";
             this.labelNasc.Size = new System.Drawing.Size(122, 16);
-            this.labelNasc.TabIndex = 24;
+            this.labelNasc.TabIndex = 31;
             this.labelNasc.Text = "*DATA NASCIMENTO:";
             // 
             // textProfissao
@@ -878,7 +830,7 @@
             this.textProfissao.MaxLength = 30;
             this.textProfissao.Name = "textProfissao";
             this.textProfissao.Size = new System.Drawing.Size(130, 20);
-            this.textProfissao.TabIndex = 23;
+            this.textProfissao.TabIndex = 30;
             // 
             // labelProfissao
             // 
@@ -888,16 +840,28 @@
             this.labelProfissao.Location = new System.Drawing.Point(183, 89);
             this.labelProfissao.Name = "labelProfissao";
             this.labelProfissao.Size = new System.Drawing.Size(71, 16);
-            this.labelProfissao.TabIndex = 22;
+            this.labelProfissao.TabIndex = 29;
             this.labelProfissao.Text = "PROFISSÃO:";
             // 
             // textEscolaridade
             // 
+            this.textEscolaridade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membrosBindingSource, "ESCOLARIDADE", true));
             this.textEscolaridade.Location = new System.Drawing.Point(7, 108);
             this.textEscolaridade.MaxLength = 35;
             this.textEscolaridade.Name = "textEscolaridade";
             this.textEscolaridade.Size = new System.Drawing.Size(159, 20);
-            this.textEscolaridade.TabIndex = 21;
+            this.textEscolaridade.TabIndex = 28;
+            this.textEscolaridade.Tag = "";
+            // 
+            // membrosBindingSource
+            // 
+            this.membrosBindingSource.DataMember = "membros";
+            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
+            // 
+            // sistemaIgrejaDataSet
+            // 
+            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
+            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelEscolaridade
             // 
@@ -907,7 +871,7 @@
             this.labelEscolaridade.Location = new System.Drawing.Point(4, 89);
             this.labelEscolaridade.Name = "labelEscolaridade";
             this.labelEscolaridade.Size = new System.Drawing.Size(92, 16);
-            this.labelEscolaridade.TabIndex = 20;
+            this.labelEscolaridade.TabIndex = 27;
             this.labelEscolaridade.Text = "ESCOLARIDADE:";
             // 
             // textEmail
@@ -916,7 +880,7 @@
             this.textEmail.MaxLength = 30;
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(166, 20);
-            this.textEmail.TabIndex = 19;
+            this.textEmail.TabIndex = 26;
             // 
             // labelEmail
             // 
@@ -926,7 +890,7 @@
             this.labelEmail.Location = new System.Drawing.Point(453, 47);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(49, 16);
-            this.labelEmail.TabIndex = 18;
+            this.labelEmail.TabIndex = 25;
             this.labelEmail.Text = "E-MAIL:";
             // 
             // textTelefone
@@ -935,7 +899,7 @@
             this.textTelefone.MaxLength = 15;
             this.textTelefone.Name = "textTelefone";
             this.textTelefone.Size = new System.Drawing.Size(105, 20);
-            this.textTelefone.TabIndex = 17;
+            this.textTelefone.TabIndex = 24;
             // 
             // labelTelefone
             // 
@@ -945,7 +909,7 @@
             this.labelTelefone.Location = new System.Drawing.Point(327, 47);
             this.labelTelefone.Name = "labelTelefone";
             this.labelTelefone.Size = new System.Drawing.Size(117, 16);
-            this.labelTelefone.TabIndex = 16;
+            this.labelTelefone.TabIndex = 23;
             this.labelTelefone.Text = "TELEFONE/CELULAR:";
             // 
             // textCep
@@ -954,7 +918,7 @@
             this.textCep.MaxLength = 12;
             this.textCep.Name = "textCep";
             this.textCep.Size = new System.Drawing.Size(76, 20);
-            this.textCep.TabIndex = 15;
+            this.textCep.TabIndex = 22;
             // 
             // labelCep
             // 
@@ -964,7 +928,7 @@
             this.labelCep.Location = new System.Drawing.Point(237, 47);
             this.labelCep.Name = "labelCep";
             this.labelCep.Size = new System.Drawing.Size(35, 16);
-            this.labelCep.TabIndex = 14;
+            this.labelCep.TabIndex = 21;
             this.labelCep.Text = "*CEP:";
             // 
             // textUf
@@ -973,7 +937,7 @@
             this.textUf.MaxLength = 5;
             this.textUf.Name = "textUf";
             this.textUf.Size = new System.Drawing.Size(37, 20);
-            this.textUf.TabIndex = 13;
+            this.textUf.TabIndex = 20;
             // 
             // labelUf
             // 
@@ -983,7 +947,7 @@
             this.labelUf.Location = new System.Drawing.Point(183, 47);
             this.labelUf.Name = "labelUf";
             this.labelUf.Size = new System.Drawing.Size(24, 16);
-            this.labelUf.TabIndex = 12;
+            this.labelUf.TabIndex = 19;
             this.labelUf.Text = "UF:";
             // 
             // textCidade
@@ -992,7 +956,7 @@
             this.textCidade.MaxLength = 15;
             this.textCidade.Name = "textCidade";
             this.textCidade.Size = new System.Drawing.Size(159, 20);
-            this.textCidade.TabIndex = 11;
+            this.textCidade.TabIndex = 18;
             // 
             // labelCidade
             // 
@@ -1002,7 +966,7 @@
             this.labelCidade.Location = new System.Drawing.Point(4, 47);
             this.labelCidade.Name = "labelCidade";
             this.labelCidade.Size = new System.Drawing.Size(55, 16);
-            this.labelCidade.TabIndex = 10;
+            this.labelCidade.TabIndex = 17;
             this.labelCidade.Text = "*CIDADE:";
             // 
             // textBairro
@@ -1011,7 +975,7 @@
             this.textBairro.MaxLength = 15;
             this.textBairro.Name = "textBairro";
             this.textBairro.Size = new System.Drawing.Size(93, 20);
-            this.textBairro.TabIndex = 9;
+            this.textBairro.TabIndex = 16;
             // 
             // labelBairro
             // 
@@ -1021,7 +985,7 @@
             this.labelBairro.Location = new System.Drawing.Point(522, 5);
             this.labelBairro.Name = "labelBairro";
             this.labelBairro.Size = new System.Drawing.Size(51, 16);
-            this.labelBairro.TabIndex = 8;
+            this.labelBairro.TabIndex = 15;
             this.labelBairro.Text = "BAIRRO:";
             // 
             // textNumero
@@ -1030,7 +994,7 @@
             this.textNumero.MaxLength = 6;
             this.textNumero.Name = "textNumero";
             this.textNumero.Size = new System.Drawing.Size(50, 20);
-            this.textNumero.TabIndex = 7;
+            this.textNumero.TabIndex = 14;
             // 
             // labelNumero
             // 
@@ -1040,7 +1004,7 @@
             this.labelNumero.Location = new System.Drawing.Point(463, 5);
             this.labelNumero.Name = "labelNumero";
             this.labelNumero.Size = new System.Drawing.Size(60, 16);
-            this.labelNumero.TabIndex = 6;
+            this.labelNumero.TabIndex = 13;
             this.labelNumero.Text = "NÚMERO:";
             // 
             // textEndereco
@@ -1049,7 +1013,7 @@
             this.textEndereco.MaxLength = 30;
             this.textEndereco.Name = "textEndereco";
             this.textEndereco.Size = new System.Drawing.Size(169, 20);
-            this.textEndereco.TabIndex = 5;
+            this.textEndereco.TabIndex = 12;
             // 
             // labelEndereco
             // 
@@ -1059,7 +1023,7 @@
             this.labelEndereco.Location = new System.Drawing.Point(280, 5);
             this.labelEndereco.Name = "labelEndereco";
             this.labelEndereco.Size = new System.Drawing.Size(143, 16);
-            this.labelEndereco.TabIndex = 4;
+            this.labelEndereco.TabIndex = 11;
             this.labelEndereco.Text = "ENDEREÇO (avenida, rua):";
             // 
             // textSexo
@@ -1068,7 +1032,7 @@
             this.textSexo.MaxLength = 12;
             this.textSexo.Name = "textSexo";
             this.textSexo.Size = new System.Drawing.Size(81, 20);
-            this.textSexo.TabIndex = 3;
+            this.textSexo.TabIndex = 10;
             // 
             // labelSexo
             // 
@@ -1078,7 +1042,7 @@
             this.labelSexo.Location = new System.Drawing.Point(183, 5);
             this.labelSexo.Name = "labelSexo";
             this.labelSexo.Size = new System.Drawing.Size(43, 16);
-            this.labelSexo.TabIndex = 2;
+            this.labelSexo.TabIndex = 9;
             this.labelSexo.Text = "*SEXO:";
             // 
             // textNome
@@ -1088,7 +1052,7 @@
             this.textNome.MaxLength = 50;
             this.textNome.Name = "textNome";
             this.textNome.Size = new System.Drawing.Size(159, 20);
-            this.textNome.TabIndex = 1;
+            this.textNome.TabIndex = 8;
             this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged_1);
             // 
             // labelNome
@@ -1099,22 +1063,71 @@
             this.labelNome.Location = new System.Drawing.Point(4, 5);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(50, 16);
-            this.labelNome.TabIndex = 0;
+            this.labelNome.TabIndex = 7;
             this.labelNome.Text = "*NOME:";
-            // 
-            // sistemaIgrejaDataSet
-            // 
-            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
-            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // membrosBindingSource
-            // 
-            this.membrosBindingSource.DataMember = "membros";
-            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
             // 
             // membrosTableAdapter
             // 
             this.membrosTableAdapter.ClearBeforeFill = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Visible = false;
+            // 
+            // Column6
+            // 
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column6.HeaderText = "";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            this.ColumnCIDADE.HeaderText = "CIDADE";
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            this.ColumnCONTATO.HeaderText = "CONTATO";
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            this.ColumnTIPO.HeaderText = "TIPO";
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            this.ColumnNOME.HeaderText = "NOME";
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnNOME.Width = 211;
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            this.ColumnID.HeaderText = "#";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnID.Width = 30;
             // 
             // FormMembro
             // 
@@ -1136,8 +1149,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.formMembroInfo.ResumeLayout(false);
             this.formMembroInfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1232,15 +1245,16 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnNovo;
+        private SistemaIgrejaDataSet sistemaIgrejaDataSet;
+        private System.Windows.Forms.BindingSource membrosBindingSource;
+        private SistemaIgrejaDataSetTableAdapters.membrosTableAdapter membrosTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTIPO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCONTATO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCIDADE;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private SistemaIgrejaDataSet sistemaIgrejaDataSet;
-        private System.Windows.Forms.BindingSource membrosBindingSource;
-        private SistemaIgrejaDataSetTableAdapters.membrosTableAdapter membrosTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
 

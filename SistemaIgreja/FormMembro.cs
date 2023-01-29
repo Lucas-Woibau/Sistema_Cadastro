@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -181,12 +182,12 @@ namespace SistemaIgreja
                     textFilho4.Text.Trim(), textFilho5.Text.Trim(), textDtFilho.Text.Trim(), textDtFilho2.Text.Trim(), textDtFilho3.Text.Trim(), textDtFilho4.Text.Trim(), textDtFilho5.Text.Trim(),
                     textSexFilho.Text.Trim(), textSexFilho2.Text.Trim(), textSexFilho3.Text.Trim(), textSexFilho4.Text.Trim(), textSexFilho5.Text.Trim(), textPai.Text.Trim(), textMae.Text.Trim(),
                     textDtBat.Text.Trim(), textIgrBat.Text.Trim(), textIgrAnt.Text.Trim(), textPasBat.Text.Trim(), textCargExer.Text.Trim(), textCargIgr.Text.Trim(), textTalen.Text.Trim(), textTipo.Text.Trim(), textAcei.Text.Trim());
-               
+
                 DbMembro.AdicionarMembro(membro);
                 Limpar();
             }
 
-            else if(btnEditar.Text == "EDITAR")
+            else if (btnEditar.Text == "EDITAR")
             {
                 Membro membro = new Membro(textNome.Text.Trim(), textSexo.Text.Trim(), textEndereco.Text.Trim(), textNumero.Text.Trim(), textBairro.Text.Trim(), textCidade.Text.Trim(), textUf.Text.Trim(),
                    textCep.Text.Trim(), textTelefone.Text.Trim(), textEmail.Text.Trim(), textEscolaridade.Text.Trim(), textProfissao.Text.Trim(), textNasc.Text.Trim(), textNat.Text.Trim(), textRg.Text.Trim(),
@@ -203,41 +204,113 @@ namespace SistemaIgreja
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Pega o índice da linha selecionada
-            int index = e.RowIndex;
+            //dataGridView1.CurrentRow.Selected= true;
+            //int index = e.RowIndex;
+            //DataGridViewRow selectedRow = dataGridView1.Rows[index]; // recupera a linha selecionada
 
-            // Verifica se o índice é válido (se ele é maior ou igual a zero)
-            if (index >= 0)
+            //NOME = selectedRow.Cells["ColumnNOME"].Value.ToString();
+            //TIPO = selectedRow.Cells["ColumnTIPO"].Value.ToString();
+            //TELEFONE_CELULAR = selectedRow.Cells["ColumnCONTATO"].Value.ToString();
+            //CIDADE = selectedRow.Cells["ColumnCIDADE"].Value.ToString();
+            //ESCOLARIDADE = selectedRow.Cells["ESCOLARIDADE"].Value.ToString();
+
+            //int selectedRowIndex = e.RowIndex;
+            //int id = int.Parse(dataGridView1.Rows[selectedRowIndex].Cells[0].Value.ToString());
+            //string query = $"SELECT * FROM tabela WHERE ID = {id}";
+
+
+            //if (e.RowIndex >= 0)
+            //{
+            //    textNome.Text = NOME;
+            //    textTipo.Text= TIPO;
+            //    textTelefone.Text = TELEFONE_CELULAR;
+            //    textCidade.Text = CIDADE;
+            //    textEscolaridade.Text = ESCOLARIDADE;
+            //}
+
+            //dataGridView1.CellClick += dataGridView1_CellClick;
+
+            //if (e.ColumnIndex == 0)
+            //{
+            //    //Deletando
+            //    if(MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+            //    {
+            //        DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
+            //        Limpar();
+            //        Display();
+            //    }
+            //    return;
+            //}
+
+
+            if (e.RowIndex >= 0)
             {
-                // Pega os valores das células da linha selecionada
-                string nome = dataGridView1.Rows[index].Cells[2].Value.ToString();
-                string tipo = dataGridView1.Rows[index].Cells[3].Value.ToString();
-                string telefone = dataGridView1.Rows[index].Cells[4].Value.ToString();
-                string cidade = dataGridView1.Rows[index].Cells[5].Value.ToString();
+                // obter o ID da pessoa selecionada
+                int id = (int)dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value;
 
-                // Preenche os campos do formulário com os valores
-                textNome.Text = nome;
-                textTipo.Text = tipo;
-                textTelefone.Text = telefone;
-                textCidade.Text = cidade;
-            }
-
-            if (e.ColumnIndex == 0)
-            {
-                //Deletando
-                if(MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                // criar a conexão com o banco de dados
+                using (SqlConnection connection = new SqlConnection("Server=localhost\\sqlexpress;Initial Catalog=SistemaIgreja;Integrated Security=True"))
                 {
-                    DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
-                    Limpar();
-                    Display();
+                    connection.Open();
+
+                    // criar a query para selecionar os dados da pessoa
+                    string query = "SELECT ID, NOME, SEXO, ENDERECO, NÚMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3, NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5, NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGO, TALENTOS, TIPO, ACEITO_POR FROM membros WHERE ID = @id";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // atribuir os valores do banco de dados para as textboxes
+                                textNome.Text = (string)reader["NOME"];
+                                textSexo.Text = (string)reader["SEXO"];
+                                textEndereco.Text = (string)reader["ENDERECO"];
+                                textNumero.Text = (string)reader["NÚMERO"];
+                                textBairro.Text = (string)reader["BAIRRO"];
+                                textCidade.Text = (string)reader["CIDADE"];
+                                textUf.Text = (string)reader["UF"];
+                                textCep.Text = (string)reader["CEP"];
+                                textTelefone.Text = (string)reader["TELEFONE_CELULAR"];
+                                textEmail.Text = (string)reader["EMAIL"];
+                                textEscolaridade.Text = (string)reader["ESCOLARIDADE"];
+                                textProfissao.Text = (string)reader["PROFISSAO"];
+                                textNasc.Text = (string)reader["DATA_NASCIMENTO"];
+                                textNat.Text = (string)reader["NATURALIDADE"];
+                                textRg.Text = (string)reader["RG"];
+                                textOrg.Text = (string)reader["ORG"];
+                                textCpf.Text = (string)reader["CPF"];
+                                textDtCasamento.Text = (string)reader["DATA_CASAMENTO"];
+                                textConj.Text = (string)reader["CONJUGUE"];
+                                textTelConj.Text = (string)reader["CEL_CONJUGUE"];
+                                textFilho.Text = (string)reader["NOME_FILHO1"];
+                                textFilho2.Text = (string)reader["NOME_FILHO2"];
+                                textFilho3.Text = (string)reader["NOME_FILHO3"];
+                                textFilho4.Text = (string)reader["NOME_FILHO4"];
+                                textFilho5.Text = (string)reader["NOME_FILHO5"];
+                                textDtFilho.Text = (string)reader["DATA_NASCIMENTO_FILHO1"];
+                                textDtFilho2.Text = (string)reader["DATA_NASCIMENTO_FILHO2"];
+                                textDtFilho3.Text = (string)reader["DATA_NASCIMENTO_FILHO3"];
+                                textDtFilho4.Text = (string)reader["DATA_NASCIMENTO_FILHO4"];
+                                textDtFilho5.Text = (string)reader["DATA_NASCIMENTO_FILHO5"];
+                                textSexFilho.Text = (string)reader["SEXO_FILHO1"];
+                                textSexFilho2.Text = (string)reader["SEXO_FILHO2"];
+                                textSexFilho3.Text = (string)reader["SEXO_FILHO3"];
+                                textSexFilho4.Text = (string)reader["SEXO_FILHO4"];
+                                textSexFilho5.Text = (string)reader["SEXO_FILHO5"];
+
+                            }
+                        }
+                    }
                 }
-                return;
             }
+
+
 
         }
 
         private void textBoxPesqMem_TextChanged(object sender, EventArgs e)
-        {           
+        {
             DbMembro.PesquisarMembro($"select ID, NOME, TIPO, TELEFONE_CELULAR, CIDADE from membros where NOME LIKE'%{textBoxPesqMem.Text}%'", dataGridView1);
         }
     }
