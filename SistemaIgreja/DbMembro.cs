@@ -14,8 +14,7 @@ namespace SistemaIgreja
     {
         public static SqlConnection GetConnection()
         {
-            string sql = "Server=localhost\\sqlexpress;Initial Catalog=SistemaIgreja;Integrated Security=True;Trust Server Certificate=true";
-            SqlConnection connection = new SqlConnection(sql);
+            SqlConnection connection = new SqlConnection(ConfiguracoesDb.stringConexao + ";Trust Server Certificate=true");
 
             try
             {

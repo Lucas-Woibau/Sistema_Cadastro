@@ -204,6 +204,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfiguracoesDb.cs" />
     <Compile Include="DbMembro.cs" />
     <Compile Include="FormMembro.cs">
       <SubType>Form</SubType>

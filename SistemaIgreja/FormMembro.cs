@@ -204,44 +204,7 @@ namespace SistemaIgreja
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //dataGridView1.CurrentRow.Selected= true;
-            //int index = e.RowIndex;
-            //DataGridViewRow selectedRow = dataGridView1.Rows[index]; // recupera a linha selecionada
-
-            //NOME = selectedRow.Cells["ColumnNOME"].Value.ToString();
-            //TIPO = selectedRow.Cells["ColumnTIPO"].Value.ToString();
-            //TELEFONE_CELULAR = selectedRow.Cells["ColumnCONTATO"].Value.ToString();
-            //CIDADE = selectedRow.Cells["ColumnCIDADE"].Value.ToString();
-            //ESCOLARIDADE = selectedRow.Cells["ESCOLARIDADE"].Value.ToString();
-
-            //int selectedRowIndex = e.RowIndex;
-            //int id = int.Parse(dataGridView1.Rows[selectedRowIndex].Cells[0].Value.ToString());
-            //string query = $"SELECT * FROM tabela WHERE ID = {id}";
-
-
-            //if (e.RowIndex >= 0)
-            //{
-            //    textNome.Text = NOME;
-            //    textTipo.Text= TIPO;
-            //    textTelefone.Text = TELEFONE_CELULAR;
-            //    textCidade.Text = CIDADE;
-            //    textEscolaridade.Text = ESCOLARIDADE;
-            //}
-
-            //dataGridView1.CellClick += dataGridView1_CellClick;
-
-            //if (e.ColumnIndex == 0)
-            //{
-            //    //Deletando
-            //    if(MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
-            //    {
-            //        DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString());
-            //        Limpar();
-            //        Display();
-            //    }
-            //    return;
-            //}
-
+            dataGridView1.CurrentRow.Selected= true;
 
             if (e.RowIndex >= 0)
             {
@@ -249,7 +212,8 @@ namespace SistemaIgreja
                 int id = (int)dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value;
 
                 // criar a conexão com o banco de dados
-                using (SqlConnection connection = new SqlConnection("Server=localhost\\sqlexpress;Initial Catalog=SistemaIgreja;Integrated Security=True"))
+                DbMembro dbMembro= new DbMembro();
+                using (SqlConnection connection = new SqlConnection(ConfiguracoesDb.stringConexao))
                 {
                     connection.Open();
 
@@ -262,51 +226,82 @@ namespace SistemaIgreja
                         {
                             if (reader.Read())
                             {
-                                // atribuir os valores do banco de dados para as textboxes
-                                textNome.Text = (string)reader["NOME"];
-                                textSexo.Text = (string)reader["SEXO"];
-                                textEndereco.Text = (string)reader["ENDERECO"];
-                                textNumero.Text = (string)reader["NÚMERO"];
-                                textBairro.Text = (string)reader["BAIRRO"];
-                                textCidade.Text = (string)reader["CIDADE"];
-                                textUf.Text = (string)reader["UF"];
-                                textCep.Text = (string)reader["CEP"];
-                                textTelefone.Text = (string)reader["TELEFONE_CELULAR"];
-                                textEmail.Text = (string)reader["EMAIL"];
-                                textEscolaridade.Text = (string)reader["ESCOLARIDADE"];
-                                textProfissao.Text = (string)reader["PROFISSAO"];
-                                textNasc.Text = (string)reader["DATA_NASCIMENTO"];
-                                textNat.Text = (string)reader["NATURALIDADE"];
-                                textRg.Text = (string)reader["RG"];
-                                textOrg.Text = (string)reader["ORG"];
-                                textCpf.Text = (string)reader["CPF"];
-                                textDtCasamento.Text = (string)reader["DATA_CASAMENTO"];
-                                textConj.Text = (string)reader["CONJUGUE"];
-                                textTelConj.Text = (string)reader["CEL_CONJUGUE"];
-                                textFilho.Text = (string)reader["NOME_FILHO1"];
-                                textFilho2.Text = (string)reader["NOME_FILHO2"];
-                                textFilho3.Text = (string)reader["NOME_FILHO3"];
-                                textFilho4.Text = (string)reader["NOME_FILHO4"];
-                                textFilho5.Text = (string)reader["NOME_FILHO5"];
-                                textDtFilho.Text = (string)reader["DATA_NASCIMENTO_FILHO1"];
-                                textDtFilho2.Text = (string)reader["DATA_NASCIMENTO_FILHO2"];
-                                textDtFilho3.Text = (string)reader["DATA_NASCIMENTO_FILHO3"];
-                                textDtFilho4.Text = (string)reader["DATA_NASCIMENTO_FILHO4"];
-                                textDtFilho5.Text = (string)reader["DATA_NASCIMENTO_FILHO5"];
-                                textSexFilho.Text = (string)reader["SEXO_FILHO1"];
-                                textSexFilho2.Text = (string)reader["SEXO_FILHO2"];
-                                textSexFilho3.Text = (string)reader["SEXO_FILHO3"];
-                                textSexFilho4.Text = (string)reader["SEXO_FILHO4"];
-                                textSexFilho5.Text = (string)reader["SEXO_FILHO5"];
+                                try
+                                {
+                                    // atribuir os valores do banco de dados para as textboxes
+                                    textNome.Text = (string)reader["NOME"];
+                                    textSexo.Text = (string)reader["SEXO"];
+                                    textEndereco.Text = (string)reader["ENDERECO"];
+                                    textNumero.Text = (string)reader["NÚMERO"];
+                                    textBairro.Text = (string)reader["BAIRRO"];
+                                    textCidade.Text = (string)reader["CIDADE"];
+                                    textUf.Text = (string)reader["UF"];
+                                    textCep.Text = (string)reader["CEP"];
+                                    textTelefone.Text = (string)reader["TELEFONE_CELULAR"];
+                                    textEmail.Text = (string)reader["EMAIL"];
+                                    textEscolaridade.Text = (string)reader["ESCOLARIDADE"];
+                                    textProfissao.Text = (string)reader["PROFISSAO"];
+                                    textNasc.Text = (string)reader["DATA_NASCIMENTO"];
+                                    textNat.Text = (string)reader["NATURALIDADE"];
+                                    textRg.Text = (string)reader["RG"];
+                                    textOrg.Text = (string)reader["ORG"];
+                                    textCpf.Text = (string)reader["CPF"];
+                                    textDtCasamento.Text = (string)reader["DATA_CASAMENTO"];
+                                    textConj.Text = (string)reader["CONJUGUE"];
+                                    textTelConj.Text = (string)reader["CEL_CONJUGUE"];
+                                    textFilho.Text = (string)reader["NOME_FILHO1"];
+                                    textFilho2.Text = (string)reader["NOME_FILHO2"];
+                                    textFilho3.Text = (string)reader["NOME_FILHO3"];
+                                    textFilho4.Text = (string)reader["NOME_FILHO4"];
+                                    textFilho5.Text = (string)reader["NOME_FILHO5"];
+                                    textDtFilho.Text = (string)reader["DATA_NASCIMENTO_FILHO1"];
+                                    textDtFilho2.Text = (string)reader["DATA_NASCIMENTO_FILHO2"];
+                                    textDtFilho3.Text = (string)reader["DATA_NASCIMENTO_FILHO3"];
+                                    textDtFilho4.Text = (string)reader["DATA_NASCIMENTO_FILHO4"];
+                                    textDtFilho5.Text = (string)reader["DATA_NASCIMENTO_FILHO5"];
+                                    textSexFilho.Text = (string)reader["SEXO_FILHO1"];
+                                    textSexFilho2.Text = (string)reader["SEXO_FILHO2"];
+                                    textSexFilho3.Text = (string)reader["SEXO_FILHO3"];
+                                    textSexFilho4.Text = (string)reader["SEXO_FILHO4"];
+                                    textSexFilho5.Text = (string)reader["SEXO_FILHO5"];
+                                    textPai.Text = (string)reader["NOME_PAI"];
+                                    textMae.Text = (string)reader["NOME_MAE"];
+                                    textDtBat.Text = (string)reader["DATA_BATISMO"];
+                                    textIgrBat.Text = (string)reader["NOME_IGREJA_BATISMO"];
+                                    textIgrAnt.Text = (string)reader["NOME_IGREJA_ANTERIOR"];
+                                    textPasBat.Text = (string)reader["NOME_PASTOR_BATIZOU"];
+                                    textCargExer.Text = (string)reader["CARGOS_EXERCIDOS"];
+                                    textCargIgr.Text = (string)reader["REQUISICAO_CARGO"];
+                                    textTalen.Text = (string)reader["TALENTOS"];
+                                    textTipo.Text = (string)reader["TIPO"];
+                                    textAcei.Text = (string)reader["ACEITO_POR"];
 
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show("Erro ao exibir dados no relatório! ", $"Error{ex}\nSe o problema persistir, entre em contado com o Lucas Woibau! ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                                finally
+                                {
+                                    connection.Close();
+                                }
+                            }
+
+                            if (e.ColumnIndex == 0)
+                            {
+                                //Deletando
+                                if (MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                                {
+                                    DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value.ToString());
+                                    Limpar();
+                                    Display();
+                                }
+                                return;
                             }
                         }
                     }
                 }
             }
-
-
-
         }
 
         private void textBoxPesqMem_TextChanged(object sender, EventArgs e)
