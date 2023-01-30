@@ -7,9 +7,11 @@ using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using TextBox = System.Windows.Forms.TextBox;
 
 namespace SistemaIgreja
 {
@@ -19,28 +21,94 @@ namespace SistemaIgreja
                       NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5,
                       NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGOS, TALENTOS, TIPO, ACEITO_POR;
 
+        public bool Editavel = false;
+        public bool Adicionavel;
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            DesativarTextBoxes(true);
+            Editavel = true;
+        }
+
         private void FormMembro_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'sistemaIgrejaDataSet.membros' table. You can move, or remove it, as needed.
             this.membrosTableAdapter.Fill(this.sistemaIgrejaDataSet.membros);
-
+            Limpar();
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
+            Editavel = false;
             Limpar();
+            DesativarTextBoxes(true);
+            Adicionavel = true;
+        }
+
+        private bool DesativarTextBoxes(bool condicao)
+        {
+            textNome.Enabled = condicao;
+            textSexo.Enabled = condicao;
+            textEndereco.Enabled = condicao;
+            textNumero.Enabled = condicao;
+            textBairro.Enabled = condicao;
+            textCidade.Enabled = condicao;
+            textUf.Enabled = condicao;
+            textCep.Enabled = condicao;
+            textTelefone.Enabled = condicao;
+            textEmail.Enabled = condicao;
+            textEscolaridade.Enabled = condicao;
+            textProfissao.Enabled = condicao;
+            textNasc.Enabled = condicao;
+            textNat.Enabled = condicao;
+            textRg.Enabled = condicao;
+            textOrg.Enabled = condicao;
+            textCpf.Enabled = condicao;
+            textDtCasamento.Enabled = condicao;
+            textConj.Enabled = condicao;
+            textTelConj.Enabled = condicao;
+            textFilho.Enabled = condicao;
+            textFilho2.Enabled = condicao;
+            textFilho3.Enabled = condicao;
+            textFilho4.Enabled = condicao;
+            textFilho5.Enabled = condicao;
+            textDtFilho.Enabled = condicao;
+            textDtFilho2.Enabled = condicao;
+            textDtFilho3.Enabled = condicao;
+            textDtFilho4.Enabled = condicao;
+            textDtFilho5.Enabled = condicao;
+            textSexFilho.Enabled = condicao;
+            textSexFilho2.Enabled = condicao;
+            textSexFilho3.Enabled = condicao;
+            textSexFilho4.Enabled = condicao;
+            textSexFilho5.Enabled = condicao;
+            textPai.Enabled = condicao;
+            textMae.Enabled = condicao;
+            textDtBat.Enabled = condicao;
+            textIgrBat.Enabled = condicao;
+            textIgrAnt.Enabled = condicao;
+            textPasBat.Enabled = condicao;
+            textCargExer.Enabled = condicao;
+            textCargIgr.Enabled = condicao;
+            textTalen.Enabled = condicao;
+            textTipo.Enabled = condicao;
+            textAcei.Enabled = condicao;
+
+            return condicao;
         }
 
         public FormMembro()
         {
             InitializeComponent();
             Display();
+            Editavel = false;
+            Adicionavel = true;
         }
 
         public void AtualizarMembro()
         {
             btnEditar.Text = "EDITAR";
             btnSalvar.Text = "SALVAR";
+
             textNome.Text = NOME;
             textSexo.Text = SEXO;
             textEndereco.Text = ENDERECO;
@@ -97,6 +165,8 @@ namespace SistemaIgreja
             textFilho4.Text = textFilho5.Text = textDtFilho.Text = textDtFilho2.Text = textDtFilho3.Text = textDtFilho4.Text = textDtFilho5.Text =
             textSexFilho.Text = textSexFilho2.Text = textSexFilho3.Text = textSexFilho4.Text = textSexFilho5.Text = textPai.Text = textMae.Text =
             textDtBat.Text = textIgrBat.Text = textIgrAnt.Text = textPasBat.Text = textCargExer.Text = textCargIgr.Text = textTalen.Text = textTipo.Text = textAcei.Text = string.Empty;
+
+            dataGridView1.ClearSelection();
         }
 
         public void Display()
@@ -173,8 +243,8 @@ namespace SistemaIgreja
                 MessageBox.Show("Favor preencher o campo 'TIPO'");
                 return;
             }
-
-            if (btnSalvar.Text == "SALVAR")
+            
+            if (btnSalvar.Text == "SALVAR" && Editavel == false && Adicionavel==true )
             {
                 Membro membro = new Membro(textNome.Text.Trim(), textSexo.Text.Trim(), textEndereco.Text.Trim(), textNumero.Text.Trim(), textBairro.Text.Trim(), textCidade.Text.Trim(), textUf.Text.Trim(),
                     textCep.Text.Trim(), textTelefone.Text.Trim(), textEmail.Text.Trim(), textEscolaridade.Text.Trim(), textProfissao.Text.Trim(), textNasc.Text.Trim(), textNat.Text.Trim(), textRg.Text.Trim(),
@@ -187,8 +257,9 @@ namespace SistemaIgreja
                 Limpar();
             }
 
-            else if (btnEditar.Text == "EDITAR")
+            else if (btnSalvar.Text == "SALVAR" && Editavel == true)
             {
+
                 Membro membro = new Membro(textNome.Text.Trim(), textSexo.Text.Trim(), textEndereco.Text.Trim(), textNumero.Text.Trim(), textBairro.Text.Trim(), textCidade.Text.Trim(), textUf.Text.Trim(),
                    textCep.Text.Trim(), textTelefone.Text.Trim(), textEmail.Text.Trim(), textEscolaridade.Text.Trim(), textProfissao.Text.Trim(), textNasc.Text.Trim(), textNat.Text.Trim(), textRg.Text.Trim(),
                    textOrg.Text.Trim(), textCpf.Text.Trim(), textDtCasamento.Text.Trim(), textConj.Text.Trim(), textTelConj.Text.Trim(), textFilho.Text.Trim(), textFilho2.Text.Trim(), textFilho3.Text.Trim(),
@@ -197,22 +268,30 @@ namespace SistemaIgreja
                    textDtBat.Text.Trim(), textIgrBat.Text.Trim(), textIgrAnt.Text.Trim(), textPasBat.Text.Trim(), textCargExer.Text.Trim(), textCargIgr.Text.Trim(), textTalen.Text.Trim(), textTipo.Text.Trim(), textAcei.Text.Trim());
 
                 DbMembro.EditarMembro(membro, ID);
+                Limpar();
+                Editavel = false;
             }
-
             this.Display();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            dataGridView1.CurrentRow.Selected= true;
+            dataGridView1.CurrentRow.Selected = true;
+
+            if(dataGridView1.CurrentCell.Selected = true == true)
+            {
+                Adicionavel = false;
+            }
+
+            DesativarTextBoxes(false);
 
             if (e.RowIndex >= 0)
             {
                 // obter o ID da pessoa selecionada
-                int id = (int)dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value;
+                ID = Convert.ToString(dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value);
 
                 // criar a conexão com o banco de dados
-                DbMembro dbMembro= new DbMembro();
+                DbMembro dbMembro = new DbMembro();
                 using (SqlConnection connection = new SqlConnection(ConfiguracoesDb.stringConexao))
                 {
                     connection.Open();
@@ -221,7 +300,7 @@ namespace SistemaIgreja
                     string query = "SELECT ID, NOME, SEXO, ENDERECO, NÚMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3, NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5, NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGO, TALENTOS, TIPO, ACEITO_POR FROM membros WHERE ID = @id";
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@id", id);
+                        command.Parameters.AddWithValue("@id", ID);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
                             if (reader.Read())

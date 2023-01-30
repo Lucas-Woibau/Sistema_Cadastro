@@ -33,7 +33,7 @@ namespace SistemaIgreja
             SqlConnection connection = GetConnection();
             SqlCommand comand = new SqlCommand(sql, connection);
             comand.CommandType = CommandType.Text;
-
+            
             comand.Parameters.Add("@NOME", SqlDbType.VarChar).Value = membro.NOME;
             comand.Parameters.Add("@SEXO", SqlDbType.VarChar).Value = membro.SEXO;
             comand.Parameters.Add("@ENDERECO", SqlDbType.VarChar).Value = membro.ENDERECO;
@@ -90,17 +90,20 @@ namespace SistemaIgreja
             {
                 MessageBox.Show("O membro não foi adicionado!\nSe o problema persistir, entre em contado com o Lucas Woibau! " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            connection.Close();
+            finally
+            {
+                connection.Close();
+            }
         }
 
         public static void EditarMembro(Membro membro, string id)
         {
-            string sql = "UPDATE membros SET NOME=@NOME, SEXO=@SEXO, ENDERECO=@ENDERECO, NÚMERO=@NÚMERO, BAIRRO=@BAIRRO, CIDADE=@CIDADE, UF=@UF, CEP=@CEP, TELEFONE_CELULAR=@TELEFONE_CELULAR, EMAIL=@EMAIL, ESCOLARIDADE=@ESCOLARIDADE, PROFISSAO=@PROFISSAO, DATA_NASCIMENTO=@DATA_NASCIMENTO, NATURALIDADE=@NATURALIDADE, RG=@RG, ORG=@ORG, DATA_CASAMENTO=@DATA_CASAMENTO, CONJUGUE=@CONJUGUE, CEL_CONJUGUE=@CEL_CONJUGUE, NOME_FILHO1=@NOME_FILHO1, NOME_FILHO2=@NOME_FILHO2, NOME_FILHO3=@NOME_FILHO3, NOME_FILHO4=@NOME_FILHO4, NOME_FILHO5=@NOME_FILHO5, DATA_NASCIMENTO_FILHO1=@DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2=@DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3=@DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4=@DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5=@DATA_NASCIMENTO_FILHO5, SEXO_FILHO1=@SEXO_FILHO1, SEXO_FILHO2=@SEXO_FILHO2, SEXO_FILHO3=@SEXO_FILHO3, SEXO_FILHO4=@SEXO_FILHO4, SEXO_FILHO5=@SEXO_FILHO5, NOME_PAI=@NOME_PAI, NOME_MAE=@NOME_MAE, DATA_BATISMO=@DATA_BATISMO, NOME_IGREJA_BATISMO=@NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR=@NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU=@NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS=@CARGOS_EXERCIDOS, REQUISICAO_CARGO=@REQUISICAO_CARGO, TALENTOS=@TALENTOS, TIPO=@TIPO, ACEITO_POR=@ACEITO_POR WHERE ID = @MEMBRO_ID ";
+            string sql = "UPDATE membros SET NOME=@NOME, SEXO=@SEXO, ENDERECO=@ENDERECO, NÚMERO=@NÚMERO, BAIRRO=@BAIRRO, CIDADE=@CIDADE, UF=@UF, CEP=@CEP, TELEFONE_CELULAR=@TELEFONE_CELULAR, EMAIL=@EMAIL, ESCOLARIDADE=@ESCOLARIDADE, PROFISSAO=@PROFISSAO, DATA_NASCIMENTO=@DATA_NASCIMENTO, NATURALIDADE=@NATURALIDADE, RG=@RG, ORG=@ORG, CPF=@CPF, DATA_CASAMENTO=@DATA_CASAMENTO, CONJUGUE=@CONJUGUE, CEL_CONJUGUE=@CEL_CONJUGUE, NOME_FILHO1=@NOME_FILHO1, NOME_FILHO2=@NOME_FILHO2, NOME_FILHO3=@NOME_FILHO3, NOME_FILHO4=@NOME_FILHO4, NOME_FILHO5=@NOME_FILHO5, DATA_NASCIMENTO_FILHO1=@DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2=@DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3=@DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4=@DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5=@DATA_NASCIMENTO_FILHO5, SEXO_FILHO1=@SEXO_FILHO1, SEXO_FILHO2=@SEXO_FILHO2, SEXO_FILHO3=@SEXO_FILHO3, SEXO_FILHO4=@SEXO_FILHO4, SEXO_FILHO5=@SEXO_FILHO5, NOME_PAI=@NOME_PAI, NOME_MAE=@NOME_MAE, DATA_BATISMO=@DATA_BATISMO, NOME_IGREJA_BATISMO=@NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR=@NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU=@NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS=@CARGOS_EXERCIDOS, REQUISICAO_CARGO=@REQUISICAO_CARGO, TALENTOS=@TALENTOS, TIPO=@TIPO, ACEITO_POR=@ACEITO_POR WHERE ID = @ID";          
             SqlConnection connection = GetConnection();
             SqlCommand comand = new SqlCommand(sql, connection);
             comand.CommandType = CommandType.Text;
 
+            comand.Parameters.Add("@ID", SqlDbType.VarChar).Value = id;
             comand.Parameters.Add("@NOME", SqlDbType.VarChar).Value = membro.NOME;
             comand.Parameters.Add("@SEXO", SqlDbType.VarChar).Value = membro.SEXO;
             comand.Parameters.Add("@ENDERECO", SqlDbType.VarChar).Value = membro.ENDERECO;
@@ -117,6 +120,7 @@ namespace SistemaIgreja
             comand.Parameters.Add("@NATURALIDADE", SqlDbType.VarChar).Value = membro.NATURALIDADE;
             comand.Parameters.Add("@RG", SqlDbType.VarChar).Value = membro.RG;
             comand.Parameters.Add("@ORG", SqlDbType.VarChar).Value = membro.ORG;
+            comand.Parameters.Add("@CPF", SqlDbType.VarChar).Value = membro.CPF;
             comand.Parameters.Add("@DATA_CASAMENTO", SqlDbType.VarChar).Value = membro.DATA_CASAMENTO;
             comand.Parameters.Add("@CONJUGUE", SqlDbType.VarChar).Value = membro.CONJUGUE;
             comand.Parameters.Add("@CEL_CONJUGUE", SqlDbType.VarChar).Value = membro.CEL_CONJUGUE;
@@ -157,7 +161,10 @@ namespace SistemaIgreja
                 MessageBox.Show("Os dados do membro não foram atualizados!\nSe o problema persistir, entre em contado com o Lucas Woibau! " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            connection.Close();
+            finally
+            {
+                connection.Close();
+            }          
         }
 
         public static void DeletarMembro(string id)
@@ -171,14 +178,15 @@ namespace SistemaIgreja
             try
             {
                 comand.ExecuteNonQuery();
-                MessageBox.Show("O membro foi deletado com sucesso! ", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (SqlException ex)
             {
                 MessageBox.Show("O membro não foi deletado!\nSe o problema persistir, entre em contado com o Lucas Woibau! " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-            connection.Close();
+            finally
+            {
+                connection.Close();
+            }
         }
 
         public static void PesquisarMembro(string consulta, DataGridView gridView)

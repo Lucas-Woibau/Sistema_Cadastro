@@ -96,8 +96,6 @@
             this.textProfissao = new System.Windows.Forms.TextBox();
             this.labelProfissao = new System.Windows.Forms.Label();
             this.textEscolaridade = new System.Windows.Forms.TextBox();
-            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
             this.labelEscolaridade = new System.Windows.Forms.Label();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
@@ -118,15 +116,16 @@
             this.textSexo = new System.Windows.Forms.TextBox();
             this.labelSexo = new System.Windows.Forms.Label();
             this.textNome = new System.Windows.Forms.TextBox();
+            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
             this.labelNome = new System.Windows.Forms.Label();
             this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.formMembroInfo.SuspendLayout();
@@ -160,14 +159,13 @@
             this.ColumnTIPO,
             this.ColumnCONTATO,
             this.ColumnCIDADE,
-            this.Column6,
-            this.Column1});
+            this.Column6});
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 368);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 368);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(645, 354);
+            this.dataGridView1.Size = new System.Drawing.Size(624, 354);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -309,9 +307,11 @@
             this.btnEditar.TabIndex = 91;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // textAcei
             // 
+            this.textAcei.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textAcei.Location = new System.Drawing.Point(292, 551);
             this.textAcei.MaxLength = 50;
             this.textAcei.Name = "textAcei";
@@ -320,6 +320,7 @@
             // 
             // textTipo
             // 
+            this.textTipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textTipo.Location = new System.Drawing.Point(12, 551);
             this.textTipo.MaxLength = 50;
             this.textTipo.Name = "textTipo";
@@ -350,6 +351,7 @@
             // 
             // textTalen
             // 
+            this.textTalen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textTalen.Location = new System.Drawing.Point(317, 494);
             this.textTalen.MaxLength = 50;
             this.textTalen.Name = "textTalen";
@@ -369,6 +371,7 @@
             // 
             // textCargIgr
             // 
+            this.textCargIgr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCargIgr.Location = new System.Drawing.Point(13, 494);
             this.textCargIgr.MaxLength = 50;
             this.textCargIgr.Name = "textCargIgr";
@@ -388,6 +391,7 @@
             // 
             // textCargExer
             // 
+            this.textCargExer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCargExer.Location = new System.Drawing.Point(316, 441);
             this.textCargExer.MaxLength = 50;
             this.textCargExer.Name = "textCargExer";
@@ -407,6 +411,7 @@
             // 
             // textPasBat
             // 
+            this.textPasBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textPasBat.Location = new System.Drawing.Point(13, 441);
             this.textPasBat.MaxLength = 50;
             this.textPasBat.Name = "textPasBat";
@@ -426,6 +431,7 @@
             // 
             // textIgrAnt
             // 
+            this.textIgrAnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textIgrAnt.Location = new System.Drawing.Point(382, 390);
             this.textIgrAnt.MaxLength = 50;
             this.textIgrAnt.Name = "textIgrAnt";
@@ -445,6 +451,7 @@
             // 
             // textIgrBat
             // 
+            this.textIgrBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textIgrBat.Location = new System.Drawing.Point(134, 390);
             this.textIgrBat.MaxLength = 50;
             this.textIgrBat.Name = "textIgrBat";
@@ -464,6 +471,7 @@
             // 
             // textDtBat
             // 
+            this.textDtBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtBat.Location = new System.Drawing.Point(13, 390);
             this.textDtBat.MaxLength = 15;
             this.textDtBat.Name = "textDtBat";
@@ -483,6 +491,7 @@
             // 
             // textMae
             // 
+            this.textMae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textMae.Location = new System.Drawing.Point(317, 333);
             this.textMae.MaxLength = 50;
             this.textMae.Name = "textMae";
@@ -502,6 +511,7 @@
             // 
             // textPai
             // 
+            this.textPai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textPai.Location = new System.Drawing.Point(13, 333);
             this.textPai.MaxLength = 50;
             this.textPai.Name = "textPai";
@@ -521,6 +531,7 @@
             // 
             // textSexFilho5
             // 
+            this.textSexFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexFilho5.Location = new System.Drawing.Point(515, 276);
             this.textSexFilho5.MaxLength = 12;
             this.textSexFilho5.Name = "textSexFilho5";
@@ -529,6 +540,7 @@
             // 
             // textDtFilho5
             // 
+            this.textDtFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtFilho5.Location = new System.Drawing.Point(315, 276);
             this.textDtFilho5.MaxLength = 50;
             this.textDtFilho5.Name = "textDtFilho5";
@@ -537,6 +549,7 @@
             // 
             // textFilho5
             // 
+            this.textFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textFilho5.Location = new System.Drawing.Point(10, 276);
             this.textFilho5.MaxLength = 50;
             this.textFilho5.Name = "textFilho5";
@@ -545,6 +558,7 @@
             // 
             // textSexFilho4
             // 
+            this.textSexFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexFilho4.Location = new System.Drawing.Point(515, 257);
             this.textSexFilho4.MaxLength = 12;
             this.textSexFilho4.Name = "textSexFilho4";
@@ -553,6 +567,7 @@
             // 
             // textDtFilho4
             // 
+            this.textDtFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtFilho4.Location = new System.Drawing.Point(315, 257);
             this.textDtFilho4.MaxLength = 50;
             this.textDtFilho4.Name = "textDtFilho4";
@@ -561,6 +576,7 @@
             // 
             // textFilho4
             // 
+            this.textFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textFilho4.Location = new System.Drawing.Point(10, 257);
             this.textFilho4.MaxLength = 50;
             this.textFilho4.Name = "textFilho4";
@@ -569,6 +585,7 @@
             // 
             // textSexFilho3
             // 
+            this.textSexFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexFilho3.Location = new System.Drawing.Point(515, 238);
             this.textSexFilho3.MaxLength = 12;
             this.textSexFilho3.Name = "textSexFilho3";
@@ -577,6 +594,7 @@
             // 
             // textDtFilho3
             // 
+            this.textDtFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtFilho3.Location = new System.Drawing.Point(315, 238);
             this.textDtFilho3.MaxLength = 50;
             this.textDtFilho3.Name = "textDtFilho3";
@@ -585,6 +603,7 @@
             // 
             // textFilho3
             // 
+            this.textFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textFilho3.Location = new System.Drawing.Point(10, 238);
             this.textFilho3.MaxLength = 50;
             this.textFilho3.Name = "textFilho3";
@@ -593,6 +612,7 @@
             // 
             // textSexFilho2
             // 
+            this.textSexFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexFilho2.Location = new System.Drawing.Point(515, 219);
             this.textSexFilho2.MaxLength = 12;
             this.textSexFilho2.Name = "textSexFilho2";
@@ -601,6 +621,7 @@
             // 
             // textDtFilho2
             // 
+            this.textDtFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtFilho2.Location = new System.Drawing.Point(315, 219);
             this.textDtFilho2.MaxLength = 50;
             this.textDtFilho2.Name = "textDtFilho2";
@@ -609,6 +630,7 @@
             // 
             // textFilho2
             // 
+            this.textFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textFilho2.Location = new System.Drawing.Point(10, 219);
             this.textFilho2.MaxLength = 50;
             this.textFilho2.Name = "textFilho2";
@@ -617,6 +639,7 @@
             // 
             // textSexFilho
             // 
+            this.textSexFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexFilho.Location = new System.Drawing.Point(515, 201);
             this.textSexFilho.MaxLength = 12;
             this.textSexFilho.Name = "textSexFilho";
@@ -636,6 +659,7 @@
             // 
             // textDtFilho
             // 
+            this.textDtFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtFilho.Location = new System.Drawing.Point(315, 201);
             this.textDtFilho.MaxLength = 50;
             this.textDtFilho.Name = "textDtFilho";
@@ -655,6 +679,7 @@
             // 
             // textFilho
             // 
+            this.textFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textFilho.Location = new System.Drawing.Point(10, 201);
             this.textFilho.MaxLength = 50;
             this.textFilho.Name = "textFilho";
@@ -674,6 +699,7 @@
             // 
             // textTelConj
             // 
+            this.textTelConj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textTelConj.Location = new System.Drawing.Point(515, 150);
             this.textTelConj.MaxLength = 15;
             this.textTelConj.Name = "textTelConj";
@@ -693,6 +719,7 @@
             // 
             // textConj
             // 
+            this.textConj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textConj.Location = new System.Drawing.Point(372, 150);
             this.textConj.MaxLength = 30;
             this.textConj.Name = "textConj";
@@ -712,6 +739,7 @@
             // 
             // textCpf
             // 
+            this.textCpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCpf.Location = new System.Drawing.Point(148, 150);
             this.textCpf.MaxLength = 20;
             this.textCpf.Name = "textCpf";
@@ -731,6 +759,7 @@
             // 
             // textDtCasamento
             // 
+            this.textDtCasamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textDtCasamento.Location = new System.Drawing.Point(252, 150);
             this.textDtCasamento.MaxLength = 15;
             this.textDtCasamento.Name = "textDtCasamento";
@@ -750,6 +779,7 @@
             // 
             // textOrg
             // 
+            this.textOrg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textOrg.Location = new System.Drawing.Point(9, 150);
             this.textOrg.MaxLength = 35;
             this.textOrg.Name = "textOrg";
@@ -769,6 +799,7 @@
             // 
             // textRg
             // 
+            this.textRg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textRg.Location = new System.Drawing.Point(555, 108);
             this.textRg.MaxLength = 9;
             this.textRg.Name = "textRg";
@@ -788,6 +819,7 @@
             // 
             // textNat
             // 
+            this.textNat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNat.Location = new System.Drawing.Point(452, 108);
             this.textNat.MaxLength = 30;
             this.textNat.Name = "textNat";
@@ -807,6 +839,7 @@
             // 
             // textNasc
             // 
+            this.textNasc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNasc.Location = new System.Drawing.Point(331, 108);
             this.textNasc.MaxLength = 15;
             this.textNasc.Name = "textNasc";
@@ -826,6 +859,7 @@
             // 
             // textProfissao
             // 
+            this.textProfissao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textProfissao.Location = new System.Drawing.Point(186, 108);
             this.textProfissao.MaxLength = 30;
             this.textProfissao.Name = "textProfissao";
@@ -845,23 +879,13 @@
             // 
             // textEscolaridade
             // 
-            this.textEscolaridade.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membrosBindingSource, "ESCOLARIDADE", true));
+            this.textEscolaridade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textEscolaridade.Location = new System.Drawing.Point(7, 108);
             this.textEscolaridade.MaxLength = 35;
             this.textEscolaridade.Name = "textEscolaridade";
             this.textEscolaridade.Size = new System.Drawing.Size(159, 20);
             this.textEscolaridade.TabIndex = 28;
             this.textEscolaridade.Tag = "";
-            // 
-            // membrosBindingSource
-            // 
-            this.membrosBindingSource.DataMember = "membros";
-            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
-            // 
-            // sistemaIgrejaDataSet
-            // 
-            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
-            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelEscolaridade
             // 
@@ -876,6 +900,7 @@
             // 
             // textEmail
             // 
+            this.textEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textEmail.Location = new System.Drawing.Point(452, 66);
             this.textEmail.MaxLength = 30;
             this.textEmail.Name = "textEmail";
@@ -895,6 +920,7 @@
             // 
             // textTelefone
             // 
+            this.textTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textTelefone.Location = new System.Drawing.Point(334, 66);
             this.textTelefone.MaxLength = 15;
             this.textTelefone.Name = "textTelefone";
@@ -914,6 +940,7 @@
             // 
             // textCep
             // 
+            this.textCep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCep.Location = new System.Drawing.Point(240, 66);
             this.textCep.MaxLength = 12;
             this.textCep.Name = "textCep";
@@ -933,6 +960,7 @@
             // 
             // textUf
             // 
+            this.textUf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textUf.Location = new System.Drawing.Point(186, 66);
             this.textUf.MaxLength = 5;
             this.textUf.Name = "textUf";
@@ -952,6 +980,7 @@
             // 
             // textCidade
             // 
+            this.textCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textCidade.Location = new System.Drawing.Point(7, 66);
             this.textCidade.MaxLength = 15;
             this.textCidade.Name = "textCidade";
@@ -971,6 +1000,7 @@
             // 
             // textBairro
             // 
+            this.textBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBairro.Location = new System.Drawing.Point(525, 24);
             this.textBairro.MaxLength = 15;
             this.textBairro.Name = "textBairro";
@@ -990,6 +1020,7 @@
             // 
             // textNumero
             // 
+            this.textNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNumero.Location = new System.Drawing.Point(466, 24);
             this.textNumero.MaxLength = 6;
             this.textNumero.Name = "textNumero";
@@ -1009,6 +1040,7 @@
             // 
             // textEndereco
             // 
+            this.textEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textEndereco.Location = new System.Drawing.Point(283, 24);
             this.textEndereco.MaxLength = 30;
             this.textEndereco.Name = "textEndereco";
@@ -1028,6 +1060,7 @@
             // 
             // textSexo
             // 
+            this.textSexo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textSexo.Location = new System.Drawing.Point(186, 24);
             this.textSexo.MaxLength = 12;
             this.textSexo.Name = "textSexo";
@@ -1047,6 +1080,7 @@
             // 
             // textNome
             // 
+            this.textNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membrosBindingSource, "NOME", true));
             this.textNome.Location = new System.Drawing.Point(7, 24);
             this.textNome.MaxLength = 50;
@@ -1054,6 +1088,16 @@
             this.textNome.Size = new System.Drawing.Size(159, 20);
             this.textNome.TabIndex = 8;
             this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged_1);
+            // 
+            // membrosBindingSource
+            // 
+            this.membrosBindingSource.DataMember = "membros";
+            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
+            // 
+            // sistemaIgrejaDataSet
+            // 
+            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
+            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // labelNome
             // 
@@ -1070,12 +1114,51 @@
             // 
             this.membrosTableAdapter.ClearBeforeFill = true;
             // 
-            // Column1
+            // ColumnID
             // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Visible = false;
+            this.ColumnID.DataPropertyName = "ID";
+            this.ColumnID.HeaderText = "#";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnID.Visible = false;
+            this.ColumnID.Width = 50;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            this.ColumnNOME.HeaderText = "NOME";
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnNOME.Width = 210;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            this.ColumnTIPO.HeaderText = "TIPO";
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnTIPO.Width = 90;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            this.ColumnCONTATO.HeaderText = "CONTATO";
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnCONTATO.Width = 110;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            this.ColumnCIDADE.HeaderText = "CIDADE";
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnCIDADE.Width = 110;
             // 
             // Column6
             // 
@@ -1086,48 +1169,6 @@
             this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Column6.Text = "EXCLUIR";
             this.Column6.UseColumnTextForButtonValue = true;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            this.ColumnCIDADE.HeaderText = "CIDADE";
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            this.ColumnCONTATO.HeaderText = "CONTATO";
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            this.ColumnTIPO.HeaderText = "TIPO";
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            this.ColumnNOME.HeaderText = "NOME";
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnNOME.Width = 211;
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "#";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnID.Width = 30;
             // 
             // FormMembro
             // 
@@ -1254,7 +1295,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCONTATO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCIDADE;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }
 
