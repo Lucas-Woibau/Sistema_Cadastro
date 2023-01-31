@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,8 +11,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using TextBox = System.Windows.Forms.TextBox;
+using MaterialSkin.Controls;
+
 
 namespace SistemaIgreja
 {
@@ -20,6 +21,12 @@ namespace SistemaIgreja
         public string ID, NOME, SEXO, ENDERECO, NUMERO, BAIRRO, CIDADE, UF, CEP, TELEFONE_CELULAR, EMAIL, ESCOLARIDADE, PROFISSAO, DATA_NASCIMENTO, NATURALIDADE, RG, ORG, CPF, DATA_CASAMENTO, CONJUGUE, CEL_CONJUGUE, NOME_FILHO1, NOME_FILHO2, NOME_FILHO3,
                       NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5,
                       NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGOS, TALENTOS, TIPO, ACEITO_POR;
+
+        private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+            e.Handled = true;
+            e.SuppressKeyPress = true;
+        }
 
         public bool Editavel = false;
         public bool Adicionavel;
@@ -34,6 +41,16 @@ namespace SistemaIgreja
             // TODO: This line of code loads data into the 'sistemaIgrejaDataSet.membros' table. You can move, or remove it, as needed.
             this.membrosTableAdapter.Fill(this.sistemaIgrejaDataSet.membros);
             Limpar();
+        }
+
+        private void FormMembro_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult verificacao = MessageBox.Show("Realmente deseja fechar o programa?", "Fechar", MessageBoxButtons.YesNo);
+
+            if (verificacao == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -174,26 +191,6 @@ namespace SistemaIgreja
             DbMembro.PesquisarMembro("select ID, NOME, TIPO, TELEFONE_CELULAR, CIDADE from membros", dataGridView1);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panelForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textNome_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             if (textNome.Text.Trim().Length == 0)
@@ -254,12 +251,11 @@ namespace SistemaIgreja
                     textDtBat.Text.Trim(), textIgrBat.Text.Trim(), textIgrAnt.Text.Trim(), textPasBat.Text.Trim(), textCargExer.Text.Trim(), textCargIgr.Text.Trim(), textTalen.Text.Trim(), textTipo.Text.Trim(), textAcei.Text.Trim());
 
                 DbMembro.AdicionarMembro(membro);
-                Limpar();
+                Limpar();               
             }
 
             else if (btnSalvar.Text == "SALVAR" && Editavel == true)
             {
-
                 Membro membro = new Membro(textNome.Text.Trim(), textSexo.Text.Trim(), textEndereco.Text.Trim(), textNumero.Text.Trim(), textBairro.Text.Trim(), textCidade.Text.Trim(), textUf.Text.Trim(),
                    textCep.Text.Trim(), textTelefone.Text.Trim(), textEmail.Text.Trim(), textEscolaridade.Text.Trim(), textProfissao.Text.Trim(), textNasc.Text.Trim(), textNat.Text.Trim(), textRg.Text.Trim(),
                    textOrg.Text.Trim(), textCpf.Text.Trim(), textDtCasamento.Text.Trim(), textConj.Text.Trim(), textTelConj.Text.Trim(), textFilho.Text.Trim(), textFilho2.Text.Trim(), textFilho3.Text.Trim(),
@@ -269,13 +265,14 @@ namespace SistemaIgreja
 
                 DbMembro.EditarMembro(membro, ID);
                 Limpar();
-                Editavel = false;
+                Editavel = false;                
             }
+            
             this.Display();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
+        {            
             dataGridView1.CurrentRow.Selected = true;
 
             if (dataGridView1.CurrentCell.Selected = true == true)

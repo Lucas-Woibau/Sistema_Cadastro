@@ -29,22 +29,40 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMembro));
             this.panelInfo = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textBoxPesqMem = new System.Windows.Forms.TextBox();
             this.labelPesqMem = new System.Windows.Forms.Label();
             this.formMembroInfo = new System.Windows.Forms.Panel();
+            this.textSexFilho5 = new System.Windows.Forms.ComboBox();
+            this.textSexFilho3 = new System.Windows.Forms.ComboBox();
+            this.textSexFilho4 = new System.Windows.Forms.ComboBox();
+            this.textSexFilho = new System.Windows.Forms.ComboBox();
+            this.textSexFilho2 = new System.Windows.Forms.ComboBox();
+            this.textDtFilho5 = new System.Windows.Forms.MaskedTextBox();
+            this.textDtFilho4 = new System.Windows.Forms.MaskedTextBox();
+            this.textDtFilho3 = new System.Windows.Forms.MaskedTextBox();
+            this.textDtFilho2 = new System.Windows.Forms.MaskedTextBox();
+            this.textDtFilho = new System.Windows.Forms.MaskedTextBox();
+            this.textDtBat = new System.Windows.Forms.MaskedTextBox();
+            this.textNasc = new System.Windows.Forms.MaskedTextBox();
+            this.textCpf = new System.Windows.Forms.MaskedTextBox();
+            this.textTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.textAcei = new System.Windows.Forms.ComboBox();
+            this.textTipo = new System.Windows.Forms.ComboBox();
+            this.textSexo = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.textAcei = new System.Windows.Forms.TextBox();
-            this.textTipo = new System.Windows.Forms.TextBox();
             this.labelAceito = new System.Windows.Forms.Label();
             this.labelTipo = new System.Windows.Forms.Label();
             this.textTalen = new System.Windows.Forms.TextBox();
@@ -59,27 +77,16 @@
             this.labelIgrAnt = new System.Windows.Forms.Label();
             this.textIgrBat = new System.Windows.Forms.TextBox();
             this.labelIgrBatismo = new System.Windows.Forms.Label();
-            this.textDtBat = new System.Windows.Forms.TextBox();
             this.labelBatismo = new System.Windows.Forms.Label();
             this.textMae = new System.Windows.Forms.TextBox();
             this.labelMae = new System.Windows.Forms.Label();
             this.textPai = new System.Windows.Forms.TextBox();
             this.labelPai = new System.Windows.Forms.Label();
-            this.textSexFilho5 = new System.Windows.Forms.TextBox();
-            this.textDtFilho5 = new System.Windows.Forms.TextBox();
             this.textFilho5 = new System.Windows.Forms.TextBox();
-            this.textSexFilho4 = new System.Windows.Forms.TextBox();
-            this.textDtFilho4 = new System.Windows.Forms.TextBox();
             this.textFilho4 = new System.Windows.Forms.TextBox();
-            this.textSexFilho3 = new System.Windows.Forms.TextBox();
-            this.textDtFilho3 = new System.Windows.Forms.TextBox();
             this.textFilho3 = new System.Windows.Forms.TextBox();
-            this.textSexFilho2 = new System.Windows.Forms.TextBox();
-            this.textDtFilho2 = new System.Windows.Forms.TextBox();
             this.textFilho2 = new System.Windows.Forms.TextBox();
-            this.textSexFilho = new System.Windows.Forms.TextBox();
             this.sexFilho = new System.Windows.Forms.Label();
-            this.textDtFilho = new System.Windows.Forms.TextBox();
             this.DtFilho = new System.Windows.Forms.Label();
             this.textFilho = new System.Windows.Forms.TextBox();
             this.nomeFilho = new System.Windows.Forms.Label();
@@ -87,7 +94,6 @@
             this.labelTelConj = new System.Windows.Forms.Label();
             this.textConj = new System.Windows.Forms.TextBox();
             this.labelConj = new System.Windows.Forms.Label();
-            this.textCpf = new System.Windows.Forms.TextBox();
             this.labelCpf = new System.Windows.Forms.Label();
             this.textDtCasamento = new System.Windows.Forms.TextBox();
             this.labelDtCasamento = new System.Windows.Forms.Label();
@@ -97,7 +103,6 @@
             this.labelRg = new System.Windows.Forms.Label();
             this.textNat = new System.Windows.Forms.TextBox();
             this.labelNat = new System.Windows.Forms.Label();
-            this.textNasc = new System.Windows.Forms.TextBox();
             this.labelNasc = new System.Windows.Forms.Label();
             this.textProfissao = new System.Windows.Forms.TextBox();
             this.labelProfissao = new System.Windows.Forms.Label();
@@ -105,7 +110,6 @@
             this.labelEscolaridade = new System.Windows.Forms.Label();
             this.textEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.textTelefone = new System.Windows.Forms.TextBox();
             this.labelTelefone = new System.Windows.Forms.Label();
             this.textCep = new System.Windows.Forms.TextBox();
             this.labelCep = new System.Windows.Forms.Label();
@@ -119,31 +123,37 @@
             this.labelNumero = new System.Windows.Forms.Label();
             this.textEndereco = new System.Windows.Forms.TextBox();
             this.labelEndereco = new System.Windows.Forms.Label();
-            this.textSexo = new System.Windows.Forms.TextBox();
             this.labelSexo = new System.Windows.Forms.Label();
             this.textNome = new System.Windows.Forms.TextBox();
             this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
             this.labelNome = new System.Windows.Forms.Label();
             this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.formMembroInfo.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // panelInfo
             // 
-            this.panelInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.panelInfo, "panelInfo");
             this.panelInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.panelInfo.Controls.Add(this.dataGridView1);
             this.panelInfo.Controls.Add(this.textBoxPesqMem);
             this.panelInfo.Controls.Add(this.labelPesqMem);
-            this.panelInfo.Location = new System.Drawing.Point(634, 0);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(651, 740);
-            this.panelInfo.TabIndex = 0;
             // 
             // dataGridView1
             // 
@@ -160,98 +170,52 @@
             this.ColumnCONTATO,
             this.ColumnCIDADE,
             this.Column6});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 368);
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(624, 354);
-            this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "#";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnID.Visible = false;
-            this.ColumnID.Width = 50;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            this.ColumnNOME.HeaderText = "NOME";
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnNOME.Width = 210;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            this.ColumnTIPO.HeaderText = "TIPO";
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnTIPO.Width = 90;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            this.ColumnCONTATO.HeaderText = "CONTATO";
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnCONTATO.Width = 110;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            this.ColumnCIDADE.HeaderText = "CIDADE";
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnCIDADE.Width = 110;
-            // 
-            // Column6
-            // 
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column6.HeaderText = "";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "EXCLUIR";
-            this.Column6.UseColumnTextForButtonValue = true;
             // 
             // textBoxPesqMem
             // 
-            this.textBoxPesqMem.Location = new System.Drawing.Point(93, 320);
-            this.textBoxPesqMem.MaxLength = 50;
+            resources.ApplyResources(this.textBoxPesqMem, "textBoxPesqMem");
             this.textBoxPesqMem.Name = "textBoxPesqMem";
-            this.textBoxPesqMem.Size = new System.Drawing.Size(365, 20);
-            this.textBoxPesqMem.TabIndex = 1;
             this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
             // 
             // labelPesqMem
             // 
-            this.labelPesqMem.AutoSize = true;
-            this.labelPesqMem.Location = new System.Drawing.Point(29, 323);
+            resources.ApplyResources(this.labelPesqMem, "labelPesqMem");
             this.labelPesqMem.Name = "labelPesqMem";
-            this.labelPesqMem.Size = new System.Drawing.Size(58, 13);
-            this.labelPesqMem.TabIndex = 0;
-            this.labelPesqMem.Text = "MEMBRO:";
             // 
             // formMembroInfo
             // 
             this.formMembroInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.formMembroInfo.Controls.Add(this.textSexFilho5);
+            this.formMembroInfo.Controls.Add(this.textSexFilho3);
+            this.formMembroInfo.Controls.Add(this.textSexFilho4);
+            this.formMembroInfo.Controls.Add(this.textSexFilho);
+            this.formMembroInfo.Controls.Add(this.textSexFilho2);
+            this.formMembroInfo.Controls.Add(this.textDtFilho5);
+            this.formMembroInfo.Controls.Add(this.textDtFilho4);
+            this.formMembroInfo.Controls.Add(this.textDtFilho3);
+            this.formMembroInfo.Controls.Add(this.textDtFilho2);
+            this.formMembroInfo.Controls.Add(this.textDtFilho);
+            this.formMembroInfo.Controls.Add(this.textDtBat);
+            this.formMembroInfo.Controls.Add(this.textNasc);
+            this.formMembroInfo.Controls.Add(this.textCpf);
+            this.formMembroInfo.Controls.Add(this.textTelefone);
+            this.formMembroInfo.Controls.Add(this.textAcei);
+            this.formMembroInfo.Controls.Add(this.textTipo);
+            this.formMembroInfo.Controls.Add(this.textSexo);
+            this.formMembroInfo.Controls.Add(this.panel4);
+            this.formMembroInfo.Controls.Add(this.panel3);
+            this.formMembroInfo.Controls.Add(this.panel2);
+            this.formMembroInfo.Controls.Add(this.panel1);
             this.formMembroInfo.Controls.Add(this.btnNovo);
             this.formMembroInfo.Controls.Add(this.btnSalvar);
             this.formMembroInfo.Controls.Add(this.btnEditar);
-            this.formMembroInfo.Controls.Add(this.textAcei);
-            this.formMembroInfo.Controls.Add(this.textTipo);
             this.formMembroInfo.Controls.Add(this.labelAceito);
             this.formMembroInfo.Controls.Add(this.labelTipo);
             this.formMembroInfo.Controls.Add(this.textTalen);
@@ -266,27 +230,16 @@
             this.formMembroInfo.Controls.Add(this.labelIgrAnt);
             this.formMembroInfo.Controls.Add(this.textIgrBat);
             this.formMembroInfo.Controls.Add(this.labelIgrBatismo);
-            this.formMembroInfo.Controls.Add(this.textDtBat);
             this.formMembroInfo.Controls.Add(this.labelBatismo);
             this.formMembroInfo.Controls.Add(this.textMae);
             this.formMembroInfo.Controls.Add(this.labelMae);
             this.formMembroInfo.Controls.Add(this.textPai);
             this.formMembroInfo.Controls.Add(this.labelPai);
-            this.formMembroInfo.Controls.Add(this.textSexFilho5);
-            this.formMembroInfo.Controls.Add(this.textDtFilho5);
             this.formMembroInfo.Controls.Add(this.textFilho5);
-            this.formMembroInfo.Controls.Add(this.textSexFilho4);
-            this.formMembroInfo.Controls.Add(this.textDtFilho4);
             this.formMembroInfo.Controls.Add(this.textFilho4);
-            this.formMembroInfo.Controls.Add(this.textSexFilho3);
-            this.formMembroInfo.Controls.Add(this.textDtFilho3);
             this.formMembroInfo.Controls.Add(this.textFilho3);
-            this.formMembroInfo.Controls.Add(this.textSexFilho2);
-            this.formMembroInfo.Controls.Add(this.textDtFilho2);
             this.formMembroInfo.Controls.Add(this.textFilho2);
-            this.formMembroInfo.Controls.Add(this.textSexFilho);
             this.formMembroInfo.Controls.Add(this.sexFilho);
-            this.formMembroInfo.Controls.Add(this.textDtFilho);
             this.formMembroInfo.Controls.Add(this.DtFilho);
             this.formMembroInfo.Controls.Add(this.textFilho);
             this.formMembroInfo.Controls.Add(this.nomeFilho);
@@ -294,7 +247,6 @@
             this.formMembroInfo.Controls.Add(this.labelTelConj);
             this.formMembroInfo.Controls.Add(this.textConj);
             this.formMembroInfo.Controls.Add(this.labelConj);
-            this.formMembroInfo.Controls.Add(this.textCpf);
             this.formMembroInfo.Controls.Add(this.labelCpf);
             this.formMembroInfo.Controls.Add(this.textDtCasamento);
             this.formMembroInfo.Controls.Add(this.labelDtCasamento);
@@ -304,7 +256,6 @@
             this.formMembroInfo.Controls.Add(this.labelRg);
             this.formMembroInfo.Controls.Add(this.textNat);
             this.formMembroInfo.Controls.Add(this.labelNat);
-            this.formMembroInfo.Controls.Add(this.textNasc);
             this.formMembroInfo.Controls.Add(this.labelNasc);
             this.formMembroInfo.Controls.Add(this.textProfissao);
             this.formMembroInfo.Controls.Add(this.labelProfissao);
@@ -312,7 +263,6 @@
             this.formMembroInfo.Controls.Add(this.labelEscolaridade);
             this.formMembroInfo.Controls.Add(this.textEmail);
             this.formMembroInfo.Controls.Add(this.labelEmail);
-            this.formMembroInfo.Controls.Add(this.textTelefone);
             this.formMembroInfo.Controls.Add(this.labelTelefone);
             this.formMembroInfo.Controls.Add(this.textCep);
             this.formMembroInfo.Controls.Add(this.labelCep);
@@ -326,824 +276,555 @@
             this.formMembroInfo.Controls.Add(this.labelNumero);
             this.formMembroInfo.Controls.Add(this.textEndereco);
             this.formMembroInfo.Controls.Add(this.labelEndereco);
-            this.formMembroInfo.Controls.Add(this.textSexo);
             this.formMembroInfo.Controls.Add(this.labelSexo);
             this.formMembroInfo.Controls.Add(this.textNome);
             this.formMembroInfo.Controls.Add(this.labelNome);
-            this.formMembroInfo.Location = new System.Drawing.Point(1, 0);
+            resources.ApplyResources(this.formMembroInfo, "formMembroInfo");
             this.formMembroInfo.Name = "formMembroInfo";
-            this.formMembroInfo.Size = new System.Drawing.Size(627, 737);
-            this.formMembroInfo.TabIndex = 3;
+            // 
+            // textSexFilho5
+            // 
+            this.textSexFilho5.FormattingEnabled = true;
+            this.textSexFilho5.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho5.Items"),
+            resources.GetString("textSexFilho5.Items1")});
+            resources.ApplyResources(this.textSexFilho5, "textSexFilho5");
+            this.textSexFilho5.Name = "textSexFilho5";
+            // 
+            // textSexFilho3
+            // 
+            this.textSexFilho3.FormattingEnabled = true;
+            this.textSexFilho3.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho3.Items"),
+            resources.GetString("textSexFilho3.Items1")});
+            resources.ApplyResources(this.textSexFilho3, "textSexFilho3");
+            this.textSexFilho3.Name = "textSexFilho3";
+            // 
+            // textSexFilho4
+            // 
+            this.textSexFilho4.FormattingEnabled = true;
+            this.textSexFilho4.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho4.Items"),
+            resources.GetString("textSexFilho4.Items1")});
+            resources.ApplyResources(this.textSexFilho4, "textSexFilho4");
+            this.textSexFilho4.Name = "textSexFilho4";
+            // 
+            // textSexFilho
+            // 
+            this.textSexFilho.FormattingEnabled = true;
+            this.textSexFilho.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho.Items"),
+            resources.GetString("textSexFilho.Items1")});
+            resources.ApplyResources(this.textSexFilho, "textSexFilho");
+            this.textSexFilho.Name = "textSexFilho";
+            // 
+            // textSexFilho2
+            // 
+            this.textSexFilho2.FormattingEnabled = true;
+            this.textSexFilho2.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho2.Items"),
+            resources.GetString("textSexFilho2.Items1")});
+            resources.ApplyResources(this.textSexFilho2, "textSexFilho2");
+            this.textSexFilho2.Name = "textSexFilho2";
+            // 
+            // textDtFilho5
+            // 
+            resources.ApplyResources(this.textDtFilho5, "textDtFilho5");
+            this.textDtFilho5.Name = "textDtFilho5";
+            this.textDtFilho5.ValidatingType = typeof(System.DateTime);
+            // 
+            // textDtFilho4
+            // 
+            resources.ApplyResources(this.textDtFilho4, "textDtFilho4");
+            this.textDtFilho4.Name = "textDtFilho4";
+            this.textDtFilho4.ValidatingType = typeof(System.DateTime);
+            // 
+            // textDtFilho3
+            // 
+            resources.ApplyResources(this.textDtFilho3, "textDtFilho3");
+            this.textDtFilho3.Name = "textDtFilho3";
+            this.textDtFilho3.ValidatingType = typeof(System.DateTime);
+            // 
+            // textDtFilho2
+            // 
+            resources.ApplyResources(this.textDtFilho2, "textDtFilho2");
+            this.textDtFilho2.Name = "textDtFilho2";
+            this.textDtFilho2.ValidatingType = typeof(System.DateTime);
+            // 
+            // textDtFilho
+            // 
+            resources.ApplyResources(this.textDtFilho, "textDtFilho");
+            this.textDtFilho.Name = "textDtFilho";
+            this.textDtFilho.ValidatingType = typeof(System.DateTime);
+            // 
+            // textDtBat
+            // 
+            resources.ApplyResources(this.textDtBat, "textDtBat");
+            this.textDtBat.Name = "textDtBat";
+            this.textDtBat.ValidatingType = typeof(System.DateTime);
+            // 
+            // textNasc
+            // 
+            resources.ApplyResources(this.textNasc, "textNasc");
+            this.textNasc.Name = "textNasc";
+            this.textNasc.ValidatingType = typeof(System.DateTime);
+            // 
+            // textCpf
+            // 
+            resources.ApplyResources(this.textCpf, "textCpf");
+            this.textCpf.Name = "textCpf";
+            // 
+            // textTelefone
+            // 
+            resources.ApplyResources(this.textTelefone, "textTelefone");
+            this.textTelefone.Name = "textTelefone";
+            this.textTelefone.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
+            // 
+            // textAcei
+            // 
+            this.textAcei.BackColor = System.Drawing.Color.White;
+            this.textAcei.FormattingEnabled = true;
+            this.textAcei.Items.AddRange(new object[] {
+            resources.GetString("textAcei.Items"),
+            resources.GetString("textAcei.Items1"),
+            resources.GetString("textAcei.Items2")});
+            resources.ApplyResources(this.textAcei, "textAcei");
+            this.textAcei.Name = "textAcei";
+            // 
+            // textTipo
+            // 
+            this.textTipo.FormattingEnabled = true;
+            this.textTipo.Items.AddRange(new object[] {
+            resources.GetString("textTipo.Items"),
+            resources.GetString("textTipo.Items1")});
+            resources.ApplyResources(this.textTipo, "textTipo");
+            this.textTipo.Name = "textTipo";
+            // 
+            // textSexo
+            // 
+            this.textSexo.FormattingEnabled = true;
+            this.textSexo.Items.AddRange(new object[] {
+            resources.GetString("textSexo.Items"),
+            resources.GetString("textSexo.Items1")});
+            resources.ApplyResources(this.textSexo, "textSexo");
+            this.textSexo.Name = "textSexo";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Silver;
+            this.panel4.Controls.Add(this.label4);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.Controls.Add(this.label3);
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.Name = "panel3";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.label2);
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.Name = "panel2";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.label1);
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Name = "panel1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(36, 680);
+            this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnNovo, "btnNovo");
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(148, 39);
-            this.btnNovo.TabIndex = 93;
-            this.btnNovo.Text = "NOVO";
             this.btnNovo.UseVisualStyleBackColor = true;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(416, 680);
+            this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnSalvar, "btnSalvar");
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(148, 39);
-            this.btnSalvar.TabIndex = 92;
-            this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(224, 680);
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.btnEditar, "btnEditar");
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(148, 39);
-            this.btnEditar.TabIndex = 91;
-            this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // textAcei
-            // 
-            this.textAcei.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textAcei.Location = new System.Drawing.Point(292, 551);
-            this.textAcei.MaxLength = 50;
-            this.textAcei.Name = "textAcei";
-            this.textAcei.Size = new System.Drawing.Size(285, 20);
-            this.textAcei.TabIndex = 89;
-            // 
-            // textTipo
-            // 
-            this.textTipo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textTipo.Location = new System.Drawing.Point(12, 551);
-            this.textTipo.MaxLength = 50;
-            this.textTipo.Name = "textTipo";
-            this.textTipo.Size = new System.Drawing.Size(226, 20);
-            this.textTipo.TabIndex = 88;
-            // 
             // labelAceito
             // 
-            this.labelAceito.AutoSize = true;
+            resources.ApplyResources(this.labelAceito, "labelAceito");
             this.labelAceito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelAceito.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAceito.Location = new System.Drawing.Point(287, 532);
             this.labelAceito.Name = "labelAceito";
-            this.labelAceito.Size = new System.Drawing.Size(326, 16);
-            this.labelAceito.TabIndex = 82;
-            this.labelAceito.Text = "ACEITO POR (Batismo / Trânsferencia de Igreja / Aclamação):";
             // 
             // labelTipo
             // 
-            this.labelTipo.AutoSize = true;
+            resources.ApplyResources(this.labelTipo, "labelTipo");
             this.labelTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTipo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTipo.Location = new System.Drawing.Point(13, 532);
             this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(178, 16);
-            this.labelTipo.TabIndex = 79;
-            this.labelTipo.Text = "*TIPO (Membro / Frequentador):";
             // 
             // textTalen
             // 
-            this.textTalen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textTalen.Location = new System.Drawing.Point(317, 494);
-            this.textTalen.MaxLength = 50;
+            resources.ApplyResources(this.textTalen, "textTalen");
             this.textTalen.Name = "textTalen";
-            this.textTalen.Size = new System.Drawing.Size(295, 20);
-            this.textTalen.TabIndex = 78;
             // 
             // labelTalen
             // 
-            this.labelTalen.AutoSize = true;
+            resources.ApplyResources(this.labelTalen, "labelTalen");
             this.labelTalen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTalen.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTalen.Location = new System.Drawing.Point(314, 475);
             this.labelTalen.Name = "labelTalen";
-            this.labelTalen.Size = new System.Drawing.Size(208, 16);
-            this.labelTalen.TabIndex = 77;
-            this.labelTalen.Text = "TALENTOS/MINISTÉRIOS QUE POSSUI:";
             // 
             // textCargIgr
             // 
-            this.textCargIgr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textCargIgr.Location = new System.Drawing.Point(13, 494);
-            this.textCargIgr.MaxLength = 50;
+            resources.ApplyResources(this.textCargIgr, "textCargIgr");
             this.textCargIgr.Name = "textCargIgr";
-            this.textCargIgr.Size = new System.Drawing.Size(274, 20);
-            this.textCargIgr.TabIndex = 76;
             // 
             // labelCargIgr
             // 
-            this.labelCargIgr.AutoSize = true;
+            resources.ApplyResources(this.labelCargIgr, "labelCargIgr");
             this.labelCargIgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCargIgr.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCargIgr.Location = new System.Drawing.Point(10, 475);
             this.labelCargIgr.Name = "labelCargIgr";
-            this.labelCargIgr.Size = new System.Drawing.Size(283, 16);
-            this.labelCargIgr.TabIndex = 75;
-            this.labelCargIgr.Text = "DESEJA EXERCER ALGUM CARGO NA IGREJA? QUAL?";
             // 
             // textCargExer
             // 
-            this.textCargExer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textCargExer.Location = new System.Drawing.Point(316, 441);
-            this.textCargExer.MaxLength = 50;
+            resources.ApplyResources(this.textCargExer, "textCargExer");
             this.textCargExer.Name = "textCargExer";
-            this.textCargExer.Size = new System.Drawing.Size(295, 20);
-            this.textCargExer.TabIndex = 74;
             // 
             // labelCargExe
             // 
-            this.labelCargExe.AutoSize = true;
+            resources.ApplyResources(this.labelCargExe, "labelCargExe");
             this.labelCargExe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCargExe.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCargExe.Location = new System.Drawing.Point(313, 422);
             this.labelCargExe.Name = "labelCargExe";
-            this.labelCargExe.Size = new System.Drawing.Size(117, 16);
-            this.labelCargExe.TabIndex = 73;
-            this.labelCargExe.Text = "CARGOS EXERCIDOS:";
             // 
             // textPasBat
             // 
-            this.textPasBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textPasBat.Location = new System.Drawing.Point(13, 441);
-            this.textPasBat.MaxLength = 50;
+            resources.ApplyResources(this.textPasBat, "textPasBat");
             this.textPasBat.Name = "textPasBat";
-            this.textPasBat.Size = new System.Drawing.Size(274, 20);
-            this.textPasBat.TabIndex = 72;
             // 
             // labelPasBat
             // 
-            this.labelPasBat.AutoSize = true;
+            resources.ApplyResources(this.labelPasBat, "labelPasBat");
             this.labelPasBat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelPasBat.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPasBat.Location = new System.Drawing.Point(10, 422);
             this.labelPasBat.Name = "labelPasBat";
-            this.labelPasBat.Size = new System.Drawing.Size(168, 16);
-            this.labelPasBat.TabIndex = 71;
-            this.labelPasBat.Text = "NOME PASTOR QUE BATIZOU:";
             // 
             // textIgrAnt
             // 
-            this.textIgrAnt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textIgrAnt.Location = new System.Drawing.Point(382, 390);
-            this.textIgrAnt.MaxLength = 50;
+            resources.ApplyResources(this.textIgrAnt, "textIgrAnt");
             this.textIgrAnt.Name = "textIgrAnt";
-            this.textIgrAnt.Size = new System.Drawing.Size(229, 20);
-            this.textIgrAnt.TabIndex = 70;
             // 
             // labelIgrAnt
             // 
-            this.labelIgrAnt.AutoSize = true;
+            resources.ApplyResources(this.labelIgrAnt, "labelIgrAnt");
             this.labelIgrAnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelIgrAnt.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIgrAnt.Location = new System.Drawing.Point(379, 371);
             this.labelIgrAnt.Name = "labelIgrAnt";
-            this.labelIgrAnt.Size = new System.Drawing.Size(142, 16);
-            this.labelIgrAnt.TabIndex = 69;
-            this.labelIgrAnt.Text = "NOME IGREJA ANTERIOR:";
             // 
             // textIgrBat
             // 
-            this.textIgrBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textIgrBat.Location = new System.Drawing.Point(134, 390);
-            this.textIgrBat.MaxLength = 50;
+            resources.ApplyResources(this.textIgrBat, "textIgrBat");
             this.textIgrBat.Name = "textIgrBat";
-            this.textIgrBat.Size = new System.Drawing.Size(229, 20);
-            this.textIgrBat.TabIndex = 68;
             // 
             // labelIgrBatismo
             // 
-            this.labelIgrBatismo.AutoSize = true;
+            resources.ApplyResources(this.labelIgrBatismo, "labelIgrBatismo");
             this.labelIgrBatismo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelIgrBatismo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIgrBatismo.Location = new System.Drawing.Point(131, 371);
             this.labelIgrBatismo.Name = "labelIgrBatismo";
-            this.labelIgrBatismo.Size = new System.Drawing.Size(137, 16);
-            this.labelIgrBatismo.TabIndex = 67;
-            this.labelIgrBatismo.Text = "NOME IGREJA BATISMO:";
-            // 
-            // textDtBat
-            // 
-            this.textDtBat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtBat.Location = new System.Drawing.Point(13, 390);
-            this.textDtBat.MaxLength = 15;
-            this.textDtBat.Name = "textDtBat";
-            this.textDtBat.Size = new System.Drawing.Size(97, 20);
-            this.textDtBat.TabIndex = 66;
             // 
             // labelBatismo
             // 
-            this.labelBatismo.AutoSize = true;
+            resources.ApplyResources(this.labelBatismo, "labelBatismo");
             this.labelBatismo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelBatismo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBatismo.Location = new System.Drawing.Point(10, 371);
             this.labelBatismo.Name = "labelBatismo";
-            this.labelBatismo.Size = new System.Drawing.Size(93, 16);
-            this.labelBatismo.TabIndex = 65;
-            this.labelBatismo.Text = "DATA BATISMO:";
             // 
             // textMae
             // 
-            this.textMae.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textMae.Location = new System.Drawing.Point(317, 333);
-            this.textMae.MaxLength = 50;
+            resources.ApplyResources(this.textMae, "textMae");
             this.textMae.Name = "textMae";
-            this.textMae.Size = new System.Drawing.Size(277, 20);
-            this.textMae.TabIndex = 64;
             // 
             // labelMae
             // 
-            this.labelMae.AutoSize = true;
+            resources.ApplyResources(this.labelMae, "labelMae");
             this.labelMae.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelMae.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMae.Location = new System.Drawing.Point(314, 314);
             this.labelMae.Name = "labelMae";
-            this.labelMae.Size = new System.Drawing.Size(73, 16);
-            this.labelMae.TabIndex = 63;
-            this.labelMae.Text = "NOME MÃE:";
             // 
             // textPai
             // 
-            this.textPai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textPai.Location = new System.Drawing.Point(13, 333);
-            this.textPai.MaxLength = 50;
+            resources.ApplyResources(this.textPai, "textPai");
             this.textPai.Name = "textPai";
-            this.textPai.Size = new System.Drawing.Size(273, 20);
-            this.textPai.TabIndex = 62;
             // 
             // labelPai
             // 
-            this.labelPai.AutoSize = true;
+            resources.ApplyResources(this.labelPai, "labelPai");
             this.labelPai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelPai.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPai.Location = new System.Drawing.Point(10, 314);
             this.labelPai.Name = "labelPai";
-            this.labelPai.Size = new System.Drawing.Size(66, 16);
-            this.labelPai.TabIndex = 61;
-            this.labelPai.Text = "NOME PAI:";
-            // 
-            // textSexFilho5
-            // 
-            this.textSexFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexFilho5.Location = new System.Drawing.Point(515, 276);
-            this.textSexFilho5.MaxLength = 12;
-            this.textSexFilho5.Name = "textSexFilho5";
-            this.textSexFilho5.Size = new System.Drawing.Size(81, 20);
-            this.textSexFilho5.TabIndex = 60;
-            // 
-            // textDtFilho5
-            // 
-            this.textDtFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtFilho5.Location = new System.Drawing.Point(315, 276);
-            this.textDtFilho5.MaxLength = 50;
-            this.textDtFilho5.Name = "textDtFilho5";
-            this.textDtFilho5.Size = new System.Drawing.Size(167, 20);
-            this.textDtFilho5.TabIndex = 59;
             // 
             // textFilho5
             // 
-            this.textFilho5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFilho5.Location = new System.Drawing.Point(10, 276);
-            this.textFilho5.MaxLength = 50;
+            resources.ApplyResources(this.textFilho5, "textFilho5");
             this.textFilho5.Name = "textFilho5";
-            this.textFilho5.Size = new System.Drawing.Size(277, 20);
-            this.textFilho5.TabIndex = 58;
-            // 
-            // textSexFilho4
-            // 
-            this.textSexFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexFilho4.Location = new System.Drawing.Point(515, 257);
-            this.textSexFilho4.MaxLength = 12;
-            this.textSexFilho4.Name = "textSexFilho4";
-            this.textSexFilho4.Size = new System.Drawing.Size(81, 20);
-            this.textSexFilho4.TabIndex = 57;
-            // 
-            // textDtFilho4
-            // 
-            this.textDtFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtFilho4.Location = new System.Drawing.Point(315, 257);
-            this.textDtFilho4.MaxLength = 50;
-            this.textDtFilho4.Name = "textDtFilho4";
-            this.textDtFilho4.Size = new System.Drawing.Size(167, 20);
-            this.textDtFilho4.TabIndex = 56;
             // 
             // textFilho4
             // 
-            this.textFilho4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFilho4.Location = new System.Drawing.Point(10, 257);
-            this.textFilho4.MaxLength = 50;
+            resources.ApplyResources(this.textFilho4, "textFilho4");
             this.textFilho4.Name = "textFilho4";
-            this.textFilho4.Size = new System.Drawing.Size(277, 20);
-            this.textFilho4.TabIndex = 55;
-            // 
-            // textSexFilho3
-            // 
-            this.textSexFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexFilho3.Location = new System.Drawing.Point(515, 238);
-            this.textSexFilho3.MaxLength = 12;
-            this.textSexFilho3.Name = "textSexFilho3";
-            this.textSexFilho3.Size = new System.Drawing.Size(81, 20);
-            this.textSexFilho3.TabIndex = 54;
-            // 
-            // textDtFilho3
-            // 
-            this.textDtFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtFilho3.Location = new System.Drawing.Point(315, 238);
-            this.textDtFilho3.MaxLength = 50;
-            this.textDtFilho3.Name = "textDtFilho3";
-            this.textDtFilho3.Size = new System.Drawing.Size(167, 20);
-            this.textDtFilho3.TabIndex = 53;
             // 
             // textFilho3
             // 
-            this.textFilho3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFilho3.Location = new System.Drawing.Point(10, 238);
-            this.textFilho3.MaxLength = 50;
+            resources.ApplyResources(this.textFilho3, "textFilho3");
             this.textFilho3.Name = "textFilho3";
-            this.textFilho3.Size = new System.Drawing.Size(277, 20);
-            this.textFilho3.TabIndex = 52;
-            // 
-            // textSexFilho2
-            // 
-            this.textSexFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexFilho2.Location = new System.Drawing.Point(515, 219);
-            this.textSexFilho2.MaxLength = 12;
-            this.textSexFilho2.Name = "textSexFilho2";
-            this.textSexFilho2.Size = new System.Drawing.Size(81, 20);
-            this.textSexFilho2.TabIndex = 51;
-            // 
-            // textDtFilho2
-            // 
-            this.textDtFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtFilho2.Location = new System.Drawing.Point(315, 219);
-            this.textDtFilho2.MaxLength = 50;
-            this.textDtFilho2.Name = "textDtFilho2";
-            this.textDtFilho2.Size = new System.Drawing.Size(167, 20);
-            this.textDtFilho2.TabIndex = 49;
             // 
             // textFilho2
             // 
-            this.textFilho2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFilho2.Location = new System.Drawing.Point(10, 219);
-            this.textFilho2.MaxLength = 50;
+            resources.ApplyResources(this.textFilho2, "textFilho2");
             this.textFilho2.Name = "textFilho2";
-            this.textFilho2.Size = new System.Drawing.Size(277, 20);
-            this.textFilho2.TabIndex = 47;
-            // 
-            // textSexFilho
-            // 
-            this.textSexFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexFilho.Location = new System.Drawing.Point(515, 201);
-            this.textSexFilho.MaxLength = 12;
-            this.textSexFilho.Name = "textSexFilho";
-            this.textSexFilho.Size = new System.Drawing.Size(81, 20);
-            this.textSexFilho.TabIndex = 45;
             // 
             // sexFilho
             // 
-            this.sexFilho.AutoSize = true;
+            resources.ApplyResources(this.sexFilho, "sexFilho");
             this.sexFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sexFilho.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sexFilho.Location = new System.Drawing.Point(511, 181);
             this.sexFilho.Name = "sexFilho";
-            this.sexFilho.Size = new System.Drawing.Size(88, 16);
-            this.sexFilho.TabIndex = 44;
-            this.sexFilho.Text = "SEXO FILHO(a):";
-            // 
-            // textDtFilho
-            // 
-            this.textDtFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtFilho.Location = new System.Drawing.Point(315, 201);
-            this.textDtFilho.MaxLength = 50;
-            this.textDtFilho.Name = "textDtFilho";
-            this.textDtFilho.Size = new System.Drawing.Size(167, 20);
-            this.textDtFilho.TabIndex = 43;
             // 
             // DtFilho
             // 
-            this.DtFilho.AutoSize = true;
+            resources.ApplyResources(this.DtFilho, "DtFilho");
             this.DtFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DtFilho.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtFilho.Location = new System.Drawing.Point(311, 181);
             this.DtFilho.Name = "DtFilho";
-            this.DtFilho.Size = new System.Drawing.Size(167, 16);
-            this.DtFilho.TabIndex = 42;
-            this.DtFilho.Text = "DATA NASCIMENTO FILHO(a):";
             // 
             // textFilho
             // 
-            this.textFilho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textFilho.Location = new System.Drawing.Point(10, 201);
-            this.textFilho.MaxLength = 50;
+            resources.ApplyResources(this.textFilho, "textFilho");
             this.textFilho.Name = "textFilho";
-            this.textFilho.Size = new System.Drawing.Size(277, 20);
-            this.textFilho.TabIndex = 41;
             // 
             // nomeFilho
             // 
-            this.nomeFilho.AutoSize = true;
+            resources.ApplyResources(this.nomeFilho, "nomeFilho");
             this.nomeFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nomeFilho.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeFilho.Location = new System.Drawing.Point(6, 181);
             this.nomeFilho.Name = "nomeFilho";
-            this.nomeFilho.Size = new System.Drawing.Size(98, 16);
-            this.nomeFilho.TabIndex = 40;
-            this.nomeFilho.Text = "NOME  FILHO(a):";
             // 
             // textTelConj
             // 
-            this.textTelConj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textTelConj.Location = new System.Drawing.Point(515, 150);
-            this.textTelConj.MaxLength = 15;
+            resources.ApplyResources(this.textTelConj, "textTelConj");
             this.textTelConj.Name = "textTelConj";
-            this.textTelConj.Size = new System.Drawing.Size(105, 20);
-            this.textTelConj.TabIndex = 39;
             // 
             // labelTelConj
             // 
-            this.labelTelConj.AutoSize = true;
+            resources.ApplyResources(this.labelTelConj, "labelTelConj");
             this.labelTelConj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTelConj.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTelConj.Location = new System.Drawing.Point(512, 131);
             this.labelTelConj.Name = "labelTelConj";
-            this.labelTelConj.Size = new System.Drawing.Size(91, 16);
-            this.labelTelConj.TabIndex = 38;
-            this.labelTelConj.Text = "CEL CÔNJUGUE:";
             // 
             // textConj
             // 
-            this.textConj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textConj.Location = new System.Drawing.Point(372, 150);
-            this.textConj.MaxLength = 30;
+            resources.ApplyResources(this.textConj, "textConj");
             this.textConj.Name = "textConj";
-            this.textConj.Size = new System.Drawing.Size(137, 20);
-            this.textConj.TabIndex = 37;
             // 
             // labelConj
             // 
-            this.labelConj.AutoSize = true;
+            resources.ApplyResources(this.labelConj, "labelConj");
             this.labelConj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelConj.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelConj.Location = new System.Drawing.Point(371, 131);
             this.labelConj.Name = "labelConj";
-            this.labelConj.Size = new System.Drawing.Size(69, 16);
-            this.labelConj.TabIndex = 36;
-            this.labelConj.Text = "CÔNJUGUE:";
-            // 
-            // textCpf
-            // 
-            this.textCpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textCpf.Location = new System.Drawing.Point(148, 150);
-            this.textCpf.MaxLength = 20;
-            this.textCpf.Name = "textCpf";
-            this.textCpf.Size = new System.Drawing.Size(90, 20);
-            this.textCpf.TabIndex = 40;
             // 
             // labelCpf
             // 
-            this.labelCpf.AutoSize = true;
+            resources.ApplyResources(this.labelCpf, "labelCpf");
             this.labelCpf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCpf.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCpf.Location = new System.Drawing.Point(149, 131);
             this.labelCpf.Name = "labelCpf";
-            this.labelCpf.Size = new System.Drawing.Size(35, 16);
-            this.labelCpf.TabIndex = 39;
-            this.labelCpf.Text = "*CPF:";
             // 
             // textDtCasamento
             // 
-            this.textDtCasamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textDtCasamento.Location = new System.Drawing.Point(252, 150);
-            this.textDtCasamento.MaxLength = 15;
+            resources.ApplyResources(this.textDtCasamento, "textDtCasamento");
             this.textDtCasamento.Name = "textDtCasamento";
-            this.textDtCasamento.Size = new System.Drawing.Size(109, 20);
-            this.textDtCasamento.TabIndex = 33;
             // 
             // labelDtCasamento
             // 
-            this.labelDtCasamento.AutoSize = true;
+            resources.ApplyResources(this.labelDtCasamento, "labelDtCasamento");
             this.labelDtCasamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelDtCasamento.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDtCasamento.Location = new System.Drawing.Point(250, 131);
             this.labelDtCasamento.Name = "labelDtCasamento";
-            this.labelDtCasamento.Size = new System.Drawing.Size(113, 16);
-            this.labelDtCasamento.TabIndex = 32;
-            this.labelDtCasamento.Text = "DATA CASAMENTO:";
             // 
             // textOrg
             // 
-            this.textOrg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textOrg.Location = new System.Drawing.Point(9, 150);
-            this.textOrg.MaxLength = 35;
+            resources.ApplyResources(this.textOrg, "textOrg");
             this.textOrg.Name = "textOrg";
-            this.textOrg.Size = new System.Drawing.Size(127, 20);
-            this.textOrg.TabIndex = 38;
             // 
             // labelOrg
             // 
-            this.labelOrg.AutoSize = true;
+            resources.ApplyResources(this.labelOrg, "labelOrg");
             this.labelOrg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelOrg.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelOrg.Location = new System.Drawing.Point(10, 131);
             this.labelOrg.Name = "labelOrg";
-            this.labelOrg.Size = new System.Drawing.Size(60, 16);
-            this.labelOrg.TabIndex = 37;
-            this.labelOrg.Text = "ORG. EXP:";
             // 
             // textRg
             // 
-            this.textRg.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textRg.Location = new System.Drawing.Point(555, 108);
-            this.textRg.MaxLength = 9;
+            resources.ApplyResources(this.textRg, "textRg");
             this.textRg.Name = "textRg";
-            this.textRg.Size = new System.Drawing.Size(58, 20);
-            this.textRg.TabIndex = 36;
             // 
             // labelRg
             // 
-            this.labelRg.AutoSize = true;
+            resources.ApplyResources(this.labelRg, "labelRg");
             this.labelRg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelRg.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRg.Location = new System.Drawing.Point(552, 89);
             this.labelRg.Name = "labelRg";
-            this.labelRg.Size = new System.Drawing.Size(30, 16);
-            this.labelRg.TabIndex = 35;
-            this.labelRg.Text = "*RG:";
             // 
             // textNat
             // 
-            this.textNat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textNat.Location = new System.Drawing.Point(452, 108);
-            this.textNat.MaxLength = 30;
+            resources.ApplyResources(this.textNat, "textNat");
             this.textNat.Name = "textNat";
-            this.textNat.Size = new System.Drawing.Size(92, 20);
-            this.textNat.TabIndex = 34;
             // 
             // labelNat
             // 
-            this.labelNat.AutoSize = true;
+            resources.ApplyResources(this.labelNat, "labelNat");
             this.labelNat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNat.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNat.Location = new System.Drawing.Point(449, 89);
             this.labelNat.Name = "labelNat";
-            this.labelNat.Size = new System.Drawing.Size(95, 16);
-            this.labelNat.TabIndex = 33;
-            this.labelNat.Text = "NATURALIDADE:";
-            // 
-            // textNasc
-            // 
-            this.textNasc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textNasc.Location = new System.Drawing.Point(331, 108);
-            this.textNasc.MaxLength = 15;
-            this.textNasc.Name = "textNasc";
-            this.textNasc.Size = new System.Drawing.Size(108, 20);
-            this.textNasc.TabIndex = 32;
             // 
             // labelNasc
             // 
-            this.labelNasc.AutoSize = true;
+            resources.ApplyResources(this.labelNasc, "labelNasc");
             this.labelNasc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNasc.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNasc.Location = new System.Drawing.Point(324, 89);
             this.labelNasc.Name = "labelNasc";
-            this.labelNasc.Size = new System.Drawing.Size(122, 16);
-            this.labelNasc.TabIndex = 31;
-            this.labelNasc.Text = "*DATA NASCIMENTO:";
             // 
             // textProfissao
             // 
-            this.textProfissao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textProfissao.Location = new System.Drawing.Point(186, 108);
-            this.textProfissao.MaxLength = 30;
+            resources.ApplyResources(this.textProfissao, "textProfissao");
             this.textProfissao.Name = "textProfissao";
-            this.textProfissao.Size = new System.Drawing.Size(130, 20);
-            this.textProfissao.TabIndex = 30;
             // 
             // labelProfissao
             // 
-            this.labelProfissao.AutoSize = true;
+            resources.ApplyResources(this.labelProfissao, "labelProfissao");
             this.labelProfissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelProfissao.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProfissao.Location = new System.Drawing.Point(183, 89);
             this.labelProfissao.Name = "labelProfissao";
-            this.labelProfissao.Size = new System.Drawing.Size(71, 16);
-            this.labelProfissao.TabIndex = 29;
-            this.labelProfissao.Text = "PROFISSÃO:";
             // 
             // textEscolaridade
             // 
-            this.textEscolaridade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textEscolaridade.Location = new System.Drawing.Point(7, 108);
-            this.textEscolaridade.MaxLength = 35;
+            resources.ApplyResources(this.textEscolaridade, "textEscolaridade");
             this.textEscolaridade.Name = "textEscolaridade";
-            this.textEscolaridade.Size = new System.Drawing.Size(159, 20);
-            this.textEscolaridade.TabIndex = 28;
             this.textEscolaridade.Tag = "";
             // 
             // labelEscolaridade
             // 
-            this.labelEscolaridade.AutoSize = true;
+            resources.ApplyResources(this.labelEscolaridade, "labelEscolaridade");
             this.labelEscolaridade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEscolaridade.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEscolaridade.Location = new System.Drawing.Point(4, 89);
             this.labelEscolaridade.Name = "labelEscolaridade";
-            this.labelEscolaridade.Size = new System.Drawing.Size(92, 16);
-            this.labelEscolaridade.TabIndex = 27;
-            this.labelEscolaridade.Text = "ESCOLARIDADE:";
             // 
             // textEmail
             // 
-            this.textEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textEmail.Location = new System.Drawing.Point(452, 66);
-            this.textEmail.MaxLength = 30;
+            resources.ApplyResources(this.textEmail, "textEmail");
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(166, 20);
-            this.textEmail.TabIndex = 26;
             // 
             // labelEmail
             // 
-            this.labelEmail.AutoSize = true;
+            resources.ApplyResources(this.labelEmail, "labelEmail");
             this.labelEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(453, 47);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(49, 16);
-            this.labelEmail.TabIndex = 25;
-            this.labelEmail.Text = "E-MAIL:";
-            // 
-            // textTelefone
-            // 
-            this.textTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textTelefone.Location = new System.Drawing.Point(334, 66);
-            this.textTelefone.MaxLength = 15;
-            this.textTelefone.Name = "textTelefone";
-            this.textTelefone.Size = new System.Drawing.Size(105, 20);
-            this.textTelefone.TabIndex = 24;
             // 
             // labelTelefone
             // 
-            this.labelTelefone.AutoSize = true;
+            resources.ApplyResources(this.labelTelefone, "labelTelefone");
             this.labelTelefone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTelefone.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTelefone.Location = new System.Drawing.Point(327, 47);
             this.labelTelefone.Name = "labelTelefone";
-            this.labelTelefone.Size = new System.Drawing.Size(117, 16);
-            this.labelTelefone.TabIndex = 23;
-            this.labelTelefone.Text = "TELEFONE/CELULAR:";
             // 
             // textCep
             // 
-            this.textCep.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textCep.Location = new System.Drawing.Point(240, 66);
-            this.textCep.MaxLength = 12;
+            resources.ApplyResources(this.textCep, "textCep");
             this.textCep.Name = "textCep";
-            this.textCep.Size = new System.Drawing.Size(76, 20);
-            this.textCep.TabIndex = 22;
             // 
             // labelCep
             // 
-            this.labelCep.AutoSize = true;
+            resources.ApplyResources(this.labelCep, "labelCep");
             this.labelCep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCep.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCep.Location = new System.Drawing.Point(237, 47);
             this.labelCep.Name = "labelCep";
-            this.labelCep.Size = new System.Drawing.Size(35, 16);
-            this.labelCep.TabIndex = 21;
-            this.labelCep.Text = "*CEP:";
             // 
             // textUf
             // 
-            this.textUf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textUf.Location = new System.Drawing.Point(186, 66);
-            this.textUf.MaxLength = 5;
+            resources.ApplyResources(this.textUf, "textUf");
             this.textUf.Name = "textUf";
-            this.textUf.Size = new System.Drawing.Size(37, 20);
-            this.textUf.TabIndex = 20;
             // 
             // labelUf
             // 
-            this.labelUf.AutoSize = true;
+            resources.ApplyResources(this.labelUf, "labelUf");
             this.labelUf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUf.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUf.Location = new System.Drawing.Point(183, 47);
             this.labelUf.Name = "labelUf";
-            this.labelUf.Size = new System.Drawing.Size(24, 16);
-            this.labelUf.TabIndex = 19;
-            this.labelUf.Text = "UF:";
             // 
             // textCidade
             // 
-            this.textCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textCidade.Location = new System.Drawing.Point(7, 66);
-            this.textCidade.MaxLength = 15;
+            resources.ApplyResources(this.textCidade, "textCidade");
             this.textCidade.Name = "textCidade";
-            this.textCidade.Size = new System.Drawing.Size(159, 20);
-            this.textCidade.TabIndex = 18;
             // 
             // labelCidade
             // 
-            this.labelCidade.AutoSize = true;
+            resources.ApplyResources(this.labelCidade, "labelCidade");
             this.labelCidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCidade.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCidade.Location = new System.Drawing.Point(4, 47);
             this.labelCidade.Name = "labelCidade";
-            this.labelCidade.Size = new System.Drawing.Size(55, 16);
-            this.labelCidade.TabIndex = 17;
-            this.labelCidade.Text = "*CIDADE:";
             // 
             // textBairro
             // 
-            this.textBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBairro.Location = new System.Drawing.Point(525, 24);
-            this.textBairro.MaxLength = 15;
+            resources.ApplyResources(this.textBairro, "textBairro");
             this.textBairro.Name = "textBairro";
-            this.textBairro.Size = new System.Drawing.Size(93, 20);
-            this.textBairro.TabIndex = 16;
             // 
             // labelBairro
             // 
-            this.labelBairro.AutoSize = true;
+            resources.ApplyResources(this.labelBairro, "labelBairro");
             this.labelBairro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelBairro.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBairro.Location = new System.Drawing.Point(522, 5);
             this.labelBairro.Name = "labelBairro";
-            this.labelBairro.Size = new System.Drawing.Size(51, 16);
-            this.labelBairro.TabIndex = 15;
-            this.labelBairro.Text = "BAIRRO:";
             // 
             // textNumero
             // 
-            this.textNumero.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textNumero.Location = new System.Drawing.Point(466, 24);
-            this.textNumero.MaxLength = 6;
+            resources.ApplyResources(this.textNumero, "textNumero");
             this.textNumero.Name = "textNumero";
-            this.textNumero.Size = new System.Drawing.Size(50, 20);
-            this.textNumero.TabIndex = 14;
             // 
             // labelNumero
             // 
-            this.labelNumero.AutoSize = true;
+            resources.ApplyResources(this.labelNumero, "labelNumero");
             this.labelNumero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNumero.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumero.Location = new System.Drawing.Point(463, 5);
             this.labelNumero.Name = "labelNumero";
-            this.labelNumero.Size = new System.Drawing.Size(60, 16);
-            this.labelNumero.TabIndex = 13;
-            this.labelNumero.Text = "NÚMERO:";
             // 
             // textEndereco
             // 
-            this.textEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textEndereco.Location = new System.Drawing.Point(283, 24);
-            this.textEndereco.MaxLength = 30;
+            resources.ApplyResources(this.textEndereco, "textEndereco");
             this.textEndereco.Name = "textEndereco";
-            this.textEndereco.Size = new System.Drawing.Size(169, 20);
-            this.textEndereco.TabIndex = 12;
             // 
             // labelEndereco
             // 
-            this.labelEndereco.AutoSize = true;
+            resources.ApplyResources(this.labelEndereco, "labelEndereco");
             this.labelEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEndereco.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEndereco.Location = new System.Drawing.Point(280, 5);
             this.labelEndereco.Name = "labelEndereco";
-            this.labelEndereco.Size = new System.Drawing.Size(143, 16);
-            this.labelEndereco.TabIndex = 11;
-            this.labelEndereco.Text = "ENDEREÇO (avenida, rua):";
-            // 
-            // textSexo
-            // 
-            this.textSexo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textSexo.Location = new System.Drawing.Point(186, 24);
-            this.textSexo.MaxLength = 12;
-            this.textSexo.Name = "textSexo";
-            this.textSexo.Size = new System.Drawing.Size(81, 20);
-            this.textSexo.TabIndex = 10;
             // 
             // labelSexo
             // 
-            this.labelSexo.AutoSize = true;
+            resources.ApplyResources(this.labelSexo, "labelSexo");
             this.labelSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelSexo.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSexo.Location = new System.Drawing.Point(183, 5);
             this.labelSexo.Name = "labelSexo";
-            this.labelSexo.Size = new System.Drawing.Size(43, 16);
-            this.labelSexo.TabIndex = 9;
-            this.labelSexo.Text = "*SEXO:";
             // 
             // textNome
             // 
-            this.textNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNome.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.membrosBindingSource, "NOME", true));
-            this.textNome.Location = new System.Drawing.Point(7, 24);
-            this.textNome.MaxLength = 50;
+            resources.ApplyResources(this.textNome, "textNome");
             this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(159, 20);
-            this.textNome.TabIndex = 8;
-            this.textNome.TextChanged += new System.EventHandler(this.textNome_TextChanged_1);
             // 
             // membrosBindingSource
             // 
@@ -1157,39 +838,89 @@
             // 
             // labelNome
             // 
-            this.labelNome.AutoSize = true;
+            resources.ApplyResources(this.labelNome, "labelNome");
             this.labelNome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNome.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(4, 5);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(50, 16);
-            this.labelNome.TabIndex = 7;
-            this.labelNome.Text = "*NOME:";
             // 
             // membrosTableAdapter
             // 
             this.membrosTableAdapter.ClearBeforeFill = true;
             // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            resources.ApplyResources(this.ColumnID, "ColumnID");
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            resources.ApplyResources(this.ColumnNOME, "ColumnNOME");
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            resources.ApplyResources(this.ColumnTIPO, "ColumnTIPO");
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            resources.ApplyResources(this.ColumnCONTATO, "ColumnCONTATO");
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            resources.ApplyResources(this.ColumnCIDADE, "ColumnCIDADE");
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column6
+            // 
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
             // FormMembro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1280, 731);
             this.Controls.Add(this.formMembroInfo);
             this.Controls.Add(this.panelInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FormMembro";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CADASTRO DE MEMBROS";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMembro_FormClosing);
             this.Load += new System.EventHandler(this.FormMembro_Load);
             this.panelInfo.ResumeLayout(false);
             this.panelInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.formMembroInfo.ResumeLayout(false);
             this.formMembroInfo.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).EndInit();
             this.ResumeLayout(false);
@@ -1203,8 +934,6 @@
         private System.Windows.Forms.Label labelPesqMem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel formMembroInfo;
-        private System.Windows.Forms.TextBox textAcei;
-        private System.Windows.Forms.TextBox textTipo;
         private System.Windows.Forms.Label labelAceito;
         private System.Windows.Forms.Label labelTipo;
         private System.Windows.Forms.TextBox textTalen;
@@ -1219,27 +948,16 @@
         private System.Windows.Forms.Label labelIgrAnt;
         private System.Windows.Forms.TextBox textIgrBat;
         private System.Windows.Forms.Label labelIgrBatismo;
-        private System.Windows.Forms.TextBox textDtBat;
         private System.Windows.Forms.Label labelBatismo;
         private System.Windows.Forms.TextBox textMae;
         private System.Windows.Forms.Label labelMae;
         private System.Windows.Forms.TextBox textPai;
         private System.Windows.Forms.Label labelPai;
-        private System.Windows.Forms.TextBox textSexFilho5;
-        private System.Windows.Forms.TextBox textDtFilho5;
         private System.Windows.Forms.TextBox textFilho5;
-        private System.Windows.Forms.TextBox textSexFilho4;
-        private System.Windows.Forms.TextBox textDtFilho4;
         private System.Windows.Forms.TextBox textFilho4;
-        private System.Windows.Forms.TextBox textSexFilho3;
-        private System.Windows.Forms.TextBox textDtFilho3;
         private System.Windows.Forms.TextBox textFilho3;
-        private System.Windows.Forms.TextBox textSexFilho2;
-        private System.Windows.Forms.TextBox textDtFilho2;
         private System.Windows.Forms.TextBox textFilho2;
-        private System.Windows.Forms.TextBox textSexFilho;
         private System.Windows.Forms.Label sexFilho;
-        private System.Windows.Forms.TextBox textDtFilho;
         private System.Windows.Forms.Label DtFilho;
         private System.Windows.Forms.TextBox textFilho;
         private System.Windows.Forms.Label nomeFilho;
@@ -1247,7 +965,6 @@
         private System.Windows.Forms.Label labelTelConj;
         private System.Windows.Forms.TextBox textConj;
         private System.Windows.Forms.Label labelConj;
-        private System.Windows.Forms.TextBox textCpf;
         private System.Windows.Forms.Label labelCpf;
         private System.Windows.Forms.TextBox textDtCasamento;
         private System.Windows.Forms.Label labelDtCasamento;
@@ -1257,7 +974,6 @@
         private System.Windows.Forms.Label labelRg;
         private System.Windows.Forms.TextBox textNat;
         private System.Windows.Forms.Label labelNat;
-        private System.Windows.Forms.TextBox textNasc;
         private System.Windows.Forms.Label labelNasc;
         private System.Windows.Forms.TextBox textProfissao;
         private System.Windows.Forms.Label labelProfissao;
@@ -1265,7 +981,6 @@
         private System.Windows.Forms.Label labelEscolaridade;
         private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.TextBox textTelefone;
         private System.Windows.Forms.Label labelTelefone;
         private System.Windows.Forms.TextBox textCep;
         private System.Windows.Forms.Label labelCep;
@@ -1279,7 +994,6 @@
         private System.Windows.Forms.Label labelNumero;
         private System.Windows.Forms.TextBox textEndereco;
         private System.Windows.Forms.Label labelEndereco;
-        private System.Windows.Forms.TextBox textSexo;
         private System.Windows.Forms.Label labelSexo;
         private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.Label labelNome;
@@ -1289,6 +1003,31 @@
         private SistemaIgrejaDataSet sistemaIgrejaDataSet;
         private System.Windows.Forms.BindingSource membrosBindingSource;
         private SistemaIgrejaDataSetTableAdapters.membrosTableAdapter membrosTableAdapter;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox textSexo;
+        private System.Windows.Forms.ComboBox textAcei;
+        private System.Windows.Forms.ComboBox textTipo;
+        private System.Windows.Forms.MaskedTextBox textTelefone;
+        private System.Windows.Forms.MaskedTextBox textCpf;
+        private System.Windows.Forms.MaskedTextBox textNasc;
+        private System.Windows.Forms.MaskedTextBox textDtFilho;
+        private System.Windows.Forms.MaskedTextBox textDtBat;
+        private System.Windows.Forms.MaskedTextBox textDtFilho5;
+        private System.Windows.Forms.MaskedTextBox textDtFilho4;
+        private System.Windows.Forms.MaskedTextBox textDtFilho3;
+        private System.Windows.Forms.MaskedTextBox textDtFilho2;
+        private System.Windows.Forms.ComboBox textSexFilho2;
+        private System.Windows.Forms.ComboBox textSexFilho5;
+        private System.Windows.Forms.ComboBox textSexFilho3;
+        private System.Windows.Forms.ComboBox textSexFilho4;
+        private System.Windows.Forms.ComboBox textSexFilho;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTIPO;
