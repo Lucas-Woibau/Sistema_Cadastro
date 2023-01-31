@@ -243,8 +243,8 @@ namespace SistemaIgreja
                 MessageBox.Show("Favor preencher o campo 'TIPO'");
                 return;
             }
-            
-            if (btnSalvar.Text == "SALVAR" && Editavel == false && Adicionavel==true )
+
+            if (btnSalvar.Text == "SALVAR" && Editavel == false && Adicionavel == true)
             {
                 Membro membro = new Membro(textNome.Text.Trim(), textSexo.Text.Trim(), textEndereco.Text.Trim(), textNumero.Text.Trim(), textBairro.Text.Trim(), textCidade.Text.Trim(), textUf.Text.Trim(),
                     textCep.Text.Trim(), textTelefone.Text.Trim(), textEmail.Text.Trim(), textEscolaridade.Text.Trim(), textProfissao.Text.Trim(), textNasc.Text.Trim(), textNat.Text.Trim(), textRg.Text.Trim(),
@@ -278,7 +278,7 @@ namespace SistemaIgreja
         {
             dataGridView1.CurrentRow.Selected = true;
 
-            if(dataGridView1.CurrentCell.Selected = true == true)
+            if (dataGridView1.CurrentCell.Selected = true == true)
             {
                 Adicionavel = false;
             }

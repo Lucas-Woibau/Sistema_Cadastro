@@ -31,6 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.panelInfo = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textBoxPesqMem = new System.Windows.Forms.TextBox();
             this.labelPesqMem = new System.Windows.Forms.Label();
             this.formMembroInfo = new System.Windows.Forms.Panel();
@@ -120,12 +126,6 @@
             this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
             this.labelNome = new System.Windows.Forms.Label();
             this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.formMembroInfo.SuspendLayout();
@@ -170,12 +170,68 @@
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            this.ColumnID.HeaderText = "#";
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnID.Visible = false;
+            this.ColumnID.Width = 50;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            this.ColumnNOME.HeaderText = "NOME";
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnNOME.Width = 210;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            this.ColumnTIPO.HeaderText = "TIPO";
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnTIPO.Width = 90;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            this.ColumnCONTATO.HeaderText = "CONTATO";
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnCONTATO.Width = 110;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            this.ColumnCIDADE.HeaderText = "CIDADE";
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.ColumnCIDADE.Width = 110;
+            // 
+            // Column6
+            // 
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Column6.HeaderText = "";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
             // textBoxPesqMem
             // 
             this.textBoxPesqMem.Location = new System.Drawing.Point(93, 320);
             this.textBoxPesqMem.MaxLength = 50;
             this.textBoxPesqMem.Name = "textBoxPesqMem";
-            this.textBoxPesqMem.Size = new System.Drawing.Size(234, 20);
+            this.textBoxPesqMem.Size = new System.Drawing.Size(365, 20);
             this.textBoxPesqMem.TabIndex = 1;
             this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
             // 
@@ -1113,62 +1169,6 @@
             // membrosTableAdapter
             // 
             this.membrosTableAdapter.ClearBeforeFill = true;
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            this.ColumnID.HeaderText = "#";
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnID.Visible = false;
-            this.ColumnID.Width = 50;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            this.ColumnNOME.HeaderText = "NOME";
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnNOME.Width = 210;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            this.ColumnTIPO.HeaderText = "TIPO";
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnTIPO.Width = 90;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            this.ColumnCONTATO.HeaderText = "CONTATO";
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnCONTATO.Width = 110;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            this.ColumnCIDADE.HeaderText = "CIDADE";
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.ColumnCIDADE.Width = 110;
-            // 
-            // Column6
-            // 
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Column6.HeaderText = "";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "EXCLUIR";
-            this.Column6.UseColumnTextForButtonValue = true;
             // 
             // FormMembro
             // 
