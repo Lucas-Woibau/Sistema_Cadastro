@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
-using System.Drawing.Drawing2D;
-using System.Drawing;
 using System.Windows.Forms;
+
 
 namespace SistemaIgreja
 {
@@ -12,12 +11,18 @@ namespace SistemaIgreja
                       NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5,
                       NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGOS, TALENTOS, TIPO, ACEITO_POR;
 
+        public void ContabilizarMembro()
+        {
+            int qtdMembros = dataGridView1.RowCount;
+            textQtd.Text = qtdMembros.ToString();
+        }
+
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
             e.SuppressKeyPress = true;
         }
-
+        
         public bool Editavel = false;
         public bool Adicionavel;
         private void btnEditar_Click(object sender, EventArgs e)
@@ -109,6 +114,7 @@ namespace SistemaIgreja
             Display();
             Editavel = false;
             Adicionavel = true;
+            ContabilizarMembro();
         }
 
         public void AtualizarMembro()
@@ -201,30 +207,6 @@ namespace SistemaIgreja
                 return;
             }
 
-            if (textCep.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Favor preencher o campo 'CEP'");
-                return;
-            }
-
-            if (textNasc.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Favor preencher o campo 'DATA NASCIMENTO'");
-                return;
-            }
-
-            if (textRg.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Favor preencher o campo 'RG'");
-                return;
-            }
-
-            if (textCpf.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Favor preencher o campo 'CPF'");
-                return;
-            }
-
             if (textTipo.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Favor preencher o campo 'TIPO'");
@@ -241,7 +223,7 @@ namespace SistemaIgreja
                     textDtBat.Text.Trim(), textIgrBat.Text.Trim(), textIgrAnt.Text.Trim(), textPasBat.Text.Trim(), textCargExer.Text.Trim(), textCargIgr.Text.Trim(), textTalen.Text.Trim(), textTipo.Text.Trim(), textAcei.Text.Trim());
 
                 DbMembro.AdicionarMembro(membro);
-                Limpar();               
+                Limpar();
             }
 
             else if (btnSalvar.Text == "SALVAR" && Editavel == true)
@@ -254,15 +236,15 @@ namespace SistemaIgreja
                    textDtBat.Text.Trim(), textIgrBat.Text.Trim(), textIgrAnt.Text.Trim(), textPasBat.Text.Trim(), textCargExer.Text.Trim(), textCargIgr.Text.Trim(), textTalen.Text.Trim(), textTipo.Text.Trim(), textAcei.Text.Trim());
 
                 DbMembro.EditarMembro(membro, ID);
-                Limpar();
-                Editavel = false;                
-            }
-            
+                DesativarTextBoxes(false);
+                Editavel = false;
+            }            
             this.Display();
+            ContabilizarMembro();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {            
+        {
             dataGridView1.CurrentRow.Selected = true;
 
             if (dataGridView1.CurrentCell.Selected = true == true)
@@ -341,7 +323,6 @@ namespace SistemaIgreja
                                     textTalen.Text = (string)reader["TALENTOS"];
                                     textTipo.Text = (string)reader["TIPO"];
                                     textAcei.Text = (string)reader["ACEITO_POR"];
-
                                 }
                                 catch (Exception ex)
                                 {
@@ -361,6 +342,7 @@ namespace SistemaIgreja
                                     DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value.ToString());
                                     Limpar();
                                     Display();
+                                    ContabilizarMembro();
                                 }
                                 return;
                             }

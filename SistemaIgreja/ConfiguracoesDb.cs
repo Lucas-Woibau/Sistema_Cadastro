@@ -11,6 +11,6 @@ namespace SistemaIgreja
 {
     public class ConfiguracoesDb
     {
-        public static string stringConexao = File.ReadAllText("C:\\Users\\lucas\\Desktop\\SistemaIgrejaCompleto\\SistemaIgreja\\SistemaIgreja\\bin\\Debug\\ConnectionString.txt");
+        public static string stringConexao = File.ReadAllText("ConnectionString.txt");
     }
 }

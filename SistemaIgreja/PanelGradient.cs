@@ -77,7 +77,7 @@ namespace SistemaIgreja
             if (borderRadius > 2)
             {
                 using (GraphicsPath graphicsPath = GetPanelGradient(rectangleF, borderRadius))
-                using(Pen pen = new Pen(this.Parent.BackColor, 2))
+                using (Pen pen = new Pen(this.Parent.BackColor, 2))
                 {
                     this.Region = new Region(graphicsPath);
                     e.Graphics.DrawPath(pen, graphicsPath);
