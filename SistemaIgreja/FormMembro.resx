@@ -123,6 +123,9 @@
   <metadata name="sistemaIgrejaDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="sistemaIgrejaDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="membrosTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>365, 17</value>
   </metadata>
@@ -184,10 +187,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>645, 425</value>
+    <value>649, 425</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 301</value>
+    <value>624, 305</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -202,19 +205,22 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
+  </data>
+  <data name="textBoxPesqMem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textBoxPesqMem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>807, 383</value>
+    <value>737, 383</value>
   </data>
   <data name="textBoxPesqMem.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textBoxPesqMem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 20</value>
+    <value>345, 25</value>
   </data>
   <data name="textBoxPesqMem.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>49</value>
   </data>
   <data name="&gt;&gt;textBoxPesqMem.Name" xml:space="preserve">
     <value>textBoxPesqMem</value>
@@ -226,28 +232,28 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textBoxPesqMem.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="labelPesqMem.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="labelPesqMem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 9.75pt, style=Bold</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelPesqMem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelPesqMem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 383</value>
+    <value>646, 385</value>
   </data>
   <data name="labelPesqMem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 19</value>
+    <value>91, 20</value>
   </data>
   <data name="labelPesqMem.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="labelPesqMem.Text" xml:space="preserve">
-    <value>PESQUISAR MEMBRO:</value>
+    <value>PESQUISAR:</value>
   </data>
   <data name="&gt;&gt;labelPesqMem.Name" xml:space="preserve">
     <value>labelPesqMem</value>
@@ -259,10 +265,70 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelPesqMem.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="panelGradient1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="textTelConj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textTelConj.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
+  <data name="textTelConj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>523, 186</value>
+  </data>
+  <data name="textTelConj.Mask" xml:space="preserve">
+    <value>(99) 00000-0000</value>
+  </data>
+  <data name="textTelConj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 25</value>
+  </data>
+  <data name="textTelConj.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;textTelConj.Name" xml:space="preserve">
+    <value>textTelConj</value>
+  </data>
+  <data name="&gt;&gt;textTelConj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textTelConj.Parent" xml:space="preserve">
+    <value>panelGradient1</value>
+  </data>
+  <data name="&gt;&gt;textTelConj.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textDtCasamento.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textDtCasamento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
+  <data name="textDtCasamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>249, 186</value>
+  </data>
+  <data name="textDtCasamento.Mask" xml:space="preserve">
+    <value>00/00/0000</value>
+  </data>
+  <data name="textDtCasamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
+  <data name="textDtCasamento.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textDtCasamento.Name" xml:space="preserve">
+    <value>textDtCasamento</value>
+  </data>
+  <data name="&gt;&gt;textDtCasamento.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textDtCasamento.Parent" xml:space="preserve">
+    <value>panelGradient1</value>
+  </data>
+  <data name="&gt;&gt;textDtCasamento.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="textNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -271,7 +337,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 53</value>
+    <value>6, 51</value>
   </data>
   <data name="textNome.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -280,7 +346,7 @@
     <value>157, 25</value>
   </data>
   <data name="textNome.TabIndex" type="System.Int32, mscorlib">
-    <value>115</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;textNome.Name" xml:space="preserve">
     <value>textNome</value>
@@ -292,13 +358,16 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textNome.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
+  </data>
+  <data name="textQtd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textQtd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 322</value>
+    <value>794, 352</value>
   </data>
   <data name="textQtd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 13</value>
+    <value>30, 25</value>
   </data>
   <data name="textQtd.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -313,22 +382,22 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textQtd.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 9.75pt, style=Bold</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 300</value>
+    <value>646, 355</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 19</value>
+    <value>147, 20</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -346,22 +415,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="textCep.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textCep.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textCep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 97</value>
+    <value>230, 96</value>
   </data>
   <data name="textCep.Mask" xml:space="preserve">
     <value>00000-000</value>
   </data>
   <data name="textCep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 20</value>
+    <value>91, 25</value>
   </data>
   <data name="textCep.TabIndex" type="System.Int32, mscorlib">
-    <value>113</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;textCep.Name" xml:space="preserve">
     <value>textCep</value>
@@ -373,10 +445,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textCep.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="textSexFilho5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexFilho5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexFilho5.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -385,13 +460,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 332</value>
+    <value>516, 353</value>
   </data>
   <data name="textSexFilho5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
+    <value>96, 27</value>
   </data>
   <data name="textSexFilho5.TabIndex" type="System.Int32, mscorlib">
-    <value>112</value>
+    <value>34</value>
   </data>
   <data name="&gt;&gt;textSexFilho5.Name" xml:space="preserve">
     <value>textSexFilho5</value>
@@ -403,7 +478,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexFilho5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="labelNome.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -412,16 +487,16 @@
     <value>True</value>
   </data>
   <data name="labelNome.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Semibold, 11.75pt, style=Bold</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelNome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
+    <value>3, 30</value>
   </data>
   <data name="labelNome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 21</value>
+    <value>65, 20</value>
   </data>
   <data name="labelNome.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -439,10 +514,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelNome.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>10</value>
   </data>
   <data name="textSexFilho3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexFilho3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexFilho3.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -451,13 +529,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 294</value>
+    <value>516, 305</value>
   </data>
   <data name="textSexFilho3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
+    <value>96, 27</value>
   </data>
   <data name="textSexFilho3.TabIndex" type="System.Int32, mscorlib">
-    <value>111</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;textSexFilho3.Name" xml:space="preserve">
     <value>textSexFilho3</value>
@@ -469,7 +547,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexFilho3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>11</value>
   </data>
   <data name="labelSexo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -478,16 +556,16 @@
     <value>True</value>
   </data>
   <data name="labelSexo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelSexo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelSexo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 36</value>
+    <value>168, 30</value>
   </data>
   <data name="labelSexo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 16</value>
+    <value>56, 20</value>
   </data>
   <data name="labelSexo.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -505,10 +583,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelSexo.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>12</value>
   </data>
   <data name="textSexFilho4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexFilho4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexFilho4.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -517,13 +598,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 314</value>
+    <value>516, 329</value>
   </data>
   <data name="textSexFilho4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
+    <value>96, 27</value>
   </data>
   <data name="textSexFilho4.TabIndex" type="System.Int32, mscorlib">
-    <value>110</value>
+    <value>31</value>
   </data>
   <data name="&gt;&gt;textSexFilho4.Name" xml:space="preserve">
     <value>textSexFilho4</value>
@@ -535,7 +616,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexFilho4.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>13</value>
   </data>
   <data name="labelEndereco.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -544,22 +625,22 @@
     <value>True</value>
   </data>
   <data name="labelEndereco.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelEndereco.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelEndereco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 36</value>
+    <value>285, 30</value>
   </data>
   <data name="labelEndereco.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
+    <value>89, 20</value>
   </data>
   <data name="labelEndereco.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
   <data name="labelEndereco.Text" xml:space="preserve">
-    <value>ENDEREÇO (avenida, rua):</value>
+    <value>ENDEREÇO:</value>
   </data>
   <data name="&gt;&gt;labelEndereco.Name" xml:space="preserve">
     <value>labelEndereco</value>
@@ -571,10 +652,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelEndereco.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="textSexFilho.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexFilho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexFilho.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -583,13 +667,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 255</value>
+    <value>516, 257</value>
   </data>
   <data name="textSexFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
+    <value>96, 27</value>
   </data>
   <data name="textSexFilho.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
+    <value>22</value>
   </data>
   <data name="&gt;&gt;textSexFilho.Name" xml:space="preserve">
     <value>textSexFilho</value>
@@ -601,22 +685,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexFilho.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>15</value>
   </data>
   <data name="textEndereco.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textEndereco.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textEndereco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 55</value>
+    <value>289, 51</value>
   </data>
   <data name="textEndereco.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="textEndereco.Size" type="System.Drawing.Size, System.Drawing">
-    <value>169, 20</value>
+    <value>158, 25</value>
   </data>
   <data name="textEndereco.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;textEndereco.Name" xml:space="preserve">
     <value>textEndereco</value>
@@ -628,10 +715,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textEndereco.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>16</value>
   </data>
   <data name="textSexFilho2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexFilho2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexFilho2.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -640,13 +730,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 275</value>
+    <value>516, 281</value>
   </data>
   <data name="textSexFilho2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
+    <value>96, 27</value>
   </data>
   <data name="textSexFilho2.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
+    <value>25</value>
   </data>
   <data name="&gt;&gt;textSexFilho2.Name" xml:space="preserve">
     <value>textSexFilho2</value>
@@ -658,7 +748,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexFilho2.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>17</value>
   </data>
   <data name="labelNumero.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -667,22 +757,22 @@
     <value>True</value>
   </data>
   <data name="labelNumero.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelNumero.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelNumero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>460, 36</value>
+    <value>459, 30</value>
   </data>
   <data name="labelNumero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 16</value>
+    <value>32, 20</value>
   </data>
   <data name="labelNumero.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="labelNumero.Text" xml:space="preserve">
-    <value>NÚMERO:</value>
+    <value>Nº:</value>
   </data>
   <data name="&gt;&gt;labelNumero.Name" xml:space="preserve">
     <value>labelNumero</value>
@@ -694,22 +784,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelNumero.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>18</value>
   </data>
   <data name="textDtFilho5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtFilho5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 332</value>
+    <value>312, 353</value>
   </data>
   <data name="textDtFilho5.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtFilho5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 25</value>
   </data>
   <data name="textDtFilho5.TabIndex" type="System.Int32, mscorlib">
-    <value>107</value>
+    <value>33</value>
   </data>
   <data name="&gt;&gt;textDtFilho5.Name" xml:space="preserve">
     <value>textDtFilho5</value>
@@ -721,22 +814,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtFilho5.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>19</value>
   </data>
   <data name="textNumero.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textNumero.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textNumero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 55</value>
+    <value>463, 51</value>
   </data>
   <data name="textNumero.MaxLength" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="textNumero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 20</value>
+    <value>50, 25</value>
   </data>
   <data name="textNumero.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;textNumero.Name" xml:space="preserve">
     <value>textNumero</value>
@@ -748,22 +844,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textNumero.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>20</value>
   </data>
   <data name="textDtFilho4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtFilho4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 313</value>
+    <value>312, 329</value>
   </data>
   <data name="textDtFilho4.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtFilho4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 25</value>
   </data>
   <data name="textDtFilho4.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
+    <value>30</value>
   </data>
   <data name="&gt;&gt;textDtFilho4.Name" xml:space="preserve">
     <value>textDtFilho4</value>
@@ -775,7 +874,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtFilho4.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>21</value>
   </data>
   <data name="labelBairro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -784,16 +883,16 @@
     <value>True</value>
   </data>
   <data name="labelBairro.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelBairro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelBairro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 36</value>
+    <value>529, 30</value>
   </data>
   <data name="labelBairro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 16</value>
+    <value>65, 20</value>
   </data>
   <data name="labelBairro.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -811,22 +910,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelBairro.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>22</value>
   </data>
   <data name="textDtFilho3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtFilho3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 294</value>
+    <value>312, 305</value>
   </data>
   <data name="textDtFilho3.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtFilho3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 25</value>
   </data>
   <data name="textDtFilho3.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
+    <value>27</value>
   </data>
   <data name="&gt;&gt;textDtFilho3.Name" xml:space="preserve">
     <value>textDtFilho3</value>
@@ -838,22 +940,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtFilho3.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>23</value>
   </data>
   <data name="textBairro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textBairro.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textBairro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>522, 55</value>
+    <value>533, 51</value>
   </data>
   <data name="textBairro.MaxLength" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="textBairro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 20</value>
+    <value>93, 25</value>
   </data>
   <data name="textBairro.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;textBairro.Name" xml:space="preserve">
     <value>textBairro</value>
@@ -865,22 +970,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textBairro.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="textDtFilho2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtFilho2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 275</value>
+    <value>312, 281</value>
   </data>
   <data name="textDtFilho2.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtFilho2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 25</value>
   </data>
   <data name="textDtFilho2.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
+    <value>24</value>
   </data>
   <data name="&gt;&gt;textDtFilho2.Name" xml:space="preserve">
     <value>textDtFilho2</value>
@@ -892,7 +1000,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtFilho2.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>25</value>
   </data>
   <data name="labelCidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -901,16 +1009,16 @@
     <value>True</value>
   </data>
   <data name="labelCidade.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelCidade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 78</value>
+    <value>2, 76</value>
   </data>
   <data name="labelCidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 16</value>
+    <value>73, 20</value>
   </data>
   <data name="labelCidade.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -928,22 +1036,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelCidade.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>26</value>
   </data>
   <data name="textDtFilho.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtFilho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 256</value>
+    <value>312, 257</value>
   </data>
   <data name="textDtFilho.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 20</value>
+    <value>167, 25</value>
   </data>
   <data name="textDtFilho.TabIndex" type="System.Int32, mscorlib">
-    <value>103</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;textDtFilho.Name" xml:space="preserve">
     <value>textDtFilho</value>
@@ -955,22 +1066,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtFilho.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>27</value>
   </data>
   <data name="textCidade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textCidade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textCidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 97</value>
+    <value>6, 96</value>
   </data>
   <data name="textCidade.MaxLength" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
   <data name="textCidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 20</value>
+    <value>159, 25</value>
   </data>
   <data name="textCidade.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;textCidade.Name" xml:space="preserve">
     <value>textCidade</value>
@@ -982,22 +1096,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textCidade.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>28</value>
   </data>
   <data name="textDtBat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textDtBat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textDtBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 489</value>
+    <value>8, 489</value>
   </data>
   <data name="textDtBat.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textDtBat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 25</value>
   </data>
   <data name="textDtBat.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
+    <value>37</value>
   </data>
   <data name="&gt;&gt;textDtBat.Name" xml:space="preserve">
     <value>textDtBat</value>
@@ -1009,7 +1126,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textDtBat.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>29</value>
   </data>
   <data name="labelUf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1018,16 +1135,16 @@
     <value>True</value>
   </data>
   <data name="labelUf.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelUf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelUf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 78</value>
+    <value>180, 76</value>
   </data>
   <data name="labelUf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 16</value>
+    <value>32, 20</value>
   </data>
   <data name="labelUf.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1045,22 +1162,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelUf.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>30</value>
   </data>
   <data name="textNasc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textNasc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textNasc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 139</value>
+    <value>328, 141</value>
   </data>
   <data name="textNasc.Mask" xml:space="preserve">
     <value>00/00/0000</value>
   </data>
   <data name="textNasc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 25</value>
   </data>
   <data name="textNasc.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;textNasc.Name" xml:space="preserve">
     <value>textNasc</value>
@@ -1072,22 +1192,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textNasc.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>31</value>
   </data>
   <data name="textUf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textUf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textUf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 97</value>
+    <value>183, 96</value>
   </data>
   <data name="textUf.MaxLength" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
   <data name="textUf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
+    <value>37, 25</value>
   </data>
   <data name="textUf.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;textUf.Name" xml:space="preserve">
     <value>textUf</value>
@@ -1099,22 +1222,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textUf.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>32</value>
   </data>
   <data name="textCpf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textCpf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textCpf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 181</value>
+    <value>140, 186</value>
   </data>
   <data name="textCpf.Mask" xml:space="preserve">
     <value>000.000.000-00</value>
   </data>
   <data name="textCpf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+    <value>100, 25</value>
   </data>
   <data name="textCpf.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
+    <value>16</value>
   </data>
   <data name="&gt;&gt;textCpf.Name" xml:space="preserve">
     <value>textCpf</value>
@@ -1126,7 +1252,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textCpf.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>33</value>
   </data>
   <data name="labelCep.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1135,16 +1261,16 @@
     <value>True</value>
   </data>
   <data name="labelCep.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelCep.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 78</value>
+    <value>228, 76</value>
   </data>
   <data name="labelCep.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 16</value>
+    <value>39, 20</value>
   </data>
   <data name="labelCep.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -1162,22 +1288,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelCep.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>34</value>
   </data>
   <data name="textTelefone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textTelefone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textTelefone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 97</value>
+    <value>331, 96</value>
   </data>
   <data name="textTelefone.Mask" xml:space="preserve">
     <value>(99) 00000-0000</value>
   </data>
   <data name="textTelefone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 20</value>
+    <value>108, 25</value>
   </data>
   <data name="textTelefone.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;textTelefone.Name" xml:space="preserve">
     <value>textTelefone</value>
@@ -1189,7 +1318,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textTelefone.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>35</value>
   </data>
   <data name="labelTelefone.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1198,22 +1327,22 @@
     <value>True</value>
   </data>
   <data name="labelTelefone.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelTelefone.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelTelefone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 78</value>
+    <value>328, 76</value>
   </data>
   <data name="labelTelefone.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
+    <value>79, 20</value>
   </data>
   <data name="labelTelefone.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
   <data name="labelTelefone.Text" xml:space="preserve">
-    <value>TELEFONE/CELULAR:</value>
+    <value>CONTATO:</value>
   </data>
   <data name="&gt;&gt;labelTelefone.Name" xml:space="preserve">
     <value>labelTelefone</value>
@@ -1225,10 +1354,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelTelefone.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>36</value>
   </data>
   <data name="textAcei.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textAcei.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textAcei.Items" xml:space="preserve">
     <value>BATISMO</value>
@@ -1240,13 +1372,13 @@
     <value>ACLAMAÇÃO</value>
   </data>
   <data name="textAcei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>287, 643</value>
+    <value>320, 643</value>
   </data>
   <data name="textAcei.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 21</value>
+    <value>219, 27</value>
   </data>
   <data name="textAcei.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
+    <value>45</value>
   </data>
   <data name="&gt;&gt;textAcei.Name" xml:space="preserve">
     <value>textAcei</value>
@@ -1258,7 +1390,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textAcei.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>37</value>
   </data>
   <data name="labelEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1267,16 +1399,16 @@
     <value>True</value>
   </data>
   <data name="labelEmail.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelEmail.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>450, 78</value>
+    <value>456, 75</value>
   </data>
   <data name="labelEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 16</value>
+    <value>62, 20</value>
   </data>
   <data name="labelEmail.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
@@ -1294,10 +1426,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelEmail.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>38</value>
   </data>
   <data name="textTipo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textTipo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textTipo.Items" xml:space="preserve">
     <value>MEMBRO	</value>
@@ -1306,13 +1441,13 @@
     <value>FREQUENTADOR</value>
   </data>
   <data name="textTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 643</value>
+    <value>9, 643</value>
   </data>
   <data name="textTipo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 21</value>
+    <value>150, 27</value>
   </data>
   <data name="textTipo.TabIndex" type="System.Int32, mscorlib">
-    <value>97</value>
+    <value>44</value>
   </data>
   <data name="&gt;&gt;textTipo.Name" xml:space="preserve">
     <value>textTipo</value>
@@ -1324,22 +1459,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textTipo.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>39</value>
   </data>
   <data name="textEmail.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 97</value>
+    <value>460, 96</value>
   </data>
   <data name="textEmail.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="textEmail.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 20</value>
+    <value>166, 25</value>
   </data>
   <data name="textEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;textEmail.Name" xml:space="preserve">
     <value>textEmail</value>
@@ -1351,10 +1489,13 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textEmail.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>40</value>
   </data>
   <data name="textSexo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
+  </data>
+  <data name="textSexo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textSexo.Items" xml:space="preserve">
     <value>MASCULINO</value>
@@ -1363,13 +1504,13 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 55</value>
+    <value>171, 51</value>
   </data>
   <data name="textSexo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 21</value>
+    <value>103, 27</value>
   </data>
   <data name="textSexo.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;textSexo.Name" xml:space="preserve">
     <value>textSexo</value>
@@ -1381,7 +1522,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textSexo.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>41</value>
   </data>
   <data name="labelEscolaridade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1390,16 +1531,16 @@
     <value>True</value>
   </data>
   <data name="labelEscolaridade.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelEscolaridade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelEscolaridade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 120</value>
+    <value>3, 120</value>
   </data>
   <data name="labelEscolaridade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 16</value>
+    <value>119, 20</value>
   </data>
   <data name="labelEscolaridade.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -1417,22 +1558,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelEscolaridade.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>42</value>
   </data>
   <data name="textEscolaridade.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textEscolaridade.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textEscolaridade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 139</value>
+    <value>6, 141</value>
   </data>
   <data name="textEscolaridade.MaxLength" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="textEscolaridade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 20</value>
+    <value>159, 25</value>
   </data>
   <data name="textEscolaridade.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;textEscolaridade.Name" xml:space="preserve">
     <value>textEscolaridade</value>
@@ -1444,7 +1588,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textEscolaridade.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>43</value>
   </data>
   <data name="labelProfissao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1453,7 +1597,7 @@
     <value>True</value>
   </data>
   <data name="labelProfissao.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelProfissao.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1462,7 +1606,7 @@
     <value>180, 120</value>
   </data>
   <data name="labelProfissao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="labelProfissao.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
@@ -1480,22 +1624,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelProfissao.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>44</value>
   </data>
   <data name="textProfissao.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textProfissao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textProfissao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 139</value>
+    <value>183, 141</value>
   </data>
   <data name="textProfissao.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="textProfissao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 20</value>
+    <value>130, 25</value>
   </data>
   <data name="textProfissao.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;textProfissao.Name" xml:space="preserve">
     <value>textProfissao</value>
@@ -1507,7 +1654,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textProfissao.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>45</value>
   </data>
   <data name="labelNasc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1516,22 +1663,22 @@
     <value>True</value>
   </data>
   <data name="labelNasc.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelNasc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelNasc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 120</value>
+    <value>324, 120</value>
   </data>
   <data name="labelNasc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
+    <value>108, 20</value>
   </data>
   <data name="labelNasc.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
   </data>
   <data name="labelNasc.Text" xml:space="preserve">
-    <value>DATA NASCIMENTO:</value>
+    <value>NASCIMENTO:</value>
   </data>
   <data name="&gt;&gt;labelNasc.Name" xml:space="preserve">
     <value>labelNasc</value>
@@ -1543,7 +1690,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelNasc.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>46</value>
   </data>
   <data name="btnNovo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1555,13 +1702,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnNovo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 687</value>
+    <value>52, 687</value>
   </data>
   <data name="btnNovo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 39</value>
+    <value>150, 46</value>
   </data>
   <data name="btnNovo.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
+    <value>46</value>
   </data>
   <data name="btnNovo.Text" xml:space="preserve">
     <value>NOVO</value>
@@ -1576,7 +1723,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;btnNovo.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>47</value>
   </data>
   <data name="labelNat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1585,16 +1732,16 @@
     <value>True</value>
   </data>
   <data name="labelNat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelNat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelNat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 120</value>
+    <value>445, 120</value>
   </data>
   <data name="labelNat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 16</value>
+    <value>123, 20</value>
   </data>
   <data name="labelNat.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1612,7 +1759,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelNat.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>48</value>
   </data>
   <data name="btnSalvar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1624,13 +1771,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnSalvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 687</value>
+    <value>432, 687</value>
   </data>
   <data name="btnSalvar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 39</value>
+    <value>150, 46</value>
   </data>
   <data name="btnSalvar.TabIndex" type="System.Int32, mscorlib">
-    <value>92</value>
+    <value>48</value>
   </data>
   <data name="btnSalvar.Text" xml:space="preserve">
     <value>SALVAR</value>
@@ -1645,22 +1792,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;btnSalvar.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>49</value>
   </data>
   <data name="textNat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textNat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textNat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>449, 139</value>
+    <value>449, 141</value>
   </data>
   <data name="textNat.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="textNat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 20</value>
+    <value>101, 25</value>
   </data>
   <data name="textNat.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;textNat.Name" xml:space="preserve">
     <value>textNat</value>
@@ -1672,7 +1822,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textNat.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>50</value>
   </data>
   <data name="btnEditar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1684,13 +1834,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnEditar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>222, 687</value>
+    <value>241, 687</value>
   </data>
   <data name="btnEditar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 39</value>
+    <value>150, 46</value>
   </data>
   <data name="btnEditar.TabIndex" type="System.Int32, mscorlib">
-    <value>91</value>
+    <value>47</value>
   </data>
   <data name="btnEditar.Text" xml:space="preserve">
     <value>EDITAR</value>
@@ -1705,7 +1855,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;btnEditar.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>51</value>
   </data>
   <data name="labelRg.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1714,16 +1864,16 @@
     <value>True</value>
   </data>
   <data name="labelRg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelRg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelRg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>549, 120</value>
+    <value>567, 120</value>
   </data>
   <data name="labelRg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 16</value>
+    <value>32, 20</value>
   </data>
   <data name="labelRg.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
@@ -1741,7 +1891,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelRg.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>52</value>
   </data>
   <data name="labelAceito.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1750,22 +1900,22 @@
     <value>True</value>
   </data>
   <data name="labelAceito.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelAceito.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelAceito.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 624</value>
+    <value>322, 624</value>
   </data>
   <data name="labelAceito.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 16</value>
+    <value>95, 20</value>
   </data>
   <data name="labelAceito.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
   <data name="labelAceito.Text" xml:space="preserve">
-    <value>ACEITO POR (Batismo / Trânsferencia de Igreja / Aclamação):</value>
+    <value>ACEITO POR:</value>
   </data>
   <data name="&gt;&gt;labelAceito.Name" xml:space="preserve">
     <value>labelAceito</value>
@@ -1777,22 +1927,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelAceito.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>53</value>
   </data>
   <data name="textRg.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textRg.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textRg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>552, 139</value>
+    <value>569, 141</value>
   </data>
   <data name="textRg.MaxLength" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
   <data name="textRg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 20</value>
+    <value>58, 25</value>
   </data>
   <data name="textRg.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+    <value>14</value>
   </data>
   <data name="&gt;&gt;textRg.Name" xml:space="preserve">
     <value>textRg</value>
@@ -1804,7 +1957,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textRg.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>54</value>
   </data>
   <data name="labelTipo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1813,22 +1966,22 @@
     <value>True</value>
   </data>
   <data name="labelTipo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelTipo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 624</value>
+    <value>8, 624</value>
   </data>
   <data name="labelTipo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 16</value>
+    <value>52, 20</value>
   </data>
   <data name="labelTipo.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
   </data>
   <data name="labelTipo.Text" xml:space="preserve">
-    <value>*TIPO (Membro / Frequentador):</value>
+    <value>*TIPO:</value>
   </data>
   <data name="&gt;&gt;labelTipo.Name" xml:space="preserve">
     <value>labelTipo</value>
@@ -1840,7 +1993,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelTipo.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>55</value>
   </data>
   <data name="labelOrg.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1849,16 +2002,16 @@
     <value>True</value>
   </data>
   <data name="labelOrg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelOrg.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelOrg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 162</value>
+    <value>5, 166</value>
   </data>
   <data name="labelOrg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 16</value>
+    <value>77, 20</value>
   </data>
   <data name="labelOrg.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
@@ -1876,22 +2029,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelOrg.ZOrder" xml:space="preserve">
-    <value>54</value>
+    <value>56</value>
   </data>
   <data name="textTalen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textTalen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textTalen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 593</value>
+    <value>322, 593</value>
   </data>
   <data name="textTalen.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textTalen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 20</value>
+    <value>295, 25</value>
   </data>
   <data name="textTalen.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
+    <value>43</value>
   </data>
   <data name="&gt;&gt;textTalen.Name" xml:space="preserve">
     <value>textTalen</value>
@@ -1903,22 +2059,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textTalen.ZOrder" xml:space="preserve">
-    <value>55</value>
+    <value>57</value>
   </data>
   <data name="textOrg.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textOrg.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textOrg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 181</value>
+    <value>6, 186</value>
   </data>
   <data name="textOrg.MaxLength" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="textOrg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>127, 20</value>
+    <value>127, 25</value>
   </data>
   <data name="textOrg.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;textOrg.Name" xml:space="preserve">
     <value>textOrg</value>
@@ -1930,7 +2089,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textOrg.ZOrder" xml:space="preserve">
-    <value>56</value>
+    <value>58</value>
   </data>
   <data name="labelTalen.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1939,16 +2098,16 @@
     <value>True</value>
   </data>
   <data name="labelTalen.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelTalen.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelTalen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 574</value>
+    <value>320, 574</value>
   </data>
   <data name="labelTalen.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 16</value>
+    <value>268, 20</value>
   </data>
   <data name="labelTalen.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -1966,7 +2125,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelTalen.ZOrder" xml:space="preserve">
-    <value>57</value>
+    <value>59</value>
   </data>
   <data name="labelDtCasamento.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -1975,22 +2134,22 @@
     <value>True</value>
   </data>
   <data name="labelDtCasamento.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelDtCasamento.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelDtCasamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 162</value>
+    <value>247, 166</value>
   </data>
   <data name="labelDtCasamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 16</value>
+    <value>102, 20</value>
   </data>
   <data name="labelDtCasamento.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
   <data name="labelDtCasamento.Text" xml:space="preserve">
-    <value>DATA CASAMENTO:</value>
+    <value>CASAMENTO:</value>
   </data>
   <data name="&gt;&gt;labelDtCasamento.Name" xml:space="preserve">
     <value>labelDtCasamento</value>
@@ -2002,22 +2161,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelDtCasamento.ZOrder" xml:space="preserve">
-    <value>58</value>
+    <value>60</value>
   </data>
   <data name="textCargIgr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textCargIgr.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textCargIgr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 593</value>
+    <value>7, 593</value>
   </data>
   <data name="textCargIgr.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textCargIgr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 20</value>
+    <value>274, 25</value>
   </data>
   <data name="textCargIgr.TabIndex" type="System.Int32, mscorlib">
-    <value>76</value>
+    <value>42</value>
   </data>
   <data name="&gt;&gt;textCargIgr.Name" xml:space="preserve">
     <value>textCargIgr</value>
@@ -2029,34 +2191,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textCargIgr.ZOrder" xml:space="preserve">
-    <value>59</value>
-  </data>
-  <data name="textDtCasamento.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="textDtCasamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 181</value>
-  </data>
-  <data name="textDtCasamento.MaxLength" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="textDtCasamento.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 20</value>
-  </data>
-  <data name="textDtCasamento.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;textDtCasamento.Name" xml:space="preserve">
-    <value>textDtCasamento</value>
-  </data>
-  <data name="&gt;&gt;textDtCasamento.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textDtCasamento.Parent" xml:space="preserve">
-    <value>panelGradient1</value>
-  </data>
-  <data name="&gt;&gt;textDtCasamento.ZOrder" xml:space="preserve">
-    <value>60</value>
+    <value>61</value>
   </data>
   <data name="labelCargIgr.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2065,22 +2200,22 @@
     <value>True</value>
   </data>
   <data name="labelCargIgr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelCargIgr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCargIgr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 574</value>
+    <value>3, 574</value>
   </data>
   <data name="labelCargIgr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>283, 16</value>
+    <value>306, 20</value>
   </data>
   <data name="labelCargIgr.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
   <data name="labelCargIgr.Text" xml:space="preserve">
-    <value>DESEJA EXERCER ALGUM CARGO NA IGREJA? QUAL?</value>
+    <value>DESEJA ALGUM CARGO NA IGREJA? QUAL? </value>
   </data>
   <data name="&gt;&gt;labelCargIgr.Name" xml:space="preserve">
     <value>labelCargIgr</value>
@@ -2092,7 +2227,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelCargIgr.ZOrder" xml:space="preserve">
-    <value>61</value>
+    <value>62</value>
   </data>
   <data name="labelCpf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2101,16 +2236,16 @@
     <value>True</value>
   </data>
   <data name="labelCpf.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelCpf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCpf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 162</value>
+    <value>146, 166</value>
   </data>
   <data name="labelCpf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 16</value>
+    <value>39, 20</value>
   </data>
   <data name="labelCpf.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
@@ -2128,22 +2263,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelCpf.ZOrder" xml:space="preserve">
-    <value>62</value>
+    <value>63</value>
   </data>
   <data name="textCargExer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textCargExer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textCargExer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>313, 540</value>
+    <value>321, 540</value>
   </data>
   <data name="textCargExer.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textCargExer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>295, 20</value>
+    <value>295, 25</value>
   </data>
   <data name="textCargExer.TabIndex" type="System.Int32, mscorlib">
-    <value>74</value>
+    <value>41</value>
   </data>
   <data name="&gt;&gt;textCargExer.Name" xml:space="preserve">
     <value>textCargExer</value>
@@ -2155,7 +2293,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textCargExer.ZOrder" xml:space="preserve">
-    <value>63</value>
+    <value>64</value>
   </data>
   <data name="labelConj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2164,16 +2302,16 @@
     <value>True</value>
   </data>
   <data name="labelConj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelConj.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 162</value>
+    <value>368, 166</value>
   </data>
   <data name="labelConj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 16</value>
+    <value>91, 20</value>
   </data>
   <data name="labelConj.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -2191,7 +2329,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelConj.ZOrder" xml:space="preserve">
-    <value>64</value>
+    <value>65</value>
   </data>
   <data name="labelCargExe.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2200,16 +2338,16 @@
     <value>True</value>
   </data>
   <data name="labelCargExe.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelCargExe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelCargExe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>310, 521</value>
+    <value>319, 521</value>
   </data>
   <data name="labelCargExe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 16</value>
+    <value>151, 20</value>
   </data>
   <data name="labelCargExe.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -2227,22 +2365,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelCargExe.ZOrder" xml:space="preserve">
-    <value>65</value>
+    <value>66</value>
   </data>
   <data name="textConj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textConj.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 181</value>
+    <value>369, 186</value>
   </data>
   <data name="textConj.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
   </data>
   <data name="textConj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 20</value>
+    <value>137, 25</value>
   </data>
   <data name="textConj.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;textConj.Name" xml:space="preserve">
     <value>textConj</value>
@@ -2254,22 +2395,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textConj.ZOrder" xml:space="preserve">
-    <value>66</value>
+    <value>67</value>
   </data>
   <data name="textPasBat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textPasBat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textPasBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 540</value>
+    <value>7, 540</value>
   </data>
   <data name="textPasBat.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textPasBat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>274, 20</value>
+    <value>274, 25</value>
   </data>
   <data name="textPasBat.TabIndex" type="System.Int32, mscorlib">
-    <value>72</value>
+    <value>40</value>
   </data>
   <data name="&gt;&gt;textPasBat.Name" xml:space="preserve">
     <value>textPasBat</value>
@@ -2281,7 +2425,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;textPasBat.ZOrder" xml:space="preserve">
-    <value>67</value>
+    <value>68</value>
   </data>
   <data name="labelTelConj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2290,16 +2434,16 @@
     <value>True</value>
   </data>
   <data name="labelTelConj.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelTelConj.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelTelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>509, 162</value>
+    <value>520, 166</value>
   </data>
   <data name="labelTelConj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 16</value>
+    <value>119, 20</value>
   </data>
   <data name="labelTelConj.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -2317,7 +2461,7 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelTelConj.ZOrder" xml:space="preserve">
-    <value>68</value>
+    <value>69</value>
   </data>
   <data name="labelPasBat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
@@ -2326,16 +2470,16 @@
     <value>True</value>
   </data>
   <data name="labelPasBat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelPasBat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelPasBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 521</value>
+    <value>5, 521</value>
   </data>
   <data name="labelPasBat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>168, 16</value>
+    <value>214, 20</value>
   </data>
   <data name="labelPasBat.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -2353,49 +2497,25 @@
     <value>panelGradient1</value>
   </data>
   <data name="&gt;&gt;labelPasBat.ZOrder" xml:space="preserve">
-    <value>69</value>
-  </data>
-  <data name="textTelConj.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left</value>
-  </data>
-  <data name="textTelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 181</value>
-  </data>
-  <data name="textTelConj.MaxLength" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="textTelConj.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 20</value>
-  </data>
-  <data name="textTelConj.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;textTelConj.Name" xml:space="preserve">
-    <value>textTelConj</value>
-  </data>
-  <data name="&gt;&gt;textTelConj.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textTelConj.Parent" xml:space="preserve">
-    <value>panelGradient1</value>
-  </data>
-  <data name="&gt;&gt;textTelConj.ZOrder" xml:space="preserve">
     <value>70</value>
   </data>
   <data name="textIgrAnt.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textIgrAnt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textIgrAnt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 489</value>
+    <value>390, 489</value>
   </data>
   <data name="textIgrAnt.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textIgrAnt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
+    <value>229, 25</value>
   </data>
   <data name="textIgrAnt.TabIndex" type="System.Int32, mscorlib">
-    <value>70</value>
+    <value>39</value>
   </data>
   <data name="&gt;&gt;textIgrAnt.Name" xml:space="preserve">
     <value>textIgrAnt</value>
@@ -2416,22 +2536,22 @@
     <value>True</value>
   </data>
   <data name="nomeFilho.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="nomeFilho.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="nomeFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 237</value>
+    <value>4, 237</value>
   </data>
   <data name="nomeFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 16</value>
+    <value>103, 20</value>
   </data>
   <data name="nomeFilho.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="nomeFilho.Text" xml:space="preserve">
-    <value>NOME  FILHO(a):</value>
+    <value>NOME FILHO:</value>
   </data>
   <data name="&gt;&gt;nomeFilho.Name" xml:space="preserve">
     <value>nomeFilho</value>
@@ -2452,16 +2572,16 @@
     <value>True</value>
   </data>
   <data name="labelIgrAnt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelIgrAnt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelIgrAnt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>376, 470</value>
+    <value>388, 470</value>
   </data>
   <data name="labelIgrAnt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 16</value>
+    <value>184, 20</value>
   </data>
   <data name="labelIgrAnt.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -2484,6 +2604,9 @@
   <data name="textFilho.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textFilho.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textFilho.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 257</value>
   </data>
@@ -2491,10 +2614,10 @@
     <value>50</value>
   </data>
   <data name="textFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textFilho.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;textFilho.Name" xml:space="preserve">
     <value>textFilho</value>
@@ -2511,6 +2634,9 @@
   <data name="textIgrBat.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textIgrBat.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textIgrBat.Location" type="System.Drawing.Point, System.Drawing">
     <value>131, 489</value>
   </data>
@@ -2518,10 +2644,10 @@
     <value>50</value>
   </data>
   <data name="textIgrBat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 20</value>
+    <value>229, 25</value>
   </data>
   <data name="textIgrBat.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
+    <value>38</value>
   </data>
   <data name="&gt;&gt;textIgrBat.Name" xml:space="preserve">
     <value>textIgrBat</value>
@@ -2542,7 +2668,7 @@
     <value>True</value>
   </data>
   <data name="DtFilho.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="DtFilho.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2551,13 +2677,13 @@
     <value>308, 237</value>
   </data>
   <data name="DtFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 16</value>
+    <value>153, 20</value>
   </data>
   <data name="DtFilho.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
   <data name="DtFilho.Text" xml:space="preserve">
-    <value>DATA NASCIMENTO FILHO(a):</value>
+    <value>NASCIMENTO FILHO:</value>
   </data>
   <data name="&gt;&gt;DtFilho.Name" xml:space="preserve">
     <value>DtFilho</value>
@@ -2578,7 +2704,7 @@
     <value>True</value>
   </data>
   <data name="labelIgrBatismo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelIgrBatismo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2587,7 +2713,7 @@
     <value>128, 470</value>
   </data>
   <data name="labelIgrBatismo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 16</value>
+    <value>176, 20</value>
   </data>
   <data name="labelIgrBatismo.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -2614,22 +2740,22 @@
     <value>True</value>
   </data>
   <data name="sexFilho.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="sexFilho.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="sexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 237</value>
+    <value>513, 237</value>
   </data>
   <data name="sexFilho.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
+    <value>94, 20</value>
   </data>
   <data name="sexFilho.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
   <data name="sexFilho.Text" xml:space="preserve">
-    <value>SEXO FILHO(a):</value>
+    <value>SEXO FILHO:</value>
   </data>
   <data name="&gt;&gt;sexFilho.Name" xml:space="preserve">
     <value>sexFilho</value>
@@ -2650,22 +2776,22 @@
     <value>True</value>
   </data>
   <data name="labelBatismo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelBatismo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelBatismo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 470</value>
+    <value>6, 470</value>
   </data>
   <data name="labelBatismo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 16</value>
+    <value>76, 20</value>
   </data>
   <data name="labelBatismo.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
   </data>
   <data name="labelBatismo.Text" xml:space="preserve">
-    <value>DATA BATISMO:</value>
+    <value>BATISMO:</value>
   </data>
   <data name="&gt;&gt;labelBatismo.Name" xml:space="preserve">
     <value>labelBatismo</value>
@@ -2682,17 +2808,20 @@
   <data name="textFilho2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textFilho2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 275</value>
+    <value>7, 281</value>
   </data>
   <data name="textFilho2.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textFilho2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textFilho2.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
+    <value>23</value>
   </data>
   <data name="&gt;&gt;textFilho2.Name" xml:space="preserve">
     <value>textFilho2</value>
@@ -2709,17 +2838,20 @@
   <data name="textMae.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textMae.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>314, 408</value>
+    <value>325, 408</value>
   </data>
   <data name="textMae.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textMae.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textMae.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+    <value>36</value>
   </data>
   <data name="&gt;&gt;textMae.Name" xml:space="preserve">
     <value>textMae</value>
@@ -2736,17 +2868,20 @@
   <data name="textFilho3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textFilho3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 294</value>
+    <value>7, 305</value>
   </data>
   <data name="textFilho3.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textFilho3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textFilho3.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+    <value>26</value>
   </data>
   <data name="&gt;&gt;textFilho3.Name" xml:space="preserve">
     <value>textFilho3</value>
@@ -2767,16 +2902,16 @@
     <value>True</value>
   </data>
   <data name="labelMae.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelMae.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>311, 389</value>
+    <value>321, 389</value>
   </data>
   <data name="labelMae.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 16</value>
+    <value>94, 20</value>
   </data>
   <data name="labelMae.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -2799,17 +2934,20 @@
   <data name="textFilho4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textFilho4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 313</value>
+    <value>7, 329</value>
   </data>
   <data name="textFilho4.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textFilho4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textFilho4.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
+    <value>29</value>
   </data>
   <data name="&gt;&gt;textFilho4.Name" xml:space="preserve">
     <value>textFilho4</value>
@@ -2826,17 +2964,20 @@
   <data name="textPai.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textPai.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textPai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 408</value>
+    <value>9, 408</value>
   </data>
   <data name="textPai.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textPai.Size" type="System.Drawing.Size, System.Drawing">
-    <value>273, 20</value>
+    <value>273, 25</value>
   </data>
   <data name="textPai.TabIndex" type="System.Int32, mscorlib">
-    <value>62</value>
+    <value>35</value>
   </data>
   <data name="&gt;&gt;textPai.Name" xml:space="preserve">
     <value>textPai</value>
@@ -2853,17 +2994,20 @@
   <data name="textFilho5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="textFilho5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Semibold, 10pt, style=Bold</value>
+  </data>
   <data name="textFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 332</value>
+    <value>7, 353</value>
   </data>
   <data name="textFilho5.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
   <data name="textFilho5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 20</value>
+    <value>277, 25</value>
   </data>
   <data name="textFilho5.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
+    <value>32</value>
   </data>
   <data name="&gt;&gt;textFilho5.Name" xml:space="preserve">
     <value>textFilho5</value>
@@ -2884,16 +3028,16 @@
     <value>True</value>
   </data>
   <data name="labelPai.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft YaHei, 8.25pt</value>
+    <value>Segoe UI Semibold, 10.75pt, style=Bold</value>
   </data>
   <data name="labelPai.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="labelPai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 389</value>
+    <value>6, 389</value>
   </data>
   <data name="labelPai.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 16</value>
+    <value>84, 20</value>
   </data>
   <data name="labelPai.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -2913,32 +3057,14 @@
   <data name="&gt;&gt;labelPai.ZOrder" xml:space="preserve">
     <value>87</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 43</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 23</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>panelGradient1</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>88</value>
-  </data>
   <data name="panelGradient1.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, -15</value>
   </data>
   <data name="panelGradient1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
+  </data>
+  <data name="panelGradient1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
   </data>
   <data name="panelGradient1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1289, 768</value>
@@ -3565,9 +3691,6 @@
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>CADASTRO DE MEMBROS</value>
   </data>
   <data name="&gt;&gt;membrosBindingSource.Name" xml:space="preserve">
     <value>membrosBindingSource</value>
