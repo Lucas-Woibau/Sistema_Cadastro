@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelVers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>703, 299</value>
+    <value>699, 303</value>
   </data>
   <data name="labelVers.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -559,7 +559,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 361</value>
+    <value>521, 361</value>
   </data>
   <data name="textSexFilho5.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -628,7 +628,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 313</value>
+    <value>521, 313</value>
   </data>
   <data name="textSexFilho3.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -697,7 +697,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 337</value>
+    <value>521, 337</value>
   </data>
   <data name="textSexFilho4.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -766,7 +766,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 265</value>
+    <value>521, 265</value>
   </data>
   <data name="textSexFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -829,7 +829,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 289</value>
+    <value>521, 289</value>
   </data>
   <data name="textSexFilho2.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -892,7 +892,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 361</value>
+    <value>319, 361</value>
   </data>
   <data name="textDtFilho5.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -952,7 +952,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 337</value>
+    <value>319, 337</value>
   </data>
   <data name="textDtFilho4.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1018,7 +1018,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 313</value>
+    <value>319, 313</value>
   </data>
   <data name="textDtFilho3.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1078,7 +1078,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 289</value>
+    <value>319, 289</value>
   </data>
   <data name="textDtFilho2.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1144,7 +1144,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 265</value>
+    <value>319, 265</value>
   </data>
   <data name="textDtFilho.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -2773,7 +2773,7 @@
     <value>NoControl</value>
   </data>
   <data name="DtFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>308, 244</value>
+    <value>315, 244</value>
   </data>
   <data name="DtFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 20</value>
@@ -2845,7 +2845,7 @@
     <value>NoControl</value>
   </data>
   <data name="sexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>513, 244</value>
+    <value>518, 244</value>
   </data>
   <data name="sexFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -2941,7 +2941,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>325, 416</value>
+    <value>321, 416</value>
   </data>
   <data name="textMae.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3007,7 +3007,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 396</value>
+    <value>317, 396</value>
   </data>
   <data name="labelMae.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -3155,6 +3155,9 @@
   </data>
   <data name="&gt;&gt;labelPai.ZOrder" xml:space="preserve">
     <value>90</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>751, -19</value>
