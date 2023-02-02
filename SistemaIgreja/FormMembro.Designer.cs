@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMembro));
-            this.membrosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sistemaIgrejaDataSet = new SistemaIgreja.SistemaIgrejaDataSet();
-            this.membrosTableAdapter = new SistemaIgreja.SistemaIgrejaDataSetTableAdapters.membrosTableAdapter();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.panelGradient1 = new SistemaIgreja.PanelGradient();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelQtd = new System.Windows.Forms.Label();
+            this.textBoxPesqMem = new System.Windows.Forms.TextBox();
+            this.textTelConj = new System.Windows.Forms.MaskedTextBox();
+            this.textDtCasamento = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,19 +51,19 @@
             this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.textBoxPesqMem = new System.Windows.Forms.TextBox();
-            this.labelPesqMem = new System.Windows.Forms.Label();
-            this.panelGradient1 = new SistemaIgreja.PanelGradient();
-            this.textTelConj = new System.Windows.Forms.MaskedTextBox();
-            this.textDtCasamento = new System.Windows.Forms.MaskedTextBox();
             this.textNome = new System.Windows.Forms.TextBox();
-            this.textQtd = new System.Windows.Forms.TextBox();
+            this.labelPesqMem = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textCep = new System.Windows.Forms.MaskedTextBox();
+            this.textSexFilho5 = new System.Windows.Forms.ComboBox();
             this.labelNome = new System.Windows.Forms.Label();
+            this.textSexFilho3 = new System.Windows.Forms.ComboBox();
             this.labelSexo = new System.Windows.Forms.Label();
+            this.textSexFilho4 = new System.Windows.Forms.ComboBox();
             this.labelEndereco = new System.Windows.Forms.Label();
+            this.textSexFilho = new System.Windows.Forms.ComboBox();
             this.textEndereco = new System.Windows.Forms.TextBox();
+            this.textSexFilho2 = new System.Windows.Forms.ComboBox();
             this.labelNumero = new System.Windows.Forms.Label();
             this.textDtFilho5 = new System.Windows.Forms.MaskedTextBox();
             this.textNumero = new System.Windows.Forms.TextBox();
@@ -72,8 +83,11 @@
             this.labelCep = new System.Windows.Forms.Label();
             this.textTelefone = new System.Windows.Forms.MaskedTextBox();
             this.labelTelefone = new System.Windows.Forms.Label();
+            this.textAcei = new System.Windows.Forms.ComboBox();
             this.labelEmail = new System.Windows.Forms.Label();
+            this.textTipo = new System.Windows.Forms.ComboBox();
             this.textEmail = new System.Windows.Forms.TextBox();
+            this.textSexo = new System.Windows.Forms.ComboBox();
             this.labelEscolaridade = new System.Windows.Forms.Label();
             this.textEscolaridade = new System.Windows.Forms.TextBox();
             this.labelProfissao = new System.Windows.Forms.Label();
@@ -120,120 +134,12 @@
             this.textPai = new System.Windows.Forms.TextBox();
             this.textFilho5 = new System.Windows.Forms.TextBox();
             this.labelPai = new System.Windows.Forms.Label();
-            this.textSexFilho = new System.Windows.Forms.ComboBox();
-            this.textSexFilho2 = new System.Windows.Forms.ComboBox();
-            this.textSexFilho4 = new System.Windows.Forms.ComboBox();
-            this.textSexFilho3 = new System.Windows.Forms.ComboBox();
-            this.textSexFilho5 = new System.Windows.Forms.ComboBox();
-            this.textSexo = new System.Windows.Forms.ComboBox();
-            this.textTipo = new System.Windows.Forms.ComboBox();
-            this.textAcei = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelVers = new System.Windows.Forms.Label();
             this.panelGradient1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // membrosBindingSource
-            // 
-            this.membrosBindingSource.DataMember = "membros";
-            this.membrosBindingSource.DataSource = this.sistemaIgrejaDataSet;
-            // 
-            // sistemaIgrejaDataSet
-            // 
-            this.sistemaIgrejaDataSet.DataSetName = "SistemaIgrejaDataSet";
-            this.sistemaIgrejaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // membrosTableAdapter
-            // 
-            this.membrosTableAdapter.ClearBeforeFill = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnID,
-            this.ColumnNOME,
-            this.ColumnTIPO,
-            this.ColumnCONTATO,
-            this.ColumnCIDADE,
-            this.Column6});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            resources.ApplyResources(this.ColumnID, "ColumnID");
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            resources.ApplyResources(this.ColumnNOME, "ColumnNOME");
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            resources.ApplyResources(this.ColumnTIPO, "ColumnTIPO");
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            resources.ApplyResources(this.ColumnCONTATO, "ColumnCONTATO");
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            resources.ApplyResources(this.ColumnCIDADE, "ColumnCIDADE");
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column6
-            // 
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "EXCLUIR";
-            this.Column6.UseColumnTextForButtonValue = true;
-            // 
-            // textBoxPesqMem
-            // 
-            this.textBoxPesqMem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.textBoxPesqMem, "textBoxPesqMem");
-            this.textBoxPesqMem.Name = "textBoxPesqMem";
-            this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
-            // 
-            // labelPesqMem
-            // 
-            resources.ApplyResources(this.labelPesqMem, "labelPesqMem");
-            this.labelPesqMem.BackColor = System.Drawing.Color.Transparent;
-            this.labelPesqMem.ForeColor = System.Drawing.Color.White;
-            this.labelPesqMem.Name = "labelPesqMem";
             // 
             // panelGradient1
             // 
@@ -241,13 +147,16 @@
             resources.ApplyResources(this.panelGradient1, "panelGradient1");
             this.panelGradient1.BorderRadius = 0;
             this.panelGradient1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelGradient1.Controls.Add(this.labelVers);
+            this.panelGradient1.Controls.Add(this.label2);
+            this.panelGradient1.Controls.Add(this.label1);
+            this.panelGradient1.Controls.Add(this.labelQtd);
+            this.panelGradient1.Controls.Add(this.textBoxPesqMem);
             this.panelGradient1.Controls.Add(this.textTelConj);
             this.panelGradient1.Controls.Add(this.textDtCasamento);
             this.panelGradient1.Controls.Add(this.dataGridView1);
-            this.panelGradient1.Controls.Add(this.textBoxPesqMem);
             this.panelGradient1.Controls.Add(this.textNome);
             this.panelGradient1.Controls.Add(this.labelPesqMem);
-            this.panelGradient1.Controls.Add(this.textQtd);
             this.panelGradient1.Controls.Add(this.label5);
             this.panelGradient1.Controls.Add(this.textCep);
             this.panelGradient1.Controls.Add(this.textSexFilho5);
@@ -329,11 +238,41 @@
             this.panelGradient1.Controls.Add(this.textPai);
             this.panelGradient1.Controls.Add(this.textFilho5);
             this.panelGradient1.Controls.Add(this.labelPai);
+            this.panelGradient1.Controls.Add(this.pictureBox1);
             this.panelGradient1.ForeColor = System.Drawing.Color.Black;
-            this.panelGradient1.GradientAngle = 180F;
-            this.panelGradient1.GradientBottomColor = System.Drawing.Color.Chocolate;
-            this.panelGradient1.GradientTopColor = System.Drawing.Color.PaleGoldenrod;
+            this.panelGradient1.GradientAngle = 270F;
+            this.panelGradient1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(91)))), ((int)(((byte)(206)))), ((int)(((byte)(191)))));
+            this.panelGradient1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(107)))), ((int)(((byte)(10)))));
             this.panelGradient1.Name = "panelGradient1";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::SistemaIgreja.Properties.Resources.ICONE;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Name = "label1";
+            // 
+            // labelQtd
+            // 
+            resources.ApplyResources(this.labelQtd, "labelQtd");
+            this.labelQtd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelQtd.Name = "labelQtd";
+            // 
+            // textBoxPesqMem
+            // 
+            this.textBoxPesqMem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.textBoxPesqMem, "textBoxPesqMem");
+            this.textBoxPesqMem.Name = "textBoxPesqMem";
+            this.textBoxPesqMem.TextChanged += new System.EventHandler(this.textBoxPesqMem_TextChanged);
             // 
             // textTelConj
             // 
@@ -349,19 +288,142 @@
             this.textDtCasamento.Name = "textDtCasamento";
             this.textDtCasamento.ValidatingType = typeof(System.DateTime);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnID,
+            this.ColumnNOME,
+            this.ColumnTIPO,
+            this.ColumnCONTATO,
+            this.ColumnCIDADE,
+            this.Column6});
+            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.ShowCellToolTips = false;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.ColumnID.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.ColumnID, "ColumnID");
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnNOME.DefaultCellStyle = dataGridViewCellStyle3;
+            resources.ApplyResources(this.ColumnNOME, "ColumnNOME");
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnTIPO.DefaultCellStyle = dataGridViewCellStyle4;
+            resources.ApplyResources(this.ColumnTIPO, "ColumnTIPO");
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnCONTATO.DefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.ColumnCONTATO, "ColumnCONTATO");
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnCIDADE.DefaultCellStyle = dataGridViewCellStyle6;
+            resources.ApplyResources(this.ColumnCIDADE, "ColumnCIDADE");
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
             // textNome
             // 
             resources.ApplyResources(this.textNome, "textNome");
             this.textNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textNome.Name = "textNome";
             // 
-            // textQtd
+            // labelPesqMem
             // 
-            this.textQtd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textQtd.Cursor = System.Windows.Forms.Cursors.No;
-            resources.ApplyResources(this.textQtd, "textQtd");
-            this.textQtd.Name = "textQtd";
-            this.textQtd.ReadOnly = true;
+            resources.ApplyResources(this.labelPesqMem, "labelPesqMem");
+            this.labelPesqMem.BackColor = System.Drawing.Color.Transparent;
+            this.labelPesqMem.ForeColor = System.Drawing.Color.White;
+            this.labelPesqMem.Name = "labelPesqMem";
             // 
             // label5
             // 
@@ -377,29 +439,65 @@
             this.textCep.Name = "textCep";
             this.textCep.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
             // 
+            // textSexFilho5
+            // 
+            resources.ApplyResources(this.textSexFilho5, "textSexFilho5");
+            this.textSexFilho5.FormattingEnabled = true;
+            this.textSexFilho5.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho5.Items"),
+            resources.GetString("textSexFilho5.Items1")});
+            this.textSexFilho5.Name = "textSexFilho5";
+            // 
             // labelNome
             // 
             resources.ApplyResources(this.labelNome, "labelNome");
             this.labelNome.BackColor = System.Drawing.Color.Transparent;
             this.labelNome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNome.ForeColor = System.Drawing.Color.White;
+            this.labelNome.ForeColor = System.Drawing.Color.Black;
             this.labelNome.Name = "labelNome";
+            // 
+            // textSexFilho3
+            // 
+            resources.ApplyResources(this.textSexFilho3, "textSexFilho3");
+            this.textSexFilho3.FormattingEnabled = true;
+            this.textSexFilho3.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho3.Items"),
+            resources.GetString("textSexFilho3.Items1")});
+            this.textSexFilho3.Name = "textSexFilho3";
             // 
             // labelSexo
             // 
             resources.ApplyResources(this.labelSexo, "labelSexo");
             this.labelSexo.BackColor = System.Drawing.Color.Transparent;
             this.labelSexo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelSexo.ForeColor = System.Drawing.Color.White;
+            this.labelSexo.ForeColor = System.Drawing.Color.Black;
             this.labelSexo.Name = "labelSexo";
+            // 
+            // textSexFilho4
+            // 
+            resources.ApplyResources(this.textSexFilho4, "textSexFilho4");
+            this.textSexFilho4.FormattingEnabled = true;
+            this.textSexFilho4.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho4.Items"),
+            resources.GetString("textSexFilho4.Items1")});
+            this.textSexFilho4.Name = "textSexFilho4";
             // 
             // labelEndereco
             // 
             resources.ApplyResources(this.labelEndereco, "labelEndereco");
             this.labelEndereco.BackColor = System.Drawing.Color.Transparent;
             this.labelEndereco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEndereco.ForeColor = System.Drawing.Color.White;
+            this.labelEndereco.ForeColor = System.Drawing.Color.Black;
             this.labelEndereco.Name = "labelEndereco";
+            // 
+            // textSexFilho
+            // 
+            resources.ApplyResources(this.textSexFilho, "textSexFilho");
+            this.textSexFilho.FormattingEnabled = true;
+            this.textSexFilho.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho.Items"),
+            resources.GetString("textSexFilho.Items1")});
+            this.textSexFilho.Name = "textSexFilho";
             // 
             // textEndereco
             // 
@@ -407,12 +505,21 @@
             this.textEndereco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textEndereco.Name = "textEndereco";
             // 
+            // textSexFilho2
+            // 
+            resources.ApplyResources(this.textSexFilho2, "textSexFilho2");
+            this.textSexFilho2.FormattingEnabled = true;
+            this.textSexFilho2.Items.AddRange(new object[] {
+            resources.GetString("textSexFilho2.Items"),
+            resources.GetString("textSexFilho2.Items1")});
+            this.textSexFilho2.Name = "textSexFilho2";
+            // 
             // labelNumero
             // 
             resources.ApplyResources(this.labelNumero, "labelNumero");
             this.labelNumero.BackColor = System.Drawing.Color.Transparent;
             this.labelNumero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNumero.ForeColor = System.Drawing.Color.White;
+            this.labelNumero.ForeColor = System.Drawing.Color.Black;
             this.labelNumero.Name = "labelNumero";
             // 
             // textDtFilho5
@@ -440,7 +547,7 @@
             resources.ApplyResources(this.labelBairro, "labelBairro");
             this.labelBairro.BackColor = System.Drawing.Color.Transparent;
             this.labelBairro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelBairro.ForeColor = System.Drawing.Color.White;
+            this.labelBairro.ForeColor = System.Drawing.Color.Black;
             this.labelBairro.Name = "labelBairro";
             // 
             // textDtFilho3
@@ -468,7 +575,7 @@
             resources.ApplyResources(this.labelCidade, "labelCidade");
             this.labelCidade.BackColor = System.Drawing.Color.Transparent;
             this.labelCidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCidade.ForeColor = System.Drawing.Color.White;
+            this.labelCidade.ForeColor = System.Drawing.Color.Black;
             this.labelCidade.Name = "labelCidade";
             // 
             // textDtFilho
@@ -496,7 +603,7 @@
             resources.ApplyResources(this.labelUf, "labelUf");
             this.labelUf.BackColor = System.Drawing.Color.Transparent;
             this.labelUf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelUf.ForeColor = System.Drawing.Color.White;
+            this.labelUf.ForeColor = System.Drawing.Color.Black;
             this.labelUf.Name = "labelUf";
             // 
             // textNasc
@@ -523,7 +630,7 @@
             resources.ApplyResources(this.labelCep, "labelCep");
             this.labelCep.BackColor = System.Drawing.Color.Transparent;
             this.labelCep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCep.ForeColor = System.Drawing.Color.White;
+            this.labelCep.ForeColor = System.Drawing.Color.Black;
             this.labelCep.Name = "labelCep";
             // 
             // textTelefone
@@ -538,16 +645,36 @@
             resources.ApplyResources(this.labelTelefone, "labelTelefone");
             this.labelTelefone.BackColor = System.Drawing.Color.Transparent;
             this.labelTelefone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTelefone.ForeColor = System.Drawing.Color.White;
+            this.labelTelefone.ForeColor = System.Drawing.Color.Black;
             this.labelTelefone.Name = "labelTelefone";
+            // 
+            // textAcei
+            // 
+            resources.ApplyResources(this.textAcei, "textAcei");
+            this.textAcei.BackColor = System.Drawing.Color.White;
+            this.textAcei.FormattingEnabled = true;
+            this.textAcei.Items.AddRange(new object[] {
+            resources.GetString("textAcei.Items"),
+            resources.GetString("textAcei.Items1"),
+            resources.GetString("textAcei.Items2")});
+            this.textAcei.Name = "textAcei";
             // 
             // labelEmail
             // 
             resources.ApplyResources(this.labelEmail, "labelEmail");
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEmail.ForeColor = System.Drawing.Color.White;
+            this.labelEmail.ForeColor = System.Drawing.Color.Black;
             this.labelEmail.Name = "labelEmail";
+            // 
+            // textTipo
+            // 
+            resources.ApplyResources(this.textTipo, "textTipo");
+            this.textTipo.FormattingEnabled = true;
+            this.textTipo.Items.AddRange(new object[] {
+            resources.GetString("textTipo.Items"),
+            resources.GetString("textTipo.Items1")});
+            this.textTipo.Name = "textTipo";
             // 
             // textEmail
             // 
@@ -555,12 +682,21 @@
             this.textEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textEmail.Name = "textEmail";
             // 
+            // textSexo
+            // 
+            resources.ApplyResources(this.textSexo, "textSexo");
+            this.textSexo.FormattingEnabled = true;
+            this.textSexo.Items.AddRange(new object[] {
+            resources.GetString("textSexo.Items"),
+            resources.GetString("textSexo.Items1")});
+            this.textSexo.Name = "textSexo";
+            // 
             // labelEscolaridade
             // 
             resources.ApplyResources(this.labelEscolaridade, "labelEscolaridade");
             this.labelEscolaridade.BackColor = System.Drawing.Color.Transparent;
             this.labelEscolaridade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelEscolaridade.ForeColor = System.Drawing.Color.White;
+            this.labelEscolaridade.ForeColor = System.Drawing.Color.Black;
             this.labelEscolaridade.Name = "labelEscolaridade";
             // 
             // textEscolaridade
@@ -575,7 +711,7 @@
             resources.ApplyResources(this.labelProfissao, "labelProfissao");
             this.labelProfissao.BackColor = System.Drawing.Color.Transparent;
             this.labelProfissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelProfissao.ForeColor = System.Drawing.Color.White;
+            this.labelProfissao.ForeColor = System.Drawing.Color.Black;
             this.labelProfissao.Name = "labelProfissao";
             // 
             // textProfissao
@@ -589,14 +725,15 @@
             resources.ApplyResources(this.labelNasc, "labelNasc");
             this.labelNasc.BackColor = System.Drawing.Color.Transparent;
             this.labelNasc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNasc.ForeColor = System.Drawing.Color.White;
+            this.labelNasc.ForeColor = System.Drawing.Color.Black;
             this.labelNasc.Name = "labelNasc";
             // 
             // btnNovo
             // 
             resources.ApplyResources(this.btnNovo, "btnNovo");
-            this.btnNovo.BackColor = System.Drawing.Color.Transparent;
+            this.btnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNovo.ForeColor = System.Drawing.Color.Black;
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.UseVisualStyleBackColor = false;
             this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
@@ -606,13 +743,13 @@
             resources.ApplyResources(this.labelNat, "labelNat");
             this.labelNat.BackColor = System.Drawing.Color.Transparent;
             this.labelNat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelNat.ForeColor = System.Drawing.Color.White;
+            this.labelNat.ForeColor = System.Drawing.Color.Black;
             this.labelNat.Name = "labelNat";
             // 
             // btnSalvar
             // 
             resources.ApplyResources(this.btnSalvar, "btnSalvar");
-            this.btnSalvar.BackColor = System.Drawing.Color.Transparent;
+            this.btnSalvar.BackColor = System.Drawing.Color.PaleGreen;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.ForeColor = System.Drawing.Color.Black;
             this.btnSalvar.Name = "btnSalvar";
@@ -628,7 +765,7 @@
             // btnEditar
             // 
             resources.ApplyResources(this.btnEditar, "btnEditar");
-            this.btnEditar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -639,7 +776,7 @@
             resources.ApplyResources(this.labelRg, "labelRg");
             this.labelRg.BackColor = System.Drawing.Color.Transparent;
             this.labelRg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelRg.ForeColor = System.Drawing.Color.White;
+            this.labelRg.ForeColor = System.Drawing.Color.Black;
             this.labelRg.Name = "labelRg";
             // 
             // labelAceito
@@ -647,7 +784,7 @@
             resources.ApplyResources(this.labelAceito, "labelAceito");
             this.labelAceito.BackColor = System.Drawing.Color.Transparent;
             this.labelAceito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelAceito.ForeColor = System.Drawing.Color.White;
+            this.labelAceito.ForeColor = System.Drawing.Color.Black;
             this.labelAceito.Name = "labelAceito";
             // 
             // textRg
@@ -661,7 +798,7 @@
             resources.ApplyResources(this.labelTipo, "labelTipo");
             this.labelTipo.BackColor = System.Drawing.Color.Transparent;
             this.labelTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTipo.ForeColor = System.Drawing.Color.White;
+            this.labelTipo.ForeColor = System.Drawing.Color.Black;
             this.labelTipo.Name = "labelTipo";
             // 
             // labelOrg
@@ -669,7 +806,7 @@
             resources.ApplyResources(this.labelOrg, "labelOrg");
             this.labelOrg.BackColor = System.Drawing.Color.Transparent;
             this.labelOrg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelOrg.ForeColor = System.Drawing.Color.White;
+            this.labelOrg.ForeColor = System.Drawing.Color.Black;
             this.labelOrg.Name = "labelOrg";
             // 
             // textTalen
@@ -689,7 +826,7 @@
             resources.ApplyResources(this.labelTalen, "labelTalen");
             this.labelTalen.BackColor = System.Drawing.Color.Transparent;
             this.labelTalen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTalen.ForeColor = System.Drawing.Color.White;
+            this.labelTalen.ForeColor = System.Drawing.Color.Black;
             this.labelTalen.Name = "labelTalen";
             // 
             // labelDtCasamento
@@ -697,7 +834,7 @@
             resources.ApplyResources(this.labelDtCasamento, "labelDtCasamento");
             this.labelDtCasamento.BackColor = System.Drawing.Color.Transparent;
             this.labelDtCasamento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelDtCasamento.ForeColor = System.Drawing.Color.White;
+            this.labelDtCasamento.ForeColor = System.Drawing.Color.Black;
             this.labelDtCasamento.Name = "labelDtCasamento";
             // 
             // textCargIgr
@@ -711,7 +848,7 @@
             resources.ApplyResources(this.labelCargIgr, "labelCargIgr");
             this.labelCargIgr.BackColor = System.Drawing.Color.Transparent;
             this.labelCargIgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCargIgr.ForeColor = System.Drawing.Color.White;
+            this.labelCargIgr.ForeColor = System.Drawing.Color.Black;
             this.labelCargIgr.Name = "labelCargIgr";
             // 
             // labelCpf
@@ -719,7 +856,7 @@
             resources.ApplyResources(this.labelCpf, "labelCpf");
             this.labelCpf.BackColor = System.Drawing.Color.Transparent;
             this.labelCpf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCpf.ForeColor = System.Drawing.Color.White;
+            this.labelCpf.ForeColor = System.Drawing.Color.Black;
             this.labelCpf.Name = "labelCpf";
             // 
             // textCargExer
@@ -733,7 +870,7 @@
             resources.ApplyResources(this.labelConj, "labelConj");
             this.labelConj.BackColor = System.Drawing.Color.Transparent;
             this.labelConj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelConj.ForeColor = System.Drawing.Color.White;
+            this.labelConj.ForeColor = System.Drawing.Color.Black;
             this.labelConj.Name = "labelConj";
             // 
             // labelCargExe
@@ -741,7 +878,7 @@
             resources.ApplyResources(this.labelCargExe, "labelCargExe");
             this.labelCargExe.BackColor = System.Drawing.Color.Transparent;
             this.labelCargExe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelCargExe.ForeColor = System.Drawing.Color.White;
+            this.labelCargExe.ForeColor = System.Drawing.Color.Black;
             this.labelCargExe.Name = "labelCargExe";
             // 
             // textConj
@@ -761,7 +898,7 @@
             resources.ApplyResources(this.labelTelConj, "labelTelConj");
             this.labelTelConj.BackColor = System.Drawing.Color.Transparent;
             this.labelTelConj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelTelConj.ForeColor = System.Drawing.Color.White;
+            this.labelTelConj.ForeColor = System.Drawing.Color.Black;
             this.labelTelConj.Name = "labelTelConj";
             // 
             // labelPasBat
@@ -769,7 +906,7 @@
             resources.ApplyResources(this.labelPasBat, "labelPasBat");
             this.labelPasBat.BackColor = System.Drawing.Color.Transparent;
             this.labelPasBat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelPasBat.ForeColor = System.Drawing.Color.White;
+            this.labelPasBat.ForeColor = System.Drawing.Color.Black;
             this.labelPasBat.Name = "labelPasBat";
             // 
             // textIgrAnt
@@ -783,7 +920,7 @@
             resources.ApplyResources(this.nomeFilho, "nomeFilho");
             this.nomeFilho.BackColor = System.Drawing.Color.Transparent;
             this.nomeFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.nomeFilho.ForeColor = System.Drawing.Color.White;
+            this.nomeFilho.ForeColor = System.Drawing.Color.Black;
             this.nomeFilho.Name = "nomeFilho";
             // 
             // labelIgrAnt
@@ -791,7 +928,7 @@
             resources.ApplyResources(this.labelIgrAnt, "labelIgrAnt");
             this.labelIgrAnt.BackColor = System.Drawing.Color.Transparent;
             this.labelIgrAnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelIgrAnt.ForeColor = System.Drawing.Color.White;
+            this.labelIgrAnt.ForeColor = System.Drawing.Color.Black;
             this.labelIgrAnt.Name = "labelIgrAnt";
             // 
             // textFilho
@@ -811,7 +948,7 @@
             resources.ApplyResources(this.DtFilho, "DtFilho");
             this.DtFilho.BackColor = System.Drawing.Color.Transparent;
             this.DtFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DtFilho.ForeColor = System.Drawing.Color.White;
+            this.DtFilho.ForeColor = System.Drawing.Color.Black;
             this.DtFilho.Name = "DtFilho";
             // 
             // labelIgrBatismo
@@ -819,7 +956,7 @@
             resources.ApplyResources(this.labelIgrBatismo, "labelIgrBatismo");
             this.labelIgrBatismo.BackColor = System.Drawing.Color.Transparent;
             this.labelIgrBatismo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelIgrBatismo.ForeColor = System.Drawing.Color.White;
+            this.labelIgrBatismo.ForeColor = System.Drawing.Color.Black;
             this.labelIgrBatismo.Name = "labelIgrBatismo";
             // 
             // sexFilho
@@ -827,7 +964,7 @@
             resources.ApplyResources(this.sexFilho, "sexFilho");
             this.sexFilho.BackColor = System.Drawing.Color.Transparent;
             this.sexFilho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sexFilho.ForeColor = System.Drawing.Color.White;
+            this.sexFilho.ForeColor = System.Drawing.Color.Black;
             this.sexFilho.Name = "sexFilho";
             // 
             // labelBatismo
@@ -835,7 +972,7 @@
             resources.ApplyResources(this.labelBatismo, "labelBatismo");
             this.labelBatismo.BackColor = System.Drawing.Color.Transparent;
             this.labelBatismo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelBatismo.ForeColor = System.Drawing.Color.White;
+            this.labelBatismo.ForeColor = System.Drawing.Color.Black;
             this.labelBatismo.Name = "labelBatismo";
             // 
             // textFilho2
@@ -861,7 +998,7 @@
             resources.ApplyResources(this.labelMae, "labelMae");
             this.labelMae.BackColor = System.Drawing.Color.Transparent;
             this.labelMae.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelMae.ForeColor = System.Drawing.Color.White;
+            this.labelMae.ForeColor = System.Drawing.Color.Black;
             this.labelMae.Name = "labelMae";
             // 
             // textFilho4
@@ -887,82 +1024,22 @@
             resources.ApplyResources(this.labelPai, "labelPai");
             this.labelPai.BackColor = System.Drawing.Color.Transparent;
             this.labelPai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.labelPai.ForeColor = System.Drawing.Color.White;
+            this.labelPai.ForeColor = System.Drawing.Color.Black;
             this.labelPai.Name = "labelPai";
             // 
-            // textSexFilho
+            // label2
             // 
-            resources.ApplyResources(this.textSexFilho, "textSexFilho");
-            this.textSexFilho.FormattingEnabled = true;
-            this.textSexFilho.Items.AddRange(new object[] {
-            resources.GetString("textSexFilho.Items"),
-            resources.GetString("textSexFilho.Items1")});
-            this.textSexFilho.Name = "textSexFilho";
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
             // 
-            // textSexFilho2
+            // labelVers
             // 
-            resources.ApplyResources(this.textSexFilho2, "textSexFilho2");
-            this.textSexFilho2.FormattingEnabled = true;
-            this.textSexFilho2.Items.AddRange(new object[] {
-            resources.GetString("textSexFilho2.Items"),
-            resources.GetString("textSexFilho2.Items1")});
-            this.textSexFilho2.Name = "textSexFilho2";
-            // 
-            // textSexFilho4
-            // 
-            resources.ApplyResources(this.textSexFilho4, "textSexFilho4");
-            this.textSexFilho4.FormattingEnabled = true;
-            this.textSexFilho4.Items.AddRange(new object[] {
-            resources.GetString("textSexFilho4.Items"),
-            resources.GetString("textSexFilho4.Items1")});
-            this.textSexFilho4.Name = "textSexFilho4";
-            // 
-            // textSexFilho3
-            // 
-            resources.ApplyResources(this.textSexFilho3, "textSexFilho3");
-            this.textSexFilho3.FormattingEnabled = true;
-            this.textSexFilho3.Items.AddRange(new object[] {
-            resources.GetString("textSexFilho3.Items"),
-            resources.GetString("textSexFilho3.Items1")});
-            this.textSexFilho3.Name = "textSexFilho3";
-            // 
-            // textSexFilho5
-            // 
-            resources.ApplyResources(this.textSexFilho5, "textSexFilho5");
-            this.textSexFilho5.FormattingEnabled = true;
-            this.textSexFilho5.Items.AddRange(new object[] {
-            resources.GetString("textSexFilho5.Items"),
-            resources.GetString("textSexFilho5.Items1")});
-            this.textSexFilho5.Name = "textSexFilho5";
-            // 
-            // textSexo
-            // 
-            resources.ApplyResources(this.textSexo, "textSexo");
-            this.textSexo.FormattingEnabled = true;
-            this.textSexo.Items.AddRange(new object[] {
-            resources.GetString("textSexo.Items"),
-            resources.GetString("textSexo.Items1")});
-            this.textSexo.Name = "textSexo";
-            // 
-            // textTipo
-            // 
-            resources.ApplyResources(this.textTipo, "textTipo");
-            this.textTipo.FormattingEnabled = true;
-            this.textTipo.Items.AddRange(new object[] {
-            resources.GetString("textTipo.Items"),
-            resources.GetString("textTipo.Items1")});
-            this.textTipo.Name = "textTipo";
-            // 
-            // textAcei
-            // 
-            resources.ApplyResources(this.textAcei, "textAcei");
-            this.textAcei.BackColor = System.Drawing.Color.White;
-            this.textAcei.FormattingEnabled = true;
-            this.textAcei.Items.AddRange(new object[] {
-            resources.GetString("textAcei.Items"),
-            resources.GetString("textAcei.Items1"),
-            resources.GetString("textAcei.Items2")});
-            this.textAcei.Name = "textAcei";
+            resources.ApplyResources(this.labelVers, "labelVers");
+            this.labelVers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelVers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelVers.Name = "labelVers";
             // 
             // FormMembro
             // 
@@ -975,114 +1052,114 @@
             this.Name = "FormMembro";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMembro_FormClosing);
             this.Load += new System.EventHandler(this.FormMembro_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.membrosBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sistemaIgrejaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panelGradient1.ResumeLayout(false);
             this.panelGradient1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private SistemaIgrejaDataSet sistemaIgrejaDataSet;
-        private System.Windows.Forms.BindingSource membrosBindingSource;
-        private SistemaIgrejaDataSetTableAdapters.membrosTableAdapter membrosTableAdapter;
-        private System.Windows.Forms.MaskedTextBox textCep;
-        private System.Windows.Forms.Label labelNome;
-        private System.Windows.Forms.Label labelSexo;
-        private System.Windows.Forms.Label labelEndereco;
-        private System.Windows.Forms.TextBox textEndereco;
-        private System.Windows.Forms.Label labelNumero;
-        private System.Windows.Forms.MaskedTextBox textDtFilho5;
-        private System.Windows.Forms.TextBox textNumero;
-        private System.Windows.Forms.MaskedTextBox textDtFilho4;
-        private System.Windows.Forms.Label labelBairro;
-        private System.Windows.Forms.MaskedTextBox textDtFilho3;
-        private System.Windows.Forms.TextBox textBairro;
-        private System.Windows.Forms.MaskedTextBox textDtFilho2;
-        private System.Windows.Forms.Label labelCidade;
-        private System.Windows.Forms.MaskedTextBox textDtFilho;
-        private System.Windows.Forms.TextBox textCidade;
-        private System.Windows.Forms.MaskedTextBox textDtBat;
-        private System.Windows.Forms.Label labelUf;
-        private System.Windows.Forms.MaskedTextBox textNasc;
-        private System.Windows.Forms.TextBox textUf;
-        private System.Windows.Forms.MaskedTextBox textCpf;
-        private System.Windows.Forms.Label labelCep;
-        private System.Windows.Forms.MaskedTextBox textTelefone;
-        private System.Windows.Forms.Label labelTelefone;
-        private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.TextBox textEmail;
-        private System.Windows.Forms.Label labelEscolaridade;
-        private System.Windows.Forms.TextBox textEscolaridade;
-        private System.Windows.Forms.Label labelProfissao;
-        private System.Windows.Forms.TextBox textProfissao;
-        private System.Windows.Forms.Label labelNasc;
-        private System.Windows.Forms.Button btnNovo;
-        private System.Windows.Forms.Label labelNat;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox textNat;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Label labelRg;
-        private System.Windows.Forms.Label labelAceito;
-        private System.Windows.Forms.TextBox textRg;
-        private System.Windows.Forms.Label labelTipo;
-        private System.Windows.Forms.Label labelOrg;
-        private System.Windows.Forms.TextBox textTalen;
-        private System.Windows.Forms.TextBox textOrg;
-        private System.Windows.Forms.Label labelTalen;
-        private System.Windows.Forms.Label labelDtCasamento;
-        private System.Windows.Forms.TextBox textCargIgr;
-        private System.Windows.Forms.Label labelCargIgr;
-        private System.Windows.Forms.Label labelCpf;
-        private System.Windows.Forms.TextBox textCargExer;
-        private System.Windows.Forms.Label labelConj;
-        private System.Windows.Forms.Label labelCargExe;
-        private System.Windows.Forms.TextBox textConj;
-        private System.Windows.Forms.TextBox textPasBat;
-        private System.Windows.Forms.Label labelTelConj;
-        private System.Windows.Forms.Label labelPasBat;
-        private System.Windows.Forms.TextBox textIgrAnt;
-        private System.Windows.Forms.Label nomeFilho;
-        private System.Windows.Forms.Label labelIgrAnt;
-        private System.Windows.Forms.TextBox textFilho;
-        private System.Windows.Forms.TextBox textIgrBat;
-        private System.Windows.Forms.Label DtFilho;
-        private System.Windows.Forms.Label labelIgrBatismo;
-        private System.Windows.Forms.Label sexFilho;
-        private System.Windows.Forms.Label labelBatismo;
-        private System.Windows.Forms.TextBox textFilho2;
-        private System.Windows.Forms.TextBox textMae;
-        private System.Windows.Forms.TextBox textFilho3;
-        private System.Windows.Forms.Label labelMae;
-        private System.Windows.Forms.TextBox textFilho4;
-        private System.Windows.Forms.TextBox textPai;
-        private System.Windows.Forms.TextBox textFilho5;
         private System.Windows.Forms.Label labelPai;
-        private PanelGradient panelGradient1;
-        private System.Windows.Forms.Label labelPesqMem;
+        private System.Windows.Forms.TextBox textFilho5;
+        private System.Windows.Forms.TextBox textPai;
+        private System.Windows.Forms.TextBox textFilho4;
+        private System.Windows.Forms.Label labelMae;
+        private System.Windows.Forms.TextBox textFilho3;
+        private System.Windows.Forms.TextBox textMae;
+        private System.Windows.Forms.TextBox textFilho2;
+        private System.Windows.Forms.Label labelBatismo;
+        private System.Windows.Forms.Label sexFilho;
+        private System.Windows.Forms.Label labelIgrBatismo;
+        private System.Windows.Forms.Label DtFilho;
+        private System.Windows.Forms.TextBox textIgrBat;
+        private System.Windows.Forms.TextBox textFilho;
+        private System.Windows.Forms.Label labelIgrAnt;
+        private System.Windows.Forms.Label nomeFilho;
+        private System.Windows.Forms.TextBox textIgrAnt;
+        private System.Windows.Forms.Label labelPasBat;
+        private System.Windows.Forms.Label labelTelConj;
+        private System.Windows.Forms.TextBox textPasBat;
+        private System.Windows.Forms.TextBox textConj;
+        private System.Windows.Forms.Label labelCargExe;
+        private System.Windows.Forms.Label labelConj;
+        private System.Windows.Forms.TextBox textCargExer;
+        private System.Windows.Forms.Label labelCpf;
+        private System.Windows.Forms.Label labelCargIgr;
+        private System.Windows.Forms.TextBox textCargIgr;
+        private System.Windows.Forms.Label labelDtCasamento;
+        private System.Windows.Forms.Label labelTalen;
+        private System.Windows.Forms.TextBox textOrg;
+        private System.Windows.Forms.TextBox textTalen;
+        private System.Windows.Forms.Label labelOrg;
+        private System.Windows.Forms.Label labelTipo;
+        private System.Windows.Forms.TextBox textRg;
+        private System.Windows.Forms.Label labelAceito;
+        private System.Windows.Forms.Label labelRg;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.TextBox textNat;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Label labelNat;
+        private System.Windows.Forms.Button btnNovo;
+        private System.Windows.Forms.Label labelNasc;
+        private System.Windows.Forms.TextBox textProfissao;
+        private System.Windows.Forms.Label labelProfissao;
+        private System.Windows.Forms.TextBox textEscolaridade;
+        private System.Windows.Forms.Label labelEscolaridade;
+        private System.Windows.Forms.ComboBox textSexo;
+        private System.Windows.Forms.TextBox textEmail;
+        private System.Windows.Forms.ComboBox textTipo;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.ComboBox textAcei;
+        private System.Windows.Forms.Label labelTelefone;
+        private System.Windows.Forms.MaskedTextBox textTelefone;
+        private System.Windows.Forms.Label labelCep;
+        private System.Windows.Forms.MaskedTextBox textCpf;
+        private System.Windows.Forms.TextBox textUf;
+        private System.Windows.Forms.MaskedTextBox textNasc;
+        private System.Windows.Forms.Label labelUf;
+        private System.Windows.Forms.MaskedTextBox textDtBat;
+        private System.Windows.Forms.TextBox textCidade;
+        private System.Windows.Forms.MaskedTextBox textDtFilho;
+        private System.Windows.Forms.Label labelCidade;
+        private System.Windows.Forms.MaskedTextBox textDtFilho2;
+        private System.Windows.Forms.TextBox textBairro;
+        private System.Windows.Forms.MaskedTextBox textDtFilho3;
+        private System.Windows.Forms.Label labelBairro;
+        private System.Windows.Forms.MaskedTextBox textDtFilho4;
+        private System.Windows.Forms.TextBox textNumero;
+        private System.Windows.Forms.MaskedTextBox textDtFilho5;
+        private System.Windows.Forms.Label labelNumero;
+        private System.Windows.Forms.ComboBox textSexFilho2;
+        private System.Windows.Forms.TextBox textEndereco;
+        private System.Windows.Forms.ComboBox textSexFilho;
+        private System.Windows.Forms.Label labelEndereco;
+        private System.Windows.Forms.ComboBox textSexFilho4;
+        private System.Windows.Forms.Label labelSexo;
+        private System.Windows.Forms.ComboBox textSexFilho3;
+        private System.Windows.Forms.Label labelNome;
+        private System.Windows.Forms.ComboBox textSexFilho5;
+        private System.Windows.Forms.MaskedTextBox textCep;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label labelPesqMem;
+        private System.Windows.Forms.TextBox textNome;
         private System.Windows.Forms.TextBox textBoxPesqMem;
-        private System.Windows.Forms.TextBox textQtd;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MaskedTextBox textDtCasamento;
+        private System.Windows.Forms.MaskedTextBox textTelConj;
+        private PanelGradient panelGradient1;
+        private System.Windows.Forms.Label labelQtd;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTIPO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCONTATO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCIDADE;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.TextBox textNome;
-        private System.Windows.Forms.MaskedTextBox textDtCasamento;
-        private System.Windows.Forms.MaskedTextBox textTelConj;
-        private System.Windows.Forms.ComboBox textSexFilho5;
-        private System.Windows.Forms.ComboBox textSexFilho3;
-        private System.Windows.Forms.ComboBox textSexFilho4;
-        private System.Windows.Forms.ComboBox textSexFilho;
-        private System.Windows.Forms.ComboBox textSexFilho2;
-        private System.Windows.Forms.ComboBox textAcei;
-        private System.Windows.Forms.ComboBox textTipo;
-        private System.Windows.Forms.ComboBox textSexo;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelVers;
     }
 }
 

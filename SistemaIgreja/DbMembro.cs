@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Data.SqlClient;
 
-
 namespace SistemaIgreja
 {
     internal class DbMembro
@@ -85,7 +84,7 @@ namespace SistemaIgreja
             try
             {
                 comand.ExecuteNonQuery();
-                MessageBox.Show("Membro adicionado com sucesso! ", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Membro adicionado com sucesso! ", "Informação", MessageBoxButtons.OK);
             }
             catch (SqlException ex)
             {
@@ -155,7 +154,7 @@ namespace SistemaIgreja
             try
             {
                 comand.ExecuteNonQuery();
-                MessageBox.Show("Os dados do membro foram atualizados com sucesso! ", "Informação", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Os dados do membro foram atualizados com sucesso! ", "Informação", MessageBoxButtons.OK);
             }
             catch (SqlException ex)
             {

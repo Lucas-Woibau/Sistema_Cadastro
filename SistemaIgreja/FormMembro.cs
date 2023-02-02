@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Relational;
+using System;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -11,16 +13,16 @@ namespace SistemaIgreja
                       NOME_FILHO4, NOME_FILHO5, DATA_NASCIMENTO_FILHO1, DATA_NASCIMENTO_FILHO2, DATA_NASCIMENTO_FILHO3, DATA_NASCIMENTO_FILHO4, DATA_NASCIMENTO_FILHO5, SEXO_FILHO1, SEXO_FILHO2, SEXO_FILHO3, SEXO_FILHO4, SEXO_FILHO5,
                       NOME_PAI, NOME_MAE, DATA_BATISMO, NOME_IGREJA_BATISMO, NOME_IGREJA_ANTERIOR, NOME_PASTOR_BATIZOU, CARGOS_EXERCIDOS, REQUISICAO_CARGOS, TALENTOS, TIPO, ACEITO_POR;
 
-        public void ContabilizarMembro()
-        {
-            int qtdMembros = dataGridView1.RowCount;
-            textQtd.Text = qtdMembros.ToString();
-        }
-
         private void dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
             e.Handled = true;
             e.SuppressKeyPress = true;
+        }
+
+        public void ContabilizarMembro()
+        {
+            string qtdMembros = dataGridView1.Rows.Count.ToString();
+            labelQtd.Text= qtdMembros;
         }
         
         public bool Editavel = false;
@@ -34,7 +36,7 @@ namespace SistemaIgreja
         private void FormMembro_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'sistemaIgrejaDataSet.membros' table. You can move, or remove it, as needed.
-            this.membrosTableAdapter.Fill(this.sistemaIgrejaDataSet.membros);
+            //this.membrosTableAdapter.Fill(this.sistemaIgrejaDataSet.membros);
             Limpar();
         }
 
@@ -115,6 +117,9 @@ namespace SistemaIgreja
             Editavel = false;
             Adicionavel = true;
             ContabilizarMembro();
+            VersiculosDiarios();
+
+            DoubleBuffered = true;
         }
 
         public void AtualizarMembro()
@@ -192,12 +197,6 @@ namespace SistemaIgreja
             if (textNome.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Favor preencher o campo 'NOME'");
-                return;
-            }
-
-            if (textSexo.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Favor preencher o campo 'SEXO'");
                 return;
             }
 
@@ -337,7 +336,7 @@ namespace SistemaIgreja
                             if (e.ColumnIndex == 0)
                             {
                                 //Deletando
-                                if (MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information) == DialogResult.Yes)
+                                if (MessageBox.Show("Você realmente deseja deletar esse membro?", "Informação", MessageBoxButtons.YesNo) == DialogResult.Yes)
                                 {
                                     DbMembro.DeletarMembro(dataGridView1.Rows[e.RowIndex].Cells["ColumnID"].Value.ToString());
                                     Limpar();
@@ -354,6 +353,51 @@ namespace SistemaIgreja
         private void textBoxPesqMem_TextChanged(object sender, EventArgs e)
         {
             DbMembro.PesquisarMembro($"select ID, NOME, TIPO, TELEFONE_CELULAR, CIDADE from membros where NOME LIKE'%{textBoxPesqMem.Text}%'", dataGridView1);
+        }
+
+        public void VersiculosDiarios()
+        {
+            String[] versiculos = new String[]
+            {
+                "Romanos 10:9 - A saber: Se, com a tua boca, confessares ao\n" +
+                "Senhor Jesus e, em teu coração, creres que Deus o ressuscitou\n" +
+                "dos mortos, serás salvo.",
+
+                "João 3:16 - Porque Deus amou o mundo de tal maneira que\n" +
+                "deu o seu Filho unigênito, para que todo aquele que nele\n" +
+                "crê não pereça, mas tenha a vida eterna.",
+
+                "Filipenses 4:13 - Tudo posso naquele que me fortalece.",
+
+                "Mateus 6:33 - Buscai, pois, em primeiro lugar, o seu reino\n " +
+                "e a sua justiça, e todas essas coisas vos serão acrescentadas.",
+
+                "1 Pedro 3:15 - Antes, santificai a Cristo, como Senhor, em vosso \n" +
+                "coração; e estai sempre preparados para responder com mansidão e \n" +
+                "temor a qualquer que vos pedir a razão da esperança que há em vós.",
+
+                "2 Coríntios 5:21 - Àquele que não conheceu pecado, o fez pecado\n" +
+                "por nós; para que, nele, fôssemos feitos justiça de Deus.",
+
+                "2 Coríntios 5:17 - Assim que, se alguém está em Cristo, nova \n" +
+                "criatura é: as coisas velhas já passaram; eis que tudo se fez novo.",
+
+                "Mateus 5:16 - Assim resplandeça a vossa luz diante dos homens,para que\n" +
+                "vejam as vossas boas obras e glorifiquem o vosso Pai, que está nos céus.",
+
+                "Tiago 1:12 - Bem-aventurado o varão que sofre a tentação; porque,\n" +
+                "quando for provado, receberá a coroa da vida, a qual o Senhor tem\n" +
+                "prometido aos que o amam.",
+
+                "Hebreus 4:16 - Cheguemos, pois, com confiança ao trono da graça,\n " +
+                "para que possamos alcançar misericórdia e achar graça, a fim de\n" +
+                "sermos ajudados em tempo oportuno."
+            };
+
+            Random rand = new Random();
+            int randomVersiculo = rand.Next(versiculos.Length);
+
+            labelVers.Text = versiculos[randomVersiculo];
         }
     }
 }

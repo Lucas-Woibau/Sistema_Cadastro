@@ -11,6 +11,6 @@ namespace SistemaIgreja
 {
     public class ConfiguracoesDb
     {
-        public static string stringConexao = File.ReadAllText("ConnectionString.txt");
+        public static string stringConexao = "Server=localhost\\sqlexpress;Initial Catalog=SistemaIgreja;Integrated Security=True";
     }
 }
