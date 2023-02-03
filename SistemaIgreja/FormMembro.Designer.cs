@@ -38,7 +38,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelGradient1 = new SistemaIgreja.PanelGradient();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelVers = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.labelQtd = new System.Windows.Forms.Label();
             this.textBoxPesqMem = new System.Windows.Forms.TextBox();
@@ -134,11 +135,10 @@
             this.textPai = new System.Windows.Forms.TextBox();
             this.textFilho5 = new System.Windows.Forms.TextBox();
             this.labelPai = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelVers = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelGradient1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelGradient1
@@ -245,13 +245,18 @@
             this.panelGradient1.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(107)))), ((int)(((byte)(10)))));
             this.panelGradient1.Name = "panelGradient1";
             // 
-            // pictureBox1
+            // labelVers
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SistemaIgreja.Properties.Resources.ICONE;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            resources.ApplyResources(this.labelVers, "labelVers");
+            this.labelVers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.labelVers.Name = "labelVers";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Name = "label2";
             // 
             // label1
             // 
@@ -1027,19 +1032,13 @@
             this.labelPai.ForeColor = System.Drawing.Color.Black;
             this.labelPai.Name = "labelPai";
             // 
-            // label2
+            // pictureBox1
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Name = "label2";
-            // 
-            // labelVers
-            // 
-            resources.ApplyResources(this.labelVers, "labelVers");
-            this.labelVers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.labelVers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelVers.Name = "labelVers";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::SistemaIgreja.Properties.Resources.ICONE;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // FormMembro
             // 
@@ -1054,8 +1053,8 @@
             this.Load += new System.EventHandler(this.FormMembro_Load);
             this.panelGradient1.ResumeLayout(false);
             this.panelGradient1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -223,6 +223,7 @@ namespace SistemaIgreja
 
                 DbMembro.AdicionarMembro(membro);
                 Limpar();
+                this.Display();
             }
 
             else if (btnSalvar.Text == "SALVAR" && Editavel == true)
@@ -238,7 +239,7 @@ namespace SistemaIgreja
                 DesativarTextBoxes(false);
                 Editavel = false;
             }            
-            this.Display();
+            //this.Display();
             ContabilizarMembro();
         }
 
@@ -342,6 +343,8 @@ namespace SistemaIgreja
                                     Limpar();
                                     Display();
                                     ContabilizarMembro();
+                                    Adicionavel = true;
+                                    DesativarTextBoxes(true);
                                 }
                                 return;
                             }
@@ -358,7 +361,7 @@ namespace SistemaIgreja
         public void VersiculosDiarios()
         {
             String[] versiculos = new String[]
-            {
+            {   
                 "Romanos 10:9 - A saber: Se, com a tua boca, confessares ao\n" +
                 "Senhor Jesus e, em teu coração, creres que Deus o ressuscitou\n" +
                 "dos mortos, serás salvo.",
@@ -391,7 +394,131 @@ namespace SistemaIgreja
 
                 "Hebreus 4:16 - Cheguemos, pois, com confiança ao trono da graça,\n " +
                 "para que possamos alcançar misericórdia e achar graça, a fim de\n" +
-                "sermos ajudados em tempo oportuno."
+                "sermos ajudados em tempo oportuno.",
+
+                "Salmos 133:3 - Como o orvalho do Hermom, que desce sobre os montes\n" +
+                "de Sião; porque ali o Senhor ordena a bênção e a vida para sempre.",
+
+                "Tiago 5:16 - Confessai as vossas culpas uns aos outros e orai\n" +
+                "nuns pelos outros, para que sareis; a oração feita por um\n" +
+                "justo pode muito em seus efeitos.",
+
+                "Provérbios 3:5 - Confia no Senhor de todo o teu coração e\n" +
+                "não te estribes no teu próprio entendimento.",
+
+                "1 João 3:16 - Conhecemos o amor nisto: que ele deu a sua vida\n" +
+                "por nós, e nós devemos dar a vida pelos irmãos.",
+
+                "Romanos 10:17 - De sorte que a fé é pelo ouvir,\n" +
+                "e o ouvir pela palavra de Deus.",
+
+                "João 14:27 - Deixo-vos a paz, a minha paz vos dou; não vo-la dou\n" +
+                "como o mundo a dá. Não se turbe o vosso coração, nem se atemorize.",
+
+                "Salmos 37:4 - Deleita-te também no Senhor, e ele te\n" +
+                "concederá o que deseja o teu coração.",
+
+                "Salmos 46:10 - Desiste, desiste, e sabe que eu sou Deus.",
+
+                "Salmos 27:1 - O Senhor é a minha luz e a minha salvação.",
+
+                "1 João 4:8 - Quem não ama não conheceu a Deus, porque Deus é amor.",
+
+                "Lucas 11:28 - Bendito seja o Pai que deu aos homens a\n" +
+                "vida eterna, e ela está em seu Filho.",
+
+                "Filipenses 4:6-7 - Não se inquietem com coisa alguma; antes,\n" +
+                "em tudo, apresentem as suas petições a Deus em oração \n" +
+                "e súplica, com ação de graças.\nE a paz de Deus, que excede\n" +
+                "todo o entendimento, guardará o vosso coração e a\n" +
+                "vossa mente em Cristo Jesus.",
+
+                "Mateus 7:7 - Peça, e dar-se-vos-á; busque, e encontrarás;\n" +
+                "bata, e abrir-se-lhe-á.",
+
+                "Salmos 121:1-2 - Levantarei os meus olhos para os montes,\n" +
+                "de onde vem o meu socorro. O meu socorro vem do Senhor,\n" +
+                "que fez os céus e a terra.",
+
+                "1 João 1:9 - Se confessarmos os nossos pecados, ele é fiel e justo\n" +
+                "para perdoar-nos os pecados e nos purificar de toda injustiça.",
+
+                "Romanos 8:38-39 - Porque estou certo de que, nem a morte, nem a\n" +
+                "vida, nem os anjos, nem os principados, nem as coisas presentes,\n" +
+                "nem as futuras, nem os poderes, nem a altura, nem a profundidade,\n" +
+                "nem qualquer outra criatura poderá separar-nos do amor de Deus,\n" +
+                "que está em Cristo Jesus, nosso Senhor.",
+
+                "1 Tessalonicenses 5:18 - Em tudo dai graças, porque esta é a\n" +
+                "vontade de Deus em Cristo Jesus para convosco.",
+
+                "Salmos 91:16 - Com as minhas asas te cobrirei, e debaixo das\n" +
+                "minhas penas te confortarás; a minha verdade é o escudo e a proteção.",
+
+                "Salmos 56:3 - Quando eu estiver sob o pavor, confiarei em ti.",
+
+                "Lucas 12:32 - Não temas, pequenino rebanho, porque a vosso\n" +
+                "Pai agradou dar-vos o reino.",
+
+                "1 Coríntios 13:4-8 - O amor é sofredor, é benigno; o amor não\n" +
+                "é invejoso; o amor não se vangloria, não se inflama de\n" +
+                "orgulho, não se conduz inconvenientemente, não procura\n" +
+                "os seus interesses, não se irrita, não guarda rancor; não se\n" +
+                "alegra com a injustiça, mas se regozija com a verdade;\n" +
+                "tudo sofre, tudo crê, tudo espera, tudo suporta.",
+
+                "Romanos 8:28 - Sabemos que todas as coisas concorrem para\n" +
+                "o bem daqueles que amam a Deus, daqueles que são chamados\n" +
+                "segundo o seu propósito.",
+
+                "Salmos 27:14 - Espera no Senhor; seja forte, e ele\n" +
+                "fortalecerá o teu coração; espera, sim, no Senhor.",
+
+                "Efésios 2:8-9 - Porque pela graça sois salvos, por meio\n" +
+                "da fé; e isto não vem de vós, é dom de Deus; não de obras,\n" +
+                "para que ninguém se glorie.",
+
+                "1 Pedro 5:7 - Lançando sobre ele toda a vossa ansiedade,\n" +
+                "porque ele tem cuidado de vós.",
+
+                "João 14:6 - Disse-lhe Jesus: Eu sou o caminho, e a verdade,\n" +
+                "e a vida; ninguém vem ao Pai, senão por mim.",
+
+                "1 João 5:4 - Porque tudo o que é nascido de Deus vence o\n" +
+                "mundo; e esta é a vitória que venceu o mundo: a nossa fé.",
+
+                "Salmos 31:24 - Sejam fortalecidos na retidão, ó meu coração,\n" +
+                "pois ao Senhor confiei.",
+
+                "1 Tessalonicenses 5:24 - O qual preserva todos quantos o\n" +
+                "amam, mas a todos os ímpios destruirá.",
+
+                "João 8:32 - E conhecereis a verdade, e a verdade vos libertará.",
+
+                "Salmos 37:23-24 - Os passos do homem bom são confirmados pelo\n" +
+                "Senhor, e ele se agrada do seu caminho. Ainda que caia,\n" +
+                "não ficará prostrado, pois o Senhor o sustenta com a sua mão.",
+
+                "Lucas 12:34 - Porque onde estiver o teu tesouro, aí estará\n" +
+                "também o teu coração.",
+
+                "Tiago 1:2-4 - Considerai-vos felizes, meus irmãos, quando\n" +
+                "encontrais várias provações, sabendo que a prova da vossa fé\n" +
+                "produz perseverança. E a perseverança deve ter obra completa, a fim\n" +
+                "de que sejais perfeitos e completos, sem faltar em coisa alguma.",
+
+                "Colossenses 3:23-24 - E tudo o que fizerdes, fazei-o de coração,\n" +
+                "como para o Senhor e não para os homens, sabendo que do Senhor\n" +
+                "recebereis a recompensa da herança, porque a Cristo, o Senhor, servis.",
+
+                "1 João 4:18 - Nós amamos, porque ele nos amou primeiro.",
+
+                "Salmos 103:1-5 - Bendize, ó minha alma, ao Senhor, e tudo o que\n" +
+                "há em mim bendiga o seu santo nome. Bendize, ó minha alma, ao Senhor,\n" +
+                "e não esqueças nenhum de seus benefícios. Ele é o que perdoa todas\n" +
+                "as tuas iniquidades, que sara todas as tuas doenças; que resgata a\n" +
+                "tua vida da sepultura, que te cor."
+
             };
 
             Random rand = new Random();
