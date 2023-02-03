@@ -133,7 +133,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelVers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 303</value>
+    <value>695, 287</value>
   </data>
   <data name="labelVers.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -166,7 +166,7 @@
     <value>Segoe UI Symbol, 17.25pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>708, 257</value>
+    <value>708, 243</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>483, 31</value>
@@ -202,13 +202,13 @@
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 15</value>
+    <value>182, 24</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>233, 30</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>86</value>
+    <value>0</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>DADOS DO MEMBRO</value>
@@ -292,7 +292,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textTelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>523, 222</value>
+    <value>523, 225</value>
   </data>
   <data name="textTelConj.Mask" xml:space="preserve">
     <value>(99) 00000-0000</value>
@@ -322,7 +322,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtCasamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 222</value>
+    <value>249, 225</value>
   </data>
   <data name="textDtCasamento.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -375,6 +375,9 @@
   <data name="ColumnTIPO.HeaderText" xml:space="preserve">
     <value>TIPO</value>
   </data>
+  <data name="ColumnTIPO.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
   <metadata name="ColumnCONTATO.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -382,7 +385,7 @@
     <value>CONTATO</value>
   </data>
   <data name="ColumnCONTATO.Width" type="System.Int32, mscorlib">
-    <value>140</value>
+    <value>120</value>
   </data>
   <metadata name="ColumnCIDADE.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -391,7 +394,7 @@
     <value>CIDADE</value>
   </data>
   <data name="ColumnCIDADE.Width" type="System.Int32, mscorlib">
-    <value>80</value>
+    <value>92</value>
   </data>
   <metadata name="Column6.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -399,14 +402,17 @@
   <data name="Column6.HeaderText" xml:space="preserve">
     <value />
   </data>
+  <data name="Column6.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>641, 425</value>
+    <value>638, 428</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 315</value>
+    <value>635, 324</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
     <value>dataGridView1</value>
@@ -427,7 +433,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 87</value>
+    <value>6, 90</value>
   </data>
   <data name="textNome.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -523,7 +529,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textCep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 132</value>
+    <value>230, 135</value>
   </data>
   <data name="textCep.Mask" xml:space="preserve">
     <value>00000-000</value>
@@ -559,7 +565,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 374</value>
+    <value>521, 377</value>
   </data>
   <data name="textSexFilho5.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -592,13 +598,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelNome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 66</value>
+    <value>3, 69</value>
   </data>
   <data name="labelNome.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
   </data>
   <data name="labelNome.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>0</value>
   </data>
   <data name="labelNome.Text" xml:space="preserve">
     <value>*NOME:</value>
@@ -628,7 +634,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 326</value>
+    <value>521, 329</value>
   </data>
   <data name="textSexFilho3.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -661,13 +667,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelSexo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 66</value>
+    <value>171, 69</value>
   </data>
   <data name="labelSexo.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 20</value>
   </data>
   <data name="labelSexo.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>0</value>
   </data>
   <data name="labelSexo.Text" xml:space="preserve">
     <value>SEXO:</value>
@@ -697,7 +703,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 350</value>
+    <value>521, 353</value>
   </data>
   <data name="textSexFilho4.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -730,13 +736,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelEndereco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 66</value>
+    <value>285, 69</value>
   </data>
   <data name="labelEndereco.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 20</value>
   </data>
   <data name="labelEndereco.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>0</value>
   </data>
   <data name="labelEndereco.Text" xml:space="preserve">
     <value>ENDEREÇO:</value>
@@ -766,7 +772,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 278</value>
+    <value>521, 281</value>
   </data>
   <data name="textSexFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -793,7 +799,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textEndereco.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 87</value>
+    <value>289, 90</value>
   </data>
   <data name="textEndereco.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -829,7 +835,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>521, 302</value>
+    <value>521, 305</value>
   </data>
   <data name="textSexFilho2.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 25</value>
@@ -862,13 +868,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelNumero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>459, 66</value>
+    <value>459, 69</value>
   </data>
   <data name="labelNumero.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 20</value>
   </data>
   <data name="labelNumero.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>0</value>
   </data>
   <data name="labelNumero.Text" xml:space="preserve">
     <value>Nº:</value>
@@ -892,7 +898,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 374</value>
+    <value>319, 377</value>
   </data>
   <data name="textDtFilho5.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -922,7 +928,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textNumero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>463, 87</value>
+    <value>463, 90</value>
   </data>
   <data name="textNumero.MaxLength" type="System.Int32, mscorlib">
     <value>6</value>
@@ -952,7 +958,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 350</value>
+    <value>319, 353</value>
   </data>
   <data name="textDtFilho4.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -988,13 +994,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelBairro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 66</value>
+    <value>529, 69</value>
   </data>
   <data name="labelBairro.Size" type="System.Drawing.Size, System.Drawing">
     <value>65, 20</value>
   </data>
   <data name="labelBairro.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>0</value>
   </data>
   <data name="labelBairro.Text" xml:space="preserve">
     <value>BAIRRO:</value>
@@ -1018,7 +1024,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 326</value>
+    <value>319, 329</value>
   </data>
   <data name="textDtFilho3.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1048,7 +1054,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textBairro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 87</value>
+    <value>533, 90</value>
   </data>
   <data name="textBairro.MaxLength" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1078,7 +1084,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 302</value>
+    <value>319, 305</value>
   </data>
   <data name="textDtFilho2.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1114,13 +1120,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelCidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2, 112</value>
+    <value>2, 115</value>
   </data>
   <data name="labelCidade.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 20</value>
   </data>
   <data name="labelCidade.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>0</value>
   </data>
   <data name="labelCidade.Text" xml:space="preserve">
     <value>*CIDADE:</value>
@@ -1144,7 +1150,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 278</value>
+    <value>319, 281</value>
   </data>
   <data name="textDtFilho.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1174,7 +1180,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textCidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 132</value>
+    <value>6, 135</value>
   </data>
   <data name="textCidade.MaxLength" type="System.Int32, mscorlib">
     <value>15</value>
@@ -1204,7 +1210,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textDtBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 484</value>
+    <value>8, 487</value>
   </data>
   <data name="textDtBat.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1240,13 +1246,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelUf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 112</value>
+    <value>180, 115</value>
   </data>
   <data name="labelUf.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 20</value>
   </data>
   <data name="labelUf.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>0</value>
   </data>
   <data name="labelUf.Text" xml:space="preserve">
     <value>UF:</value>
@@ -1270,7 +1276,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textNasc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 177</value>
+    <value>328, 180</value>
   </data>
   <data name="textNasc.Mask" xml:space="preserve">
     <value>00/00/0000</value>
@@ -1300,7 +1306,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textUf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 132</value>
+    <value>183, 135</value>
   </data>
   <data name="textUf.MaxLength" type="System.Int32, mscorlib">
     <value>5</value>
@@ -1330,7 +1336,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textCpf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 222</value>
+    <value>140, 225</value>
   </data>
   <data name="textCpf.Mask" xml:space="preserve">
     <value>000.000.000-00</value>
@@ -1366,13 +1372,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelCep.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 112</value>
+    <value>228, 115</value>
   </data>
   <data name="labelCep.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
   </data>
   <data name="labelCep.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>0</value>
   </data>
   <data name="labelCep.Text" xml:space="preserve">
     <value>CEP:</value>
@@ -1396,7 +1402,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textTelefone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>331, 132</value>
+    <value>331, 135</value>
   </data>
   <data name="textTelefone.Mask" xml:space="preserve">
     <value>(99) 00000-0000</value>
@@ -1432,13 +1438,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelTelefone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 112</value>
+    <value>328, 115</value>
   </data>
   <data name="labelTelefone.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 20</value>
   </data>
   <data name="labelTelefone.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+    <value>0</value>
   </data>
   <data name="labelTelefone.Text" xml:space="preserve">
     <value>CONTATO:</value>
@@ -1471,7 +1477,7 @@
     <value>ACLAMAÇÃO</value>
   </data>
   <data name="textAcei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>323, 638</value>
+    <value>323, 641</value>
   </data>
   <data name="textAcei.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 25</value>
@@ -1504,13 +1510,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>453, 111</value>
+    <value>453, 114</value>
   </data>
   <data name="labelEmail.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
   </data>
   <data name="labelEmail.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+    <value>0</value>
   </data>
   <data name="labelEmail.Text" xml:space="preserve">
     <value>E-MAIL:</value>
@@ -1540,7 +1546,7 @@
     <value>FREQUENTADOR</value>
   </data>
   <data name="textTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 638</value>
+    <value>9, 641</value>
   </data>
   <data name="textTipo.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 25</value>
@@ -1567,7 +1573,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textEmail.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 132</value>
+    <value>457, 135</value>
   </data>
   <data name="textEmail.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1603,7 +1609,7 @@
     <value>FEMININO</value>
   </data>
   <data name="textSexo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 87</value>
+    <value>174, 90</value>
   </data>
   <data name="textSexo.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 25</value>
@@ -1636,13 +1642,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelEscolaridade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 156</value>
+    <value>3, 159</value>
   </data>
   <data name="labelEscolaridade.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 20</value>
   </data>
   <data name="labelEscolaridade.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
+    <value>0</value>
   </data>
   <data name="labelEscolaridade.Text" xml:space="preserve">
     <value>ESCOLARIDADE:</value>
@@ -1666,7 +1672,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textEscolaridade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 177</value>
+    <value>6, 180</value>
   </data>
   <data name="textEscolaridade.MaxLength" type="System.Int32, mscorlib">
     <value>35</value>
@@ -1702,13 +1708,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelProfissao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 156</value>
+    <value>180, 159</value>
   </data>
   <data name="labelProfissao.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
   </data>
   <data name="labelProfissao.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+    <value>0</value>
   </data>
   <data name="labelProfissao.Text" xml:space="preserve">
     <value>PROFISSÃO:</value>
@@ -1732,7 +1738,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textProfissao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 177</value>
+    <value>183, 180</value>
   </data>
   <data name="textProfissao.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1768,13 +1774,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelNasc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 156</value>
+    <value>324, 159</value>
   </data>
   <data name="labelNasc.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 20</value>
   </data>
   <data name="labelNasc.TabIndex" type="System.Int32, mscorlib">
-    <value>31</value>
+    <value>0</value>
   </data>
   <data name="labelNasc.Text" xml:space="preserve">
     <value>NASCIMENTO:</value>
@@ -1801,7 +1807,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnNovo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 702</value>
+    <value>35, 713</value>
   </data>
   <data name="btnNovo.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 38</value>
@@ -1837,13 +1843,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelNat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>442, 156</value>
+    <value>442, 159</value>
   </data>
   <data name="labelNat.Size" type="System.Drawing.Size, System.Drawing">
     <value>123, 20</value>
   </data>
   <data name="labelNat.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+    <value>0</value>
   </data>
   <data name="labelNat.Text" xml:space="preserve">
     <value>NATURALIDADE:</value>
@@ -1870,7 +1876,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnSalvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 702</value>
+    <value>422, 713</value>
   </data>
   <data name="btnSalvar.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 38</value>
@@ -1900,7 +1906,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textNat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 177</value>
+    <value>446, 180</value>
   </data>
   <data name="textNat.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -1933,7 +1939,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnEditar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 702</value>
+    <value>232, 713</value>
   </data>
   <data name="btnEditar.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 38</value>
@@ -1969,13 +1975,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelRg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 156</value>
+    <value>566, 159</value>
   </data>
   <data name="labelRg.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 20</value>
   </data>
   <data name="labelRg.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+    <value>0</value>
   </data>
   <data name="labelRg.Text" xml:space="preserve">
     <value>RG:</value>
@@ -2005,7 +2011,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelAceito.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 618</value>
+    <value>322, 621</value>
   </data>
   <data name="labelAceito.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 20</value>
@@ -2035,7 +2041,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textRg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>568, 177</value>
+    <value>568, 180</value>
   </data>
   <data name="textRg.MaxLength" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2071,7 +2077,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelTipo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 618</value>
+    <value>8, 621</value>
   </data>
   <data name="labelTipo.Size" type="System.Drawing.Size, System.Drawing">
     <value>52, 20</value>
@@ -2107,13 +2113,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelOrg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 201</value>
+    <value>5, 204</value>
   </data>
   <data name="labelOrg.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 20</value>
   </data>
   <data name="labelOrg.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
+    <value>0</value>
   </data>
   <data name="labelOrg.Text" xml:space="preserve">
     <value>ORG. EXP:</value>
@@ -2137,7 +2143,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textTalen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>322, 588</value>
+    <value>322, 591</value>
   </data>
   <data name="textTalen.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2167,7 +2173,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textOrg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 222</value>
+    <value>6, 225</value>
   </data>
   <data name="textOrg.MaxLength" type="System.Int32, mscorlib">
     <value>35</value>
@@ -2203,7 +2209,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelTalen.Location" type="System.Drawing.Point, System.Drawing">
-    <value>320, 568</value>
+    <value>320, 571</value>
   </data>
   <data name="labelTalen.Size" type="System.Drawing.Size, System.Drawing">
     <value>268, 20</value>
@@ -2239,13 +2245,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelDtCasamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>247, 202</value>
+    <value>247, 205</value>
   </data>
   <data name="labelDtCasamento.Size" type="System.Drawing.Size, System.Drawing">
     <value>102, 20</value>
   </data>
   <data name="labelDtCasamento.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
+    <value>0</value>
   </data>
   <data name="labelDtCasamento.Text" xml:space="preserve">
     <value>CASAMENTO:</value>
@@ -2269,7 +2275,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textCargIgr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 588</value>
+    <value>7, 591</value>
   </data>
   <data name="textCargIgr.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2305,7 +2311,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCargIgr.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 568</value>
+    <value>3, 571</value>
   </data>
   <data name="labelCargIgr.Size" type="System.Drawing.Size, System.Drawing">
     <value>306, 20</value>
@@ -2341,13 +2347,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelCpf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 202</value>
+    <value>146, 205</value>
   </data>
   <data name="labelCpf.Size" type="System.Drawing.Size, System.Drawing">
     <value>39, 20</value>
   </data>
   <data name="labelCpf.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+    <value>0</value>
   </data>
   <data name="labelCpf.Text" xml:space="preserve">
     <value>CPF:</value>
@@ -2371,7 +2377,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textCargExer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 535</value>
+    <value>321, 538</value>
   </data>
   <data name="textCargExer.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2407,13 +2413,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>368, 202</value>
+    <value>368, 205</value>
   </data>
   <data name="labelConj.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 20</value>
   </data>
   <data name="labelConj.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+    <value>0</value>
   </data>
   <data name="labelConj.Text" xml:space="preserve">
     <value>CÔNJUGUE:</value>
@@ -2443,7 +2449,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelCargExe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>319, 515</value>
+    <value>319, 518</value>
   </data>
   <data name="labelCargExe.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 20</value>
@@ -2473,7 +2479,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>369, 222</value>
+    <value>369, 225</value>
   </data>
   <data name="textConj.MaxLength" type="System.Int32, mscorlib">
     <value>30</value>
@@ -2503,7 +2509,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textPasBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 535</value>
+    <value>7, 538</value>
   </data>
   <data name="textPasBat.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2539,13 +2545,13 @@
     <value>NoControl</value>
   </data>
   <data name="labelTelConj.Location" type="System.Drawing.Point, System.Drawing">
-    <value>520, 202</value>
+    <value>520, 205</value>
   </data>
   <data name="labelTelConj.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 20</value>
   </data>
   <data name="labelTelConj.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
+    <value>0</value>
   </data>
   <data name="labelTelConj.Text" xml:space="preserve">
     <value>CEL CÔNJUGUE:</value>
@@ -2575,7 +2581,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelPasBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 515</value>
+    <value>5, 518</value>
   </data>
   <data name="labelPasBat.Size" type="System.Drawing.Size, System.Drawing">
     <value>214, 20</value>
@@ -2605,7 +2611,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textIgrAnt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>390, 484</value>
+    <value>390, 487</value>
   </data>
   <data name="textIgrAnt.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2641,7 +2647,7 @@
     <value>NoControl</value>
   </data>
   <data name="nomeFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 257</value>
+    <value>4, 260</value>
   </data>
   <data name="nomeFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 20</value>
@@ -2677,7 +2683,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelIgrAnt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>388, 464</value>
+    <value>388, 467</value>
   </data>
   <data name="labelIgrAnt.Size" type="System.Drawing.Size, System.Drawing">
     <value>184, 20</value>
@@ -2707,7 +2713,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 278</value>
+    <value>7, 281</value>
   </data>
   <data name="textFilho.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2737,7 +2743,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textIgrBat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 484</value>
+    <value>131, 487</value>
   </data>
   <data name="textIgrBat.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2773,7 +2779,7 @@
     <value>NoControl</value>
   </data>
   <data name="DtFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 257</value>
+    <value>315, 260</value>
   </data>
   <data name="DtFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 20</value>
@@ -2809,7 +2815,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelIgrBatismo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 464</value>
+    <value>128, 467</value>
   </data>
   <data name="labelIgrBatismo.Size" type="System.Drawing.Size, System.Drawing">
     <value>176, 20</value>
@@ -2845,7 +2851,7 @@
     <value>NoControl</value>
   </data>
   <data name="sexFilho.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 257</value>
+    <value>518, 260</value>
   </data>
   <data name="sexFilho.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -2881,7 +2887,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelBatismo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 464</value>
+    <value>6, 467</value>
   </data>
   <data name="labelBatismo.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 20</value>
@@ -2911,7 +2917,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textFilho2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 302</value>
+    <value>7, 305</value>
   </data>
   <data name="textFilho2.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2941,7 +2947,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>321, 428</value>
+    <value>321, 431</value>
   </data>
   <data name="textMae.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -2971,7 +2977,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textFilho3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 326</value>
+    <value>7, 329</value>
   </data>
   <data name="textFilho3.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3007,7 +3013,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelMae.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 408</value>
+    <value>317, 411</value>
   </data>
   <data name="labelMae.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -3037,7 +3043,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textFilho4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 350</value>
+    <value>7, 353</value>
   </data>
   <data name="textFilho4.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3067,7 +3073,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textPai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 428</value>
+    <value>9, 431</value>
   </data>
   <data name="textPai.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3097,7 +3103,7 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="textFilho5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 374</value>
+    <value>7, 377</value>
   </data>
   <data name="textFilho5.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
@@ -3133,7 +3139,7 @@
     <value>NoControl</value>
   </data>
   <data name="labelPai.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 408</value>
+    <value>6, 411</value>
   </data>
   <data name="labelPai.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 20</value>
@@ -3160,7 +3166,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>751, -19</value>
+    <value>751, -33</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>366, 323</value>
@@ -3196,7 +3202,7 @@
     <value>1289, 768</value>
   </data>
   <data name="panelGradient1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panelGradient1.Name" xml:space="preserve">
     <value>panelGradient1</value>
@@ -3817,6 +3823,9 @@
         EiRIkCBBggQJEiRIkCBBggQJEiRIkCBBggQJEiRIkCBBggQJEiRIkCBBggQJEiRIkCBBggQJEiRIkCBB
         ggQJEiRIkCBBggQJEiRIkCDhF4n/B5sVwVOZOpCeAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

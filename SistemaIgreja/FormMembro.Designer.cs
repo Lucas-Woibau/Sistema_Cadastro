@@ -46,12 +46,6 @@
             this.textTelConj = new System.Windows.Forms.MaskedTextBox();
             this.textDtCasamento = new System.Windows.Forms.MaskedTextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.textNome = new System.Windows.Forms.TextBox();
             this.labelPesqMem = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -136,6 +130,12 @@
             this.textFilho5 = new System.Windows.Forms.TextBox();
             this.labelPai = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ColumnID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnNOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnTIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCONTATO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnCIDADE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelGradient1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -335,87 +335,6 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.ShowCellToolTips = false;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // ColumnID
-            // 
-            this.ColumnID.DataPropertyName = "ID";
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.ColumnID.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.ColumnID, "ColumnID");
-            this.ColumnID.Name = "ColumnID";
-            this.ColumnID.ReadOnly = true;
-            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnNOME
-            // 
-            this.ColumnNOME.DataPropertyName = "NOME";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            this.ColumnNOME.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.ColumnNOME, "ColumnNOME");
-            this.ColumnNOME.Name = "ColumnNOME";
-            this.ColumnNOME.ReadOnly = true;
-            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnTIPO
-            // 
-            this.ColumnTIPO.DataPropertyName = "TIPO";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.ColumnTIPO.DefaultCellStyle = dataGridViewCellStyle4;
-            resources.ApplyResources(this.ColumnTIPO, "ColumnTIPO");
-            this.ColumnTIPO.Name = "ColumnTIPO";
-            this.ColumnTIPO.ReadOnly = true;
-            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCONTATO
-            // 
-            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            this.ColumnCONTATO.DefaultCellStyle = dataGridViewCellStyle5;
-            resources.ApplyResources(this.ColumnCONTATO, "ColumnCONTATO");
-            this.ColumnCONTATO.Name = "ColumnCONTATO";
-            this.ColumnCONTATO.ReadOnly = true;
-            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // ColumnCIDADE
-            // 
-            this.ColumnCIDADE.DataPropertyName = "CIDADE";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.ColumnCIDADE.DefaultCellStyle = dataGridViewCellStyle6;
-            resources.ApplyResources(this.ColumnCIDADE, "ColumnCIDADE");
-            this.ColumnCIDADE.Name = "ColumnCIDADE";
-            this.ColumnCIDADE.ReadOnly = true;
-            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
-            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Column6.Text = "EXCLUIR";
-            this.Column6.UseColumnTextForButtonValue = true;
             // 
             // textNome
             // 
@@ -1040,6 +959,87 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
             // 
+            // ColumnID
+            // 
+            this.ColumnID.DataPropertyName = "ID";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            this.ColumnID.DefaultCellStyle = dataGridViewCellStyle2;
+            resources.ApplyResources(this.ColumnID, "ColumnID");
+            this.ColumnID.Name = "ColumnID";
+            this.ColumnID.ReadOnly = true;
+            this.ColumnID.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnNOME
+            // 
+            this.ColumnNOME.DataPropertyName = "NOME";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnNOME.DefaultCellStyle = dataGridViewCellStyle3;
+            resources.ApplyResources(this.ColumnNOME, "ColumnNOME");
+            this.ColumnNOME.Name = "ColumnNOME";
+            this.ColumnNOME.ReadOnly = true;
+            this.ColumnNOME.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnTIPO
+            // 
+            this.ColumnTIPO.DataPropertyName = "TIPO";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnTIPO.DefaultCellStyle = dataGridViewCellStyle4;
+            resources.ApplyResources(this.ColumnTIPO, "ColumnTIPO");
+            this.ColumnTIPO.Name = "ColumnTIPO";
+            this.ColumnTIPO.ReadOnly = true;
+            this.ColumnTIPO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCONTATO
+            // 
+            this.ColumnCONTATO.DataPropertyName = "TELEFONE_CELULAR";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnCONTATO.DefaultCellStyle = dataGridViewCellStyle5;
+            resources.ApplyResources(this.ColumnCONTATO, "ColumnCONTATO");
+            this.ColumnCONTATO.Name = "ColumnCONTATO";
+            this.ColumnCONTATO.ReadOnly = true;
+            this.ColumnCONTATO.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ColumnCIDADE
+            // 
+            this.ColumnCIDADE.DataPropertyName = "CIDADE";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.ColumnCIDADE.DefaultCellStyle = dataGridViewCellStyle6;
+            resources.ApplyResources(this.ColumnCIDADE, "ColumnCIDADE");
+            this.ColumnCIDADE.Name = "ColumnCIDADE";
+            this.ColumnCIDADE.ReadOnly = true;
+            this.ColumnCIDADE.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle7;
+            this.Column6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            this.Column6.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Column6.Text = "EXCLUIR";
+            this.Column6.UseColumnTextForButtonValue = true;
+            // 
             // FormMembro
             // 
             resources.ApplyResources(this, "$this");
@@ -1150,15 +1150,15 @@
         private PanelGradient panelGradient1;
         private System.Windows.Forms.Label labelQtd;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelVers;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnNOME;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnTIPO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCONTATO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnCIDADE;
         private System.Windows.Forms.DataGridViewButtonColumn Column6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelVers;
     }
 }
 
