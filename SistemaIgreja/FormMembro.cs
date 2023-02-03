@@ -22,9 +22,9 @@ namespace SistemaIgreja
         public void ContabilizarMembro()
         {
             string qtdMembros = dataGridView1.Rows.Count.ToString();
-            labelQtd.Text= qtdMembros;
+            labelQtd.Text = qtdMembros;
         }
-        
+
         public bool Editavel = false;
         public bool Adicionavel;
         private void btnEditar_Click(object sender, EventArgs e)
@@ -189,7 +189,19 @@ namespace SistemaIgreja
 
         public void Display()
         {
+            int currentRowIndex = -1;
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                currentRowIndex = dataGridView1.CurrentRow.Index;
+            }
+
             DbMembro.PesquisarMembro("select ID, NOME, TIPO, TELEFONE_CELULAR, CIDADE from membros", dataGridView1);
+            dataGridView1.CurrentCell = null;
+
+            if (currentRowIndex != -1 && currentRowIndex < dataGridView1.Rows.Count)
+            {
+                dataGridView1.Rows[currentRowIndex].Selected = true;
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -223,7 +235,6 @@ namespace SistemaIgreja
 
                 DbMembro.AdicionarMembro(membro);
                 Limpar();
-                this.Display();
             }
 
             else if (btnSalvar.Text == "SALVAR" && Editavel == true)
@@ -238,8 +249,8 @@ namespace SistemaIgreja
                 DbMembro.EditarMembro(membro, ID);
                 DesativarTextBoxes(false);
                 Editavel = false;
-            }            
-            //this.Display();
+            }
+            this.Display();
             ContabilizarMembro();
         }
 
@@ -361,7 +372,7 @@ namespace SistemaIgreja
         public void VersiculosDiarios()
         {
             String[] versiculos = new String[]
-            {   
+            {
                 "Romanos 10:9 - A saber: Se, com a tua boca, confessares ao\n" +
                 "Senhor Jesus e, em teu coração, creres que Deus o ressuscitou\n" +
                 "dos mortos, serás salvo.",
