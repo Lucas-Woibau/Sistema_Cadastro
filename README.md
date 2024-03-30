@@ -1,12 +1,11 @@
-# Sistema de Cadastro de Membros
-## Sistema de cadastro de membros simples feito para uma igreja (pequena).
+# Sobre
+Sistema de cadastro de membros simples feito para uma igreja (pequena).
 
-## Ferramentas utilizadas:
-### Visual Studio 2022.
-### Windows Forms.
-### Linguagem C#.
-### Banco de dados SQL Server. 
+# Layout 
+![desk 1](https://github.com/Lucas-Woibau/Sistema_Cadastro/blob/master/SistemaIgreja/Tela.png?raw=true)
 
-# Tela Principal:
-
-<img src="https://github.com/Lucas-Woibau/Sistema_Cadastro/blob/master/SistemaIgreja/Tela.png?raw=true">
+# Tecnologias utilizadas
+- Windows Forms
+- C#
+- .NET
+- SQL Server
